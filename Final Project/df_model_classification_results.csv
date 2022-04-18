@@ -1,0 +1,2698 @@
+,unique_model_name,model_scope,model_type,balance_method,scale_method,train_acc_score,test_acc_score,balance_acc_score,f1_score,precision_score,recall_score,roc_auc_score,confusion_matrix,classification_report,features,coef_values,date_recorded
+0,secondary-logregr-fill0-nobal-noscale,NFT secondary sales,LogisticRegression(),None,None,0.7408124728511579,0.7408609368998087,0.7429703224195214,0.743129419216631,0.7037161843399965,0.7872194452611977,0.7429703224195214,<sklearn.metrics._plot.confusion_matrix.ConfusionMatrixDisplay object at 0x7fde2db09790>,"              precision    recall  f1-score   support
+
+           0       0.78      0.70      0.74    145918
+           1       0.70      0.79      0.74    132639
+
+    accuracy                           0.74    278557
+   macro avg       0.74      0.74      0.74    278557
+weighted avg       0.75      0.74      0.74    278557
+","Index(['nft_sales_count', 'First_item_Unique_id_collection', 'GoogleTrends',
+       'BTC_price', 'ETH_price', 'MANA_price', 'WAX_price',
+       'GoogleTrends_7d_rolling_avg', 'GoogleTrends_14d_rolling_avg',
+       'GoogleTrends_30d_rolling_avg', 'GoogleTrends_60d_rolling_avg',
+       'GoogleTrends_90d_rolling_avg', 'BTC_price_7d_rolling_avg',
+       'BTC_price_14d_rolling_avg', 'BTC_price_30d_rolling_avg',
+       'BTC_price_60d_rolling_avg', 'BTC_price_90d_rolling_avg',
+       'ETH_price_7d_rolling_avg', 'ETH_price_14d_rolling_avg',
+       'ETH_price_30d_rolling_avg', 'ETH_price_60d_rolling_avg',
+       'ETH_price_90d_rolling_avg', 'MANA_price_7d_rolling_avg',
+       'MANA_price_14d_rolling_avg', 'MANA_price_30d_rolling_avg',
+       'MANA_price_60d_rolling_avg', 'MANA_price_90d_rolling_avg',
+       'WAX_price_7d_rolling_avg', 'WAX_price_14d_rolling_avg',
+       'WAX_price_30d_rolling_avg', 'WAX_price_60d_rolling_avg',
+       'WAX_price_90d_rolling_avg', 'Ggl_trends_collection',
+       'Ggl_trends_collection_7d_rolling_avg',
+       'Ggl_trends_collection_14d_rolling_avg',
+       'Ggl_trends_collection_30d_rolling_avg',
+       'Ggl_trends_collection_60d_rolling_avg',
+       'Ggl_trends_collection_90d_rolling_avg', 'Price_USD_median_7d',
+       'Price_USD_max_7d', 'Price_USD_median_14d', 'Price_USD_max_14d',
+       'Price_USD_median_30d', 'Price_USD_max_30d', 'Price_USD_median_60d',
+       'Price_USD_max_60d', 'Price_USD_median_90d', 'Price_USD_max_90d',
+       'Price_USD_median_180d', 'Price_USD_max_180d', 'Price_USD_median_365d',
+       'Price_USD_max_365d', 'Price_USD_median_730d', 'Price_USD_max_730d',
+       'Price_Crypto_median_7d', 'Price_Crypto_max_7d',
+       'Price_Crypto_median_14d', 'Price_Crypto_max_14d',
+       'Price_Crypto_median_30d', 'Price_Crypto_max_30d',
+       'Price_Crypto_median_60d', 'Price_Crypto_max_60d',
+       'Price_Crypto_median_90d', 'Price_Crypto_max_90d',
+       'Price_Crypto_median_180d', 'Price_Crypto_max_180d',
+       'Price_Crypto_median_365d', 'Price_Crypto_max_365d',
+       'Price_Crypto_median_730d', 'Price_Crypto_max_730d',
+       'Price_USD_collection_cum_median', 'Price_USD_collection_cum_max',
+       'Price_Crypto_collection_cum_median', 'Price_Crypto_collection_cum_max',
+       'p_resale', 'pca_1', 'pca_2', 'pca_3', 'pca_4', 'pca_5',
+       'trans_count_seller', 'deg_centrality_seller', 'pgrank_seller',
+       'trans_count_buyer', 'deg_centrality_buyer', 'pgrank_buyer',
+       'Category_Art', 'Category_Collectible', 'Category_Games',
+       'Category_Metaverse', 'Category_Other'],
+      dtype='object')","[-1.10920488e-04  0.00000000e+00 -5.43299592e-07  6.08940911e-05
+ -1.52651683e-05 -2.44056298e-09 -4.14735128e-08 -6.09157043e-07
+ -3.04495139e-07  4.27578179e-07  6.40453171e-07  4.58096465e-07
+ -1.19911671e-04 -2.61213888e-06  8.05326331e-05  1.36755100e-04
+ -1.37157190e-04 -2.52399192e-05 -3.36994412e-05 -5.50787586e-05
+ -7.93361655e-05 -8.29736562e-05  4.27321079e-09  1.51513022e-08
+  2.47826835e-08  1.71761610e-08  1.18796532e-08 -3.73918731e-08
+ -3.11305633e-08 -2.24675442e-08 -1.78311301e-08 -1.38503756e-08
+ -2.12105478e-06 -2.49168632e-06 -2.74550701e-06 -2.79051166e-06
+ -2.03911475e-06 -1.35070331e-06 -1.14764022e-05  2.01667600e-05
+ -8.47662274e-07  4.27044958e-06  1.32914340e-06 -3.38078224e-06
+  3.75034784e-06  3.68669213e-06 -4.63494325e-06  4.94313764e-06
+ -7.14888737e-06  3.19803313e-06 -8.11342396e-06 -4.77631726e-06
+ -9.15496009e-06 -3.44452712e-06 -8.55029541e-06  3.75501578e-06
+  7.18705265e-06 -8.22341251e-06 -1.37042198e-06  4.08129401e-06
+  8.92818607e-07 -3.69734370e-05  6.15307667e-07  3.32309320e-05
+ -5.88751353e-07 -1.30406090e-06 -1.57500374e-06  4.77981547e-06
+ -1.81837858e-06  6.70678185e-07 -3.67546974e-06  3.84327000e-07
+  7.43664705e-05 -3.91864925e-06 -1.63257231e-06  8.19661987e-06
+  1.63251327e-07 -4.47284735e-08 -5.38275716e-07  1.15978116e-06
+ -5.03825375e-06 -5.70073045e-10  1.22626442e-10 -5.03825375e-06
+ -5.97876834e-11 -1.09924455e-11 -5.01523769e-07  7.66565150e-08
+  2.05617805e-07  1.91229351e-08 -1.35881726e-08]",2022-04-05-02:40:03
+1,secondary-logregr-fillcustom-nobal-noscale,NFT secondary sales,LogisticRegression(),None,None,0.7408378494375977,0.7402114097945287,0.742013992657425,0.7415591948384879,0.7056763202725724,0.7812867791290702,0.7420139926574251,<sklearn.metrics._plot.confusion_matrix.ConfusionMatrixDisplay object at 0x7fde2d736d90>,"              precision    recall  f1-score   support
+
+           0       0.78      0.70      0.74    145301
+           1       0.71      0.78      0.74    132548
+
+    accuracy                           0.74    277849
+   macro avg       0.74      0.74      0.74    277849
+weighted avg       0.74      0.74      0.74    277849
+","Index(['nft_sales_count', 'First_item_Unique_id_collection', 'GoogleTrends',
+       'BTC_price', 'ETH_price', 'MANA_price', 'WAX_price',
+       'GoogleTrends_7d_rolling_avg', 'GoogleTrends_14d_rolling_avg',
+       'GoogleTrends_30d_rolling_avg', 'GoogleTrends_60d_rolling_avg',
+       'GoogleTrends_90d_rolling_avg', 'BTC_price_7d_rolling_avg',
+       'BTC_price_14d_rolling_avg', 'BTC_price_30d_rolling_avg',
+       'BTC_price_60d_rolling_avg', 'BTC_price_90d_rolling_avg',
+       'ETH_price_7d_rolling_avg', 'ETH_price_14d_rolling_avg',
+       'ETH_price_30d_rolling_avg', 'ETH_price_60d_rolling_avg',
+       'ETH_price_90d_rolling_avg', 'MANA_price_7d_rolling_avg',
+       'MANA_price_14d_rolling_avg', 'MANA_price_30d_rolling_avg',
+       'MANA_price_60d_rolling_avg', 'MANA_price_90d_rolling_avg',
+       'WAX_price_7d_rolling_avg', 'WAX_price_14d_rolling_avg',
+       'WAX_price_30d_rolling_avg', 'WAX_price_60d_rolling_avg',
+       'WAX_price_90d_rolling_avg', 'Ggl_trends_collection',
+       'Ggl_trends_collection_7d_rolling_avg',
+       'Ggl_trends_collection_14d_rolling_avg',
+       'Ggl_trends_collection_30d_rolling_avg',
+       'Ggl_trends_collection_60d_rolling_avg',
+       'Ggl_trends_collection_90d_rolling_avg', 'Price_USD_median_7d',
+       'Price_USD_max_7d', 'Price_USD_median_14d', 'Price_USD_max_14d',
+       'Price_USD_median_30d', 'Price_USD_max_30d', 'Price_USD_median_60d',
+       'Price_USD_max_60d', 'Price_USD_median_90d', 'Price_USD_max_90d',
+       'Price_USD_median_180d', 'Price_USD_max_180d', 'Price_USD_median_365d',
+       'Price_USD_max_365d', 'Price_USD_median_730d', 'Price_USD_max_730d',
+       'Price_Crypto_median_7d', 'Price_Crypto_max_7d',
+       'Price_Crypto_median_14d', 'Price_Crypto_max_14d',
+       'Price_Crypto_median_30d', 'Price_Crypto_max_30d',
+       'Price_Crypto_median_60d', 'Price_Crypto_max_60d',
+       'Price_Crypto_median_90d', 'Price_Crypto_max_90d',
+       'Price_Crypto_median_180d', 'Price_Crypto_max_180d',
+       'Price_Crypto_median_365d', 'Price_Crypto_max_365d',
+       'Price_Crypto_median_730d', 'Price_Crypto_max_730d',
+       'Price_USD_collection_cum_median', 'Price_USD_collection_cum_max',
+       'Price_Crypto_collection_cum_median', 'Price_Crypto_collection_cum_max',
+       'p_resale', 'pca_1', 'pca_2', 'pca_3', 'pca_4', 'pca_5',
+       'trans_count_seller', 'deg_centrality_seller', 'pgrank_seller',
+       'trans_count_buyer', 'deg_centrality_buyer', 'pgrank_buyer',
+       'Category_Art', 'Category_Collectible', 'Category_Games',
+       'Category_Metaverse', 'Category_Other'],
+      dtype='object')","[-7.30757025e-05  0.00000000e+00 -4.73525319e-07  5.98539159e-05
+ -1.44865364e-05 -7.22304154e-09 -4.10483197e-08 -5.38217715e-07
+ -3.07056396e-07  2.71480400e-07  4.55641842e-07  3.27508670e-07
+ -9.73286159e-05  5.51244029e-06  6.80564563e-05  1.02596332e-04
+ -1.22315657e-04 -2.24494012e-05 -2.85479223e-05 -4.48802740e-05
+ -6.50228372e-05 -6.86122991e-05 -2.15541702e-09  7.14876514e-09
+  1.39713616e-08  5.19245668e-09 -1.46837460e-09 -4.05736361e-08
+ -3.68326838e-08 -3.15488978e-08 -3.44441990e-08 -3.89879986e-08
+ -1.72333022e-06 -2.06265040e-06 -2.30776307e-06 -2.34074306e-06
+ -1.69095789e-06 -1.12161819e-06 -1.23142511e-05  2.02708755e-05
+ -1.69460274e-06  8.39550796e-07  7.79572583e-07 -1.20332039e-06
+  2.57015424e-06  3.68278706e-06 -4.38396248e-06  2.34782884e-06
+ -6.41495677e-06  1.18057427e-05 -7.21336442e-06 -1.27329739e-05
+ -8.07575245e-06 -2.91406924e-06 -6.24495699e-06  1.49292278e-07
+  6.24088785e-06 -4.48479076e-06 -9.63832547e-07  7.95207703e-06
+  4.16937643e-07 -2.58952848e-05  1.30867807e-07  2.43801285e-05
+ -8.67860202e-07 -1.12921913e-05 -1.68556659e-06  7.60513205e-06
+ -1.90002839e-06  1.93546949e-06 -1.66387819e-06  3.68275780e-07
+  6.13976472e-05 -3.95222842e-06 -3.40162439e-06  1.20339465e-05
+ -1.87318801e-07  1.85869870e-06 -7.55954012e-07  1.16984523e-07
+ -4.41257332e-06 -4.56011264e-10  9.82013968e-11 -4.41257332e-06
+ -5.26705208e-11 -9.09494227e-12 -4.03540129e-07  6.16582706e-08
+  1.64148864e-07  1.49542128e-08 -5.87661688e-09]",2022-04-05-02:53:33
+2,secondary-logregr-fill0-nobal-minmaxscale,NFT secondary sales,LogisticRegression(),None,MinMaxScaler,0.7625503936357729,0.7634380037119871,0.7656013851829258,0.7655213641151185,0.7248859447548065,0.8109831949878995,0.7656013851829256,<sklearn.metrics._plot.confusion_matrix.ConfusionMatrixDisplay object at 0x7fde2d49bad0>,"              precision    recall  f1-score   support
+
+           0       0.81      0.72      0.76    145918
+           1       0.72      0.81      0.77    132639
+
+    accuracy                           0.76    278557
+   macro avg       0.77      0.77      0.76    278557
+weighted avg       0.77      0.76      0.76    278557
+","Index(['nft_sales_count', 'First_item_Unique_id_collection', 'GoogleTrends',
+       'BTC_price', 'ETH_price', 'MANA_price', 'WAX_price',
+       'GoogleTrends_7d_rolling_avg', 'GoogleTrends_14d_rolling_avg',
+       'GoogleTrends_30d_rolling_avg', 'GoogleTrends_60d_rolling_avg',
+       'GoogleTrends_90d_rolling_avg', 'BTC_price_7d_rolling_avg',
+       'BTC_price_14d_rolling_avg', 'BTC_price_30d_rolling_avg',
+       'BTC_price_60d_rolling_avg', 'BTC_price_90d_rolling_avg',
+       'ETH_price_7d_rolling_avg', 'ETH_price_14d_rolling_avg',
+       'ETH_price_30d_rolling_avg', 'ETH_price_60d_rolling_avg',
+       'ETH_price_90d_rolling_avg', 'MANA_price_7d_rolling_avg',
+       'MANA_price_14d_rolling_avg', 'MANA_price_30d_rolling_avg',
+       'MANA_price_60d_rolling_avg', 'MANA_price_90d_rolling_avg',
+       'WAX_price_7d_rolling_avg', 'WAX_price_14d_rolling_avg',
+       'WAX_price_30d_rolling_avg', 'WAX_price_60d_rolling_avg',
+       'WAX_price_90d_rolling_avg', 'Ggl_trends_collection',
+       'Ggl_trends_collection_7d_rolling_avg',
+       'Ggl_trends_collection_14d_rolling_avg',
+       'Ggl_trends_collection_30d_rolling_avg',
+       'Ggl_trends_collection_60d_rolling_avg',
+       'Ggl_trends_collection_90d_rolling_avg', 'Price_USD_median_7d',
+       'Price_USD_max_7d', 'Price_USD_median_14d', 'Price_USD_max_14d',
+       'Price_USD_median_30d', 'Price_USD_max_30d', 'Price_USD_median_60d',
+       'Price_USD_max_60d', 'Price_USD_median_90d', 'Price_USD_max_90d',
+       'Price_USD_median_180d', 'Price_USD_max_180d', 'Price_USD_median_365d',
+       'Price_USD_max_365d', 'Price_USD_median_730d', 'Price_USD_max_730d',
+       'Price_Crypto_median_7d', 'Price_Crypto_max_7d',
+       'Price_Crypto_median_14d', 'Price_Crypto_max_14d',
+       'Price_Crypto_median_30d', 'Price_Crypto_max_30d',
+       'Price_Crypto_median_60d', 'Price_Crypto_max_60d',
+       'Price_Crypto_median_90d', 'Price_Crypto_max_90d',
+       'Price_Crypto_median_180d', 'Price_Crypto_max_180d',
+       'Price_Crypto_median_365d', 'Price_Crypto_max_365d',
+       'Price_Crypto_median_730d', 'Price_Crypto_max_730d',
+       'Price_USD_collection_cum_median', 'Price_USD_collection_cum_max',
+       'Price_Crypto_collection_cum_median', 'Price_Crypto_collection_cum_max',
+       'p_resale', 'pca_1', 'pca_2', 'pca_3', 'pca_4', 'pca_5',
+       'trans_count_seller', 'deg_centrality_seller', 'pgrank_seller',
+       'trans_count_buyer', 'deg_centrality_buyer', 'pgrank_buyer',
+       'Category_Art', 'Category_Collectible', 'Category_Games',
+       'Category_Metaverse', 'Category_Other'],
+      dtype='object')","[-7.12056733  0.         -0.30707971  2.90028498  1.42381231  0.43270877
+ -1.18934055 -2.31827172  2.79351944  2.87135451 -1.3032103  -1.00078453
+ -2.28030953 -1.75253446  0.84897483  0.04845928  0.92682436  0.83454347
+  1.05750007 -1.00277344 -0.58642698  0.34609946 -2.65682749 -0.58237452
+  1.48507313  1.95789458 -1.44528988 -0.38407404 -0.88506891  0.14424056
+  0.21075251 -0.95182684  0.29460288  0.22216445  0.53878435 -1.18970475
+ -0.71648628  0.53718618  0.97749175  1.8016635   0.99721883  1.37304461
+  0.98110506  0.80789224  1.00648459  1.13643349  0.90141668  1.1982825
+  0.88088295  1.30936909  0.87566823  1.41315382  0.86828944  1.6001838
+ -0.5930524  -0.12133686 -0.54679892 -0.16224784 -0.59494272 -0.15522878
+ -0.59236479 -0.16385336 -0.59269407 -0.15625899 -0.59451114 -0.16853729
+ -0.59556683 -0.14984295 -0.59589318 -0.16874635  0.28238969  1.40424493
+  0.66451556 -3.63531951 -3.78010181  1.0493856  -0.11698918  0.47776065
+ -0.35933627  0.3064044  -0.98370158 -2.18532739 16.31513441 -0.98370158
+ -0.68262894  2.19389706 -1.20543251  0.20880191  0.17525784  0.52512051
+ -0.36557619]",2022-04-05-03:15:37
+3,secondary-logregr-fillcustom-nobal-minmaxscale,NFT secondary sales,LogisticRegression(),None,MinMaxScaler,0.7631458898877355,0.7636665958848151,0.7658979554108007,0.7668055215225027,0.7243778557578117,0.8145124784983553,0.7658979554108007,<sklearn.metrics._plot.confusion_matrix.ConfusionMatrixDisplay object at 0x7fde2d17d310>,"              precision    recall  f1-score   support
+
+           0       0.81      0.72      0.76    145301
+           1       0.72      0.81      0.77    132548
+
+    accuracy                           0.76    277849
+   macro avg       0.77      0.77      0.76    277849
+weighted avg       0.77      0.76      0.76    277849
+","Index(['nft_sales_count', 'First_item_Unique_id_collection', 'GoogleTrends',
+       'BTC_price', 'ETH_price', 'MANA_price', 'WAX_price',
+       'GoogleTrends_7d_rolling_avg', 'GoogleTrends_14d_rolling_avg',
+       'GoogleTrends_30d_rolling_avg', 'GoogleTrends_60d_rolling_avg',
+       'GoogleTrends_90d_rolling_avg', 'BTC_price_7d_rolling_avg',
+       'BTC_price_14d_rolling_avg', 'BTC_price_30d_rolling_avg',
+       'BTC_price_60d_rolling_avg', 'BTC_price_90d_rolling_avg',
+       'ETH_price_7d_rolling_avg', 'ETH_price_14d_rolling_avg',
+       'ETH_price_30d_rolling_avg', 'ETH_price_60d_rolling_avg',
+       'ETH_price_90d_rolling_avg', 'MANA_price_7d_rolling_avg',
+       'MANA_price_14d_rolling_avg', 'MANA_price_30d_rolling_avg',
+       'MANA_price_60d_rolling_avg', 'MANA_price_90d_rolling_avg',
+       'WAX_price_7d_rolling_avg', 'WAX_price_14d_rolling_avg',
+       'WAX_price_30d_rolling_avg', 'WAX_price_60d_rolling_avg',
+       'WAX_price_90d_rolling_avg', 'Ggl_trends_collection',
+       'Ggl_trends_collection_7d_rolling_avg',
+       'Ggl_trends_collection_14d_rolling_avg',
+       'Ggl_trends_collection_30d_rolling_avg',
+       'Ggl_trends_collection_60d_rolling_avg',
+       'Ggl_trends_collection_90d_rolling_avg', 'Price_USD_median_7d',
+       'Price_USD_max_7d', 'Price_USD_median_14d', 'Price_USD_max_14d',
+       'Price_USD_median_30d', 'Price_USD_max_30d', 'Price_USD_median_60d',
+       'Price_USD_max_60d', 'Price_USD_median_90d', 'Price_USD_max_90d',
+       'Price_USD_median_180d', 'Price_USD_max_180d', 'Price_USD_median_365d',
+       'Price_USD_max_365d', 'Price_USD_median_730d', 'Price_USD_max_730d',
+       'Price_Crypto_median_7d', 'Price_Crypto_max_7d',
+       'Price_Crypto_median_14d', 'Price_Crypto_max_14d',
+       'Price_Crypto_median_30d', 'Price_Crypto_max_30d',
+       'Price_Crypto_median_60d', 'Price_Crypto_max_60d',
+       'Price_Crypto_median_90d', 'Price_Crypto_max_90d',
+       'Price_Crypto_median_180d', 'Price_Crypto_max_180d',
+       'Price_Crypto_median_365d', 'Price_Crypto_max_365d',
+       'Price_Crypto_median_730d', 'Price_Crypto_max_730d',
+       'Price_USD_collection_cum_median', 'Price_USD_collection_cum_max',
+       'Price_Crypto_collection_cum_median', 'Price_Crypto_collection_cum_max',
+       'p_resale', 'pca_1', 'pca_2', 'pca_3', 'pca_4', 'pca_5',
+       'trans_count_seller', 'deg_centrality_seller', 'pgrank_seller',
+       'trans_count_buyer', 'deg_centrality_buyer', 'pgrank_buyer',
+       'Category_Art', 'Category_Collectible', 'Category_Games',
+       'Category_Metaverse', 'Category_Other'],
+      dtype='object')","[-5.74689892  0.         -0.53224657  2.13107985  0.59362572 -1.19067621
+  2.58158374 -2.23274097  1.50079271  1.37479255 -0.87577065 -0.66681127
+ -2.390718   -1.40035436  1.81063018  1.60796816  2.30251672  0.02014846
+  0.30746832  0.44475255 -1.27149276 -2.18284887 -1.82414579  1.24109442
+  1.36483477  0.52036375 -0.38541229  0.48587563 -0.60778809 -2.36891955
+ -0.04944069  1.01916215  0.46479929  0.02901835  0.53828049 -1.25937127
+ -0.76146721  0.95588774  0.73641258  1.22525584  0.77072227  0.92068338
+  0.77205294  0.63337693  0.78413229  0.85441733  0.71400943  0.90320253
+  0.69943524  0.9671467   0.69547401  0.979387    0.69063643  1.06573208
+ -0.1247073  -0.05967369 -0.08236236 -0.06723993 -0.09921032 -0.06509463
+ -0.09742873 -0.0739186  -0.09747623 -0.06972142 -0.09873533 -0.08328055
+ -0.0993151  -0.0824596  -0.09954236 -0.11802172  0.06111816  0.66818858
+ -0.03242268 -1.19123747 -3.22745167  3.19341562  0.09827741  0.4735792
+ -0.52256916  1.07387529 -0.87737788 -1.58908676 13.86890188 -0.87737788
+ -0.75039521  1.98928962 -1.07458853  0.03878197 -0.10854975  0.17767076
+ -0.37255763]",2022-04-05-03:20:46
+4,secondary-lightgbm-fill0-nobal-noscale,NFT secondary sales,LGBMClassifier(),None,None,0.8141942223674149,0.8135605998054258,0.8144460539784524,0.8097070160782073,0.7876629811016774,0.8330204540142794,0.8144460539784524,<sklearn.metrics._plot.confusion_matrix.ConfusionMatrixDisplay object at 0x7fde2cee1250>,"              precision    recall  f1-score   support
+
+           0       0.84      0.80      0.82    145918
+           1       0.79      0.83      0.81    132639
+
+    accuracy                           0.81    278557
+   macro avg       0.81      0.81      0.81    278557
+weighted avg       0.81      0.81      0.81    278557
+","Index(['nft_sales_count', 'First_item_Unique_id_collection', 'GoogleTrends',
+       'BTC_price', 'ETH_price', 'MANA_price', 'WAX_price',
+       'GoogleTrends_7d_rolling_avg', 'GoogleTrends_14d_rolling_avg',
+       'GoogleTrends_30d_rolling_avg', 'GoogleTrends_60d_rolling_avg',
+       'GoogleTrends_90d_rolling_avg', 'BTC_price_7d_rolling_avg',
+       'BTC_price_14d_rolling_avg', 'BTC_price_30d_rolling_avg',
+       'BTC_price_60d_rolling_avg', 'BTC_price_90d_rolling_avg',
+       'ETH_price_7d_rolling_avg', 'ETH_price_14d_rolling_avg',
+       'ETH_price_30d_rolling_avg', 'ETH_price_60d_rolling_avg',
+       'ETH_price_90d_rolling_avg', 'MANA_price_7d_rolling_avg',
+       'MANA_price_14d_rolling_avg', 'MANA_price_30d_rolling_avg',
+       'MANA_price_60d_rolling_avg', 'MANA_price_90d_rolling_avg',
+       'WAX_price_7d_rolling_avg', 'WAX_price_14d_rolling_avg',
+       'WAX_price_30d_rolling_avg', 'WAX_price_60d_rolling_avg',
+       'WAX_price_90d_rolling_avg', 'Ggl_trends_collection',
+       'Ggl_trends_collection_7d_rolling_avg',
+       'Ggl_trends_collection_14d_rolling_avg',
+       'Ggl_trends_collection_30d_rolling_avg',
+       'Ggl_trends_collection_60d_rolling_avg',
+       'Ggl_trends_collection_90d_rolling_avg', 'Price_USD_median_7d',
+       'Price_USD_max_7d', 'Price_USD_median_14d', 'Price_USD_max_14d',
+       'Price_USD_median_30d', 'Price_USD_max_30d', 'Price_USD_median_60d',
+       'Price_USD_max_60d', 'Price_USD_median_90d', 'Price_USD_max_90d',
+       'Price_USD_median_180d', 'Price_USD_max_180d', 'Price_USD_median_365d',
+       'Price_USD_max_365d', 'Price_USD_median_730d', 'Price_USD_max_730d',
+       'Price_Crypto_median_7d', 'Price_Crypto_max_7d',
+       'Price_Crypto_median_14d', 'Price_Crypto_max_14d',
+       'Price_Crypto_median_30d', 'Price_Crypto_max_30d',
+       'Price_Crypto_median_60d', 'Price_Crypto_max_60d',
+       'Price_Crypto_median_90d', 'Price_Crypto_max_90d',
+       'Price_Crypto_median_180d', 'Price_Crypto_max_180d',
+       'Price_Crypto_median_365d', 'Price_Crypto_max_365d',
+       'Price_Crypto_median_730d', 'Price_Crypto_max_730d',
+       'Price_USD_collection_cum_median', 'Price_USD_collection_cum_max',
+       'Price_Crypto_collection_cum_median', 'Price_Crypto_collection_cum_max',
+       'p_resale', 'pca_1', 'pca_2', 'pca_3', 'pca_4', 'pca_5',
+       'trans_count_seller', 'deg_centrality_seller', 'pgrank_seller',
+       'trans_count_buyer', 'deg_centrality_buyer', 'pgrank_buyer',
+       'Category_Art', 'Category_Collectible', 'Category_Games',
+       'Category_Metaverse', 'Category_Other'],
+      dtype='object')","[190   0   3  36  45  41  14  12   7  18  11   2  16  32  11  26  28  14
+  14  12  13  16  28   9   8  13  17  27  11  19  20  28  11   8  10  24
+  20  22  15  13  10  15  14  18   9  16   5   5  16   8  11  18  37  27
+  11  10  19  11  15  13   5   6   9   8  31  18  21  15  27  16 135  39
+ 113  51 188  84  39  62  28  19 170 280 266   0  94  89   8   4   4  19
+   0]",2022-04-05-03:49:33
+5,secondary-lightgbm-fill0-nobal-minmaxscale,NFT secondary sales,LGBMClassifier(),None,MinMaxScaler,0.8139994686904296,0.810656346815912,0.812134662960653,0.8091863203707522,0.7778566062932977,0.8431456811345079,0.812134662960653,<sklearn.metrics._plot.confusion_matrix.ConfusionMatrixDisplay object at 0x7fde2cc022d0>,"              precision    recall  f1-score   support
+
+           0       0.85      0.78      0.81    145918
+           1       0.78      0.84      0.81    132639
+
+    accuracy                           0.81    278557
+   macro avg       0.81      0.81      0.81    278557
+weighted avg       0.81      0.81      0.81    278557
+","Index(['nft_sales_count', 'First_item_Unique_id_collection', 'GoogleTrends',
+       'BTC_price', 'ETH_price', 'MANA_price', 'WAX_price',
+       'GoogleTrends_7d_rolling_avg', 'GoogleTrends_14d_rolling_avg',
+       'GoogleTrends_30d_rolling_avg', 'GoogleTrends_60d_rolling_avg',
+       'GoogleTrends_90d_rolling_avg', 'BTC_price_7d_rolling_avg',
+       'BTC_price_14d_rolling_avg', 'BTC_price_30d_rolling_avg',
+       'BTC_price_60d_rolling_avg', 'BTC_price_90d_rolling_avg',
+       'ETH_price_7d_rolling_avg', 'ETH_price_14d_rolling_avg',
+       'ETH_price_30d_rolling_avg', 'ETH_price_60d_rolling_avg',
+       'ETH_price_90d_rolling_avg', 'MANA_price_7d_rolling_avg',
+       'MANA_price_14d_rolling_avg', 'MANA_price_30d_rolling_avg',
+       'MANA_price_60d_rolling_avg', 'MANA_price_90d_rolling_avg',
+       'WAX_price_7d_rolling_avg', 'WAX_price_14d_rolling_avg',
+       'WAX_price_30d_rolling_avg', 'WAX_price_60d_rolling_avg',
+       'WAX_price_90d_rolling_avg', 'Ggl_trends_collection',
+       'Ggl_trends_collection_7d_rolling_avg',
+       'Ggl_trends_collection_14d_rolling_avg',
+       'Ggl_trends_collection_30d_rolling_avg',
+       'Ggl_trends_collection_60d_rolling_avg',
+       'Ggl_trends_collection_90d_rolling_avg', 'Price_USD_median_7d',
+       'Price_USD_max_7d', 'Price_USD_median_14d', 'Price_USD_max_14d',
+       'Price_USD_median_30d', 'Price_USD_max_30d', 'Price_USD_median_60d',
+       'Price_USD_max_60d', 'Price_USD_median_90d', 'Price_USD_max_90d',
+       'Price_USD_median_180d', 'Price_USD_max_180d', 'Price_USD_median_365d',
+       'Price_USD_max_365d', 'Price_USD_median_730d', 'Price_USD_max_730d',
+       'Price_Crypto_median_7d', 'Price_Crypto_max_7d',
+       'Price_Crypto_median_14d', 'Price_Crypto_max_14d',
+       'Price_Crypto_median_30d', 'Price_Crypto_max_30d',
+       'Price_Crypto_median_60d', 'Price_Crypto_max_60d',
+       'Price_Crypto_median_90d', 'Price_Crypto_max_90d',
+       'Price_Crypto_median_180d', 'Price_Crypto_max_180d',
+       'Price_Crypto_median_365d', 'Price_Crypto_max_365d',
+       'Price_Crypto_median_730d', 'Price_Crypto_max_730d',
+       'Price_USD_collection_cum_median', 'Price_USD_collection_cum_max',
+       'Price_Crypto_collection_cum_median', 'Price_Crypto_collection_cum_max',
+       'p_resale', 'pca_1', 'pca_2', 'pca_3', 'pca_4', 'pca_5',
+       'trans_count_seller', 'deg_centrality_seller', 'pgrank_seller',
+       'trans_count_buyer', 'deg_centrality_buyer', 'pgrank_buyer',
+       'Category_Art', 'Category_Collectible', 'Category_Games',
+       'Category_Metaverse', 'Category_Other'],
+      dtype='object')","[173   0   3  41  47  45  19  21  11  15  15   1  22  27  14  16  31   9
+   6   6  16  22  24  11   9   8  24  23  13  18  14  35   8   7  13  25
+  19  25  12  13   9  11  14  19  13  13   8   8  19   9  16  22  41  30
+  10   6  13  12  20  18  13   7   8   4  25  21  20  12  27  25 137  52
+ 121  51 199  81  43  53  31  26 167 248 242   0  80  88  13   1  12  21
+   0]",2022-04-05-04:00:19
+6,secondary-lightgbm-fillcustom-nobal-noscale,NFT secondary sales,LGBMClassifier(),None,None,0.814179142751484,0.8134562298226735,0.8142902362131349,0.8098035690040476,0.788347086771693,0.8324606934846245,0.8142902362131349,<sklearn.metrics._plot.confusion_matrix.ConfusionMatrixDisplay object at 0x7fde2c9a22d0>,"              precision    recall  f1-score   support
+
+           0       0.84      0.80      0.82    145301
+           1       0.79      0.83      0.81    132548
+
+    accuracy                           0.81    277849
+   macro avg       0.81      0.81      0.81    277849
+weighted avg       0.81      0.81      0.81    277849
+","Index(['nft_sales_count', 'First_item_Unique_id_collection', 'GoogleTrends',
+       'BTC_price', 'ETH_price', 'MANA_price', 'WAX_price',
+       'GoogleTrends_7d_rolling_avg', 'GoogleTrends_14d_rolling_avg',
+       'GoogleTrends_30d_rolling_avg', 'GoogleTrends_60d_rolling_avg',
+       'GoogleTrends_90d_rolling_avg', 'BTC_price_7d_rolling_avg',
+       'BTC_price_14d_rolling_avg', 'BTC_price_30d_rolling_avg',
+       'BTC_price_60d_rolling_avg', 'BTC_price_90d_rolling_avg',
+       'ETH_price_7d_rolling_avg', 'ETH_price_14d_rolling_avg',
+       'ETH_price_30d_rolling_avg', 'ETH_price_60d_rolling_avg',
+       'ETH_price_90d_rolling_avg', 'MANA_price_7d_rolling_avg',
+       'MANA_price_14d_rolling_avg', 'MANA_price_30d_rolling_avg',
+       'MANA_price_60d_rolling_avg', 'MANA_price_90d_rolling_avg',
+       'WAX_price_7d_rolling_avg', 'WAX_price_14d_rolling_avg',
+       'WAX_price_30d_rolling_avg', 'WAX_price_60d_rolling_avg',
+       'WAX_price_90d_rolling_avg', 'Ggl_trends_collection',
+       'Ggl_trends_collection_7d_rolling_avg',
+       'Ggl_trends_collection_14d_rolling_avg',
+       'Ggl_trends_collection_30d_rolling_avg',
+       'Ggl_trends_collection_60d_rolling_avg',
+       'Ggl_trends_collection_90d_rolling_avg', 'Price_USD_median_7d',
+       'Price_USD_max_7d', 'Price_USD_median_14d', 'Price_USD_max_14d',
+       'Price_USD_median_30d', 'Price_USD_max_30d', 'Price_USD_median_60d',
+       'Price_USD_max_60d', 'Price_USD_median_90d', 'Price_USD_max_90d',
+       'Price_USD_median_180d', 'Price_USD_max_180d', 'Price_USD_median_365d',
+       'Price_USD_max_365d', 'Price_USD_median_730d', 'Price_USD_max_730d',
+       'Price_Crypto_median_7d', 'Price_Crypto_max_7d',
+       'Price_Crypto_median_14d', 'Price_Crypto_max_14d',
+       'Price_Crypto_median_30d', 'Price_Crypto_max_30d',
+       'Price_Crypto_median_60d', 'Price_Crypto_max_60d',
+       'Price_Crypto_median_90d', 'Price_Crypto_max_90d',
+       'Price_Crypto_median_180d', 'Price_Crypto_max_180d',
+       'Price_Crypto_median_365d', 'Price_Crypto_max_365d',
+       'Price_Crypto_median_730d', 'Price_Crypto_max_730d',
+       'Price_USD_collection_cum_median', 'Price_USD_collection_cum_max',
+       'Price_Crypto_collection_cum_median', 'Price_Crypto_collection_cum_max',
+       'p_resale', 'pca_1', 'pca_2', 'pca_3', 'pca_4', 'pca_5',
+       'trans_count_seller', 'deg_centrality_seller', 'pgrank_seller',
+       'trans_count_buyer', 'deg_centrality_buyer', 'pgrank_buyer',
+       'Category_Art', 'Category_Collectible', 'Category_Games',
+       'Category_Metaverse', 'Category_Other'],
+      dtype='object')","[147   0   1  48  40  39  27   9   8  11  19   0  23  37  17  18  39  10
+  10   4  14  15  16   7   6  12  13  18  16  19  30  31   6   8  12  21
+  16  19  18  10  12  10  12  19  16  18  12  11  17   6  21  14  34  15
+  16  10  18   8   9  14  10   8   9   8  17  15  12  14  31   4 137  40
+ 110  68 206  58  42  63  26  39 158 305 303   0  88  84   4   4  12  18
+   1]",2022-04-05-03:55:59
+7,secondary-lightgbm-fillcustom-nobal-minmaxscale,NFT secondary sales,LGBMClassifier(),None,MinMaxScaler,0.8147181060165036,0.8099255350928022,0.8116912125211627,0.810155795043604,0.7737472362982188,0.8501599420587259,0.8116912125211627,<sklearn.metrics._plot.confusion_matrix.ConfusionMatrixDisplay object at 0x7fde2c6c3890>,"              precision    recall  f1-score   support
+
+           0       0.85      0.77      0.81    145301
+           1       0.77      0.85      0.81    132548
+
+    accuracy                           0.81    277849
+   macro avg       0.81      0.81      0.81    277849
+weighted avg       0.81      0.81      0.81    277849
+","Index(['nft_sales_count', 'First_item_Unique_id_collection', 'GoogleTrends',
+       'BTC_price', 'ETH_price', 'MANA_price', 'WAX_price',
+       'GoogleTrends_7d_rolling_avg', 'GoogleTrends_14d_rolling_avg',
+       'GoogleTrends_30d_rolling_avg', 'GoogleTrends_60d_rolling_avg',
+       'GoogleTrends_90d_rolling_avg', 'BTC_price_7d_rolling_avg',
+       'BTC_price_14d_rolling_avg', 'BTC_price_30d_rolling_avg',
+       'BTC_price_60d_rolling_avg', 'BTC_price_90d_rolling_avg',
+       'ETH_price_7d_rolling_avg', 'ETH_price_14d_rolling_avg',
+       'ETH_price_30d_rolling_avg', 'ETH_price_60d_rolling_avg',
+       'ETH_price_90d_rolling_avg', 'MANA_price_7d_rolling_avg',
+       'MANA_price_14d_rolling_avg', 'MANA_price_30d_rolling_avg',
+       'MANA_price_60d_rolling_avg', 'MANA_price_90d_rolling_avg',
+       'WAX_price_7d_rolling_avg', 'WAX_price_14d_rolling_avg',
+       'WAX_price_30d_rolling_avg', 'WAX_price_60d_rolling_avg',
+       'WAX_price_90d_rolling_avg', 'Ggl_trends_collection',
+       'Ggl_trends_collection_7d_rolling_avg',
+       'Ggl_trends_collection_14d_rolling_avg',
+       'Ggl_trends_collection_30d_rolling_avg',
+       'Ggl_trends_collection_60d_rolling_avg',
+       'Ggl_trends_collection_90d_rolling_avg', 'Price_USD_median_7d',
+       'Price_USD_max_7d', 'Price_USD_median_14d', 'Price_USD_max_14d',
+       'Price_USD_median_30d', 'Price_USD_max_30d', 'Price_USD_median_60d',
+       'Price_USD_max_60d', 'Price_USD_median_90d', 'Price_USD_max_90d',
+       'Price_USD_median_180d', 'Price_USD_max_180d', 'Price_USD_median_365d',
+       'Price_USD_max_365d', 'Price_USD_median_730d', 'Price_USD_max_730d',
+       'Price_Crypto_median_7d', 'Price_Crypto_max_7d',
+       'Price_Crypto_median_14d', 'Price_Crypto_max_14d',
+       'Price_Crypto_median_30d', 'Price_Crypto_max_30d',
+       'Price_Crypto_median_60d', 'Price_Crypto_max_60d',
+       'Price_Crypto_median_90d', 'Price_Crypto_max_90d',
+       'Price_Crypto_median_180d', 'Price_Crypto_max_180d',
+       'Price_Crypto_median_365d', 'Price_Crypto_max_365d',
+       'Price_Crypto_median_730d', 'Price_Crypto_max_730d',
+       'Price_USD_collection_cum_median', 'Price_USD_collection_cum_max',
+       'Price_Crypto_collection_cum_median', 'Price_Crypto_collection_cum_max',
+       'p_resale', 'pca_1', 'pca_2', 'pca_3', 'pca_4', 'pca_5',
+       'trans_count_seller', 'deg_centrality_seller', 'pgrank_seller',
+       'trans_count_buyer', 'deg_centrality_buyer', 'pgrank_buyer',
+       'Category_Art', 'Category_Collectible', 'Category_Games',
+       'Category_Metaverse', 'Category_Other'],
+      dtype='object')","[158   0   1  40  40  34  25  14   6  13  20   0  29  45  24  14  31   7
+  10   4  10  22  17   2   9  14  19  25  11  13  24  30   4   8  14  23
+  14  24  25   8  16   8  11  25  15  17  14   6  20  12  19  20  30  22
+   9   9  13   8  10  14  15   9  11   4  16  13  15  17  33   5 137  46
+ 123  60 207  63  31  66  28  29 160 293 270   0  99  86   6   4   7  17
+   1]",2022-04-05-03:58:40
+8,secondary-xgboost-fill0-nobal-noscale,NFT secondary sales,"XGBClassifier(base_score=0.5, booster='gbtree', colsample_bylevel=1,
+              colsample_bynode=1, colsample_bytree=1, enable_categorical=False,
+              eval_metric='mlogloss', gamma=0, gpu_id=-1, importance_type=None,
+              interaction_constraints='', learning_rate=0.300000012,
+              max_delta_step=0, max_depth=6, min_child_weight=1, missing=nan,
+              monotone_constraints='()', n_estimators=100, n_jobs=8,
+              num_parallel_tree=1, predictor='auto', random_state=0,
+              reg_alpha=0, reg_lambda=1, scale_pos_weight=1, subsample=1,
+              tree_method='exact', use_label_encoder=False,
+              validate_parameters=1, verbosity=None)",None,None,0.8287702337403117,0.8238242083307905,0.8244330438726885,0.819022963708711,0.8016141141141141,0.8372047437028325,0.8244330438726885,<sklearn.metrics._plot.confusion_matrix.ConfusionMatrixDisplay object at 0x7fde2c49b510>,"              precision    recall  f1-score   support
+
+           0       0.85      0.81      0.83    145918
+           1       0.80      0.84      0.82    132639
+
+    accuracy                           0.82    278557
+   macro avg       0.82      0.82      0.82    278557
+weighted avg       0.82      0.82      0.82    278557
+","Index(['nft_sales_count', 'First_item_Unique_id_collection', 'GoogleTrends',
+       'BTC_price', 'ETH_price', 'MANA_price', 'WAX_price',
+       'GoogleTrends_7d_rolling_avg', 'GoogleTrends_14d_rolling_avg',
+       'GoogleTrends_30d_rolling_avg', 'GoogleTrends_60d_rolling_avg',
+       'GoogleTrends_90d_rolling_avg', 'BTC_price_7d_rolling_avg',
+       'BTC_price_14d_rolling_avg', 'BTC_price_30d_rolling_avg',
+       'BTC_price_60d_rolling_avg', 'BTC_price_90d_rolling_avg',
+       'ETH_price_7d_rolling_avg', 'ETH_price_14d_rolling_avg',
+       'ETH_price_30d_rolling_avg', 'ETH_price_60d_rolling_avg',
+       'ETH_price_90d_rolling_avg', 'MANA_price_7d_rolling_avg',
+       'MANA_price_14d_rolling_avg', 'MANA_price_30d_rolling_avg',
+       'MANA_price_60d_rolling_avg', 'MANA_price_90d_rolling_avg',
+       'WAX_price_7d_rolling_avg', 'WAX_price_14d_rolling_avg',
+       'WAX_price_30d_rolling_avg', 'WAX_price_60d_rolling_avg',
+       'WAX_price_90d_rolling_avg', 'Ggl_trends_collection',
+       'Ggl_trends_collection_7d_rolling_avg',
+       'Ggl_trends_collection_14d_rolling_avg',
+       'Ggl_trends_collection_30d_rolling_avg',
+       'Ggl_trends_collection_60d_rolling_avg',
+       'Ggl_trends_collection_90d_rolling_avg', 'Price_USD_median_7d',
+       'Price_USD_max_7d', 'Price_USD_median_14d', 'Price_USD_max_14d',
+       'Price_USD_median_30d', 'Price_USD_max_30d', 'Price_USD_median_60d',
+       'Price_USD_max_60d', 'Price_USD_median_90d', 'Price_USD_max_90d',
+       'Price_USD_median_180d', 'Price_USD_max_180d', 'Price_USD_median_365d',
+       'Price_USD_max_365d', 'Price_USD_median_730d', 'Price_USD_max_730d',
+       'Price_Crypto_median_7d', 'Price_Crypto_max_7d',
+       'Price_Crypto_median_14d', 'Price_Crypto_max_14d',
+       'Price_Crypto_median_30d', 'Price_Crypto_max_30d',
+       'Price_Crypto_median_60d', 'Price_Crypto_max_60d',
+       'Price_Crypto_median_90d', 'Price_Crypto_max_90d',
+       'Price_Crypto_median_180d', 'Price_Crypto_max_180d',
+       'Price_Crypto_median_365d', 'Price_Crypto_max_365d',
+       'Price_Crypto_median_730d', 'Price_Crypto_max_730d',
+       'Price_USD_collection_cum_median', 'Price_USD_collection_cum_max',
+       'Price_Crypto_collection_cum_median', 'Price_Crypto_collection_cum_max',
+       'p_resale', 'pca_1', 'pca_2', 'pca_3', 'pca_4', 'pca_5',
+       'trans_count_seller', 'deg_centrality_seller', 'pgrank_seller',
+       'trans_count_buyer', 'deg_centrality_buyer', 'pgrank_buyer',
+       'Category_Art', 'Category_Collectible', 'Category_Games',
+       'Category_Metaverse', 'Category_Other'],
+      dtype='object')","[0.04118315 0.         0.00284096 0.0047027  0.0146278  0.01434671
+ 0.00227037 0.00945351 0.00458798 0.00422976 0.02990964 0.00583457
+ 0.00380966 0.00744131 0.00673023 0.00465417 0.01083966 0.00316397
+ 0.00264257 0.00548172 0.00426838 0.00398714 0.01068145 0.00566367
+ 0.0035552  0.00285208 0.00306267 0.0039695  0.00271149 0.00460144
+ 0.00266839 0.00604431 0.00715339 0.00635969 0.00169264 0.00433058
+ 0.00498227 0.00764841 0.00178327 0.0024803  0.00177611 0.00698473
+ 0.02262812 0.00464242 0.00356113 0.00469176 0.00365844 0.00240746
+ 0.00732883 0.00155139 0.00488961 0.00246817 0.00700719 0.01182939
+ 0.00506761 0.00280938 0.00237456 0.00539231 0.00568358 0.00343203
+ 0.00438474 0.00286709 0.00152777 0.00183183 0.05260568 0.00591208
+ 0.04096681 0.00542682 0.10512713 0.00490185 0.24607317 0.02567706
+ 0.00787145 0.0124846  0.02951691 0.00473475 0.00201482 0.00325363
+ 0.00126562 0.00132629 0.00744055 0.00597025 0.01219534 0.
+ 0.00245327 0.00329332 0.00829812 0.00199918 0.00463626 0.01319642
+ 0.00131637]",2022-04-05-04:13:26
+9,secondary-xgboost-fill0-nobal-minmaxscale,NFT secondary sales,"XGBClassifier(base_score=0.5, booster='gbtree', colsample_bylevel=1,
+              colsample_bynode=1, colsample_bytree=1, enable_categorical=False,
+              eval_metric='mlogloss', gamma=0, gpu_id=-1, importance_type=None,
+              interaction_constraints='', learning_rate=0.300000012,
+              max_delta_step=0, max_depth=6, min_child_weight=1, missing=nan,
+              monotone_constraints='()', n_estimators=100, n_jobs=8,
+              num_parallel_tree=1, predictor='auto', random_state=0,
+              reg_alpha=0, reg_lambda=1, scale_pos_weight=1, subsample=1,
+              tree_method='exact', use_label_encoder=False,
+              validate_parameters=1, verbosity=None)",None,MinMaxScaler,0.8284579098712292,0.8195880914857642,0.8208637697968382,0.8173282784039896,0.7891234768937054,0.8476240019903648,0.8208637697968381,<sklearn.metrics._plot.confusion_matrix.ConfusionMatrixDisplay object at 0x7fde2c1ba690>,"              precision    recall  f1-score   support
+
+           0       0.85      0.79      0.82    145918
+           1       0.79      0.85      0.82    132639
+
+    accuracy                           0.82    278557
+   macro avg       0.82      0.82      0.82    278557
+weighted avg       0.82      0.82      0.82    278557
+","Index(['nft_sales_count', 'First_item_Unique_id_collection', 'GoogleTrends',
+       'BTC_price', 'ETH_price', 'MANA_price', 'WAX_price',
+       'GoogleTrends_7d_rolling_avg', 'GoogleTrends_14d_rolling_avg',
+       'GoogleTrends_30d_rolling_avg', 'GoogleTrends_60d_rolling_avg',
+       'GoogleTrends_90d_rolling_avg', 'BTC_price_7d_rolling_avg',
+       'BTC_price_14d_rolling_avg', 'BTC_price_30d_rolling_avg',
+       'BTC_price_60d_rolling_avg', 'BTC_price_90d_rolling_avg',
+       'ETH_price_7d_rolling_avg', 'ETH_price_14d_rolling_avg',
+       'ETH_price_30d_rolling_avg', 'ETH_price_60d_rolling_avg',
+       'ETH_price_90d_rolling_avg', 'MANA_price_7d_rolling_avg',
+       'MANA_price_14d_rolling_avg', 'MANA_price_30d_rolling_avg',
+       'MANA_price_60d_rolling_avg', 'MANA_price_90d_rolling_avg',
+       'WAX_price_7d_rolling_avg', 'WAX_price_14d_rolling_avg',
+       'WAX_price_30d_rolling_avg', 'WAX_price_60d_rolling_avg',
+       'WAX_price_90d_rolling_avg', 'Ggl_trends_collection',
+       'Ggl_trends_collection_7d_rolling_avg',
+       'Ggl_trends_collection_14d_rolling_avg',
+       'Ggl_trends_collection_30d_rolling_avg',
+       'Ggl_trends_collection_60d_rolling_avg',
+       'Ggl_trends_collection_90d_rolling_avg', 'Price_USD_median_7d',
+       'Price_USD_max_7d', 'Price_USD_median_14d', 'Price_USD_max_14d',
+       'Price_USD_median_30d', 'Price_USD_max_30d', 'Price_USD_median_60d',
+       'Price_USD_max_60d', 'Price_USD_median_90d', 'Price_USD_max_90d',
+       'Price_USD_median_180d', 'Price_USD_max_180d', 'Price_USD_median_365d',
+       'Price_USD_max_365d', 'Price_USD_median_730d', 'Price_USD_max_730d',
+       'Price_Crypto_median_7d', 'Price_Crypto_max_7d',
+       'Price_Crypto_median_14d', 'Price_Crypto_max_14d',
+       'Price_Crypto_median_30d', 'Price_Crypto_max_30d',
+       'Price_Crypto_median_60d', 'Price_Crypto_max_60d',
+       'Price_Crypto_median_90d', 'Price_Crypto_max_90d',
+       'Price_Crypto_median_180d', 'Price_Crypto_max_180d',
+       'Price_Crypto_median_365d', 'Price_Crypto_max_365d',
+       'Price_Crypto_median_730d', 'Price_Crypto_max_730d',
+       'Price_USD_collection_cum_median', 'Price_USD_collection_cum_max',
+       'Price_Crypto_collection_cum_median', 'Price_Crypto_collection_cum_max',
+       'p_resale', 'pca_1', 'pca_2', 'pca_3', 'pca_4', 'pca_5',
+       'trans_count_seller', 'deg_centrality_seller', 'pgrank_seller',
+       'trans_count_buyer', 'deg_centrality_buyer', 'pgrank_buyer',
+       'Category_Art', 'Category_Collectible', 'Category_Games',
+       'Category_Metaverse', 'Category_Other'],
+      dtype='object')","[0.04137135 0.         0.00286121 0.00443663 0.01529486 0.01412607
+ 0.00212366 0.0087785  0.00434041 0.00328959 0.03998873 0.00523742
+ 0.00356756 0.00740581 0.00631017 0.00533902 0.00947385 0.00279375
+ 0.00294336 0.00563608 0.00484807 0.00513641 0.00924033 0.00513663
+ 0.00353915 0.0026687  0.0025024  0.00382834 0.00314509 0.00531122
+ 0.002477   0.00651235 0.00476199 0.00953118 0.00126694 0.00460982
+ 0.0047787  0.00819227 0.00178338 0.00212522 0.00227319 0.00798319
+ 0.01819107 0.00466273 0.00435146 0.00485586 0.00439527 0.0027993
+ 0.00781095 0.00163554 0.00441543 0.0022342  0.00700962 0.01099048
+ 0.00518213 0.00247566 0.00199718 0.00578249 0.00618575 0.0035765
+ 0.00507308 0.00310791 0.00200785 0.00214703 0.05005534 0.00613469
+ 0.04447151 0.00351863 0.11301102 0.00508979 0.2337858  0.02309184
+ 0.00808254 0.01150746 0.02708395 0.0041395  0.00195678 0.00325067
+ 0.0014285  0.00131322 0.00722602 0.00566586 0.01196494 0.
+ 0.0024273  0.00326415 0.011944   0.00207713 0.00526221 0.01297302
+ 0.00141702]",2022-04-05-04:22:13
+10,secondary-xgboost-fillcustom-nobal-noscale,NFT secondary sales,"XGBClassifier(base_score=0.5, booster='gbtree', colsample_bylevel=1,
+              colsample_bynode=1, colsample_bytree=1, enable_categorical=False,
+              eval_metric='mlogloss', gamma=0, gpu_id=-1, importance_type=None,
+              interaction_constraints='', learning_rate=0.300000012,
+              max_delta_step=0, max_depth=6, min_child_weight=1, missing=nan,
+              monotone_constraints='()', n_estimators=100, n_jobs=8,
+              num_parallel_tree=1, predictor='auto', random_state=0,
+              reg_alpha=0, reg_lambda=1, scale_pos_weight=1, subsample=1,
+              tree_method='exact', use_label_encoder=False,
+              validate_parameters=1, verbosity=None)",None,None,0.8289659913280001,0.8244118208091445,0.8250213041069392,0.81998546216658,0.8024539788689166,0.8383000875154661,0.8250213041069392,<sklearn.metrics._plot.confusion_matrix.ConfusionMatrixDisplay object at 0x7fde27e91e50>,"              precision    recall  f1-score   support
+
+           0       0.85      0.81      0.83    145301
+           1       0.80      0.84      0.82    132548
+
+    accuracy                           0.82    277849
+   macro avg       0.82      0.83      0.82    277849
+weighted avg       0.83      0.82      0.82    277849
+","Index(['nft_sales_count', 'First_item_Unique_id_collection', 'GoogleTrends',
+       'BTC_price', 'ETH_price', 'MANA_price', 'WAX_price',
+       'GoogleTrends_7d_rolling_avg', 'GoogleTrends_14d_rolling_avg',
+       'GoogleTrends_30d_rolling_avg', 'GoogleTrends_60d_rolling_avg',
+       'GoogleTrends_90d_rolling_avg', 'BTC_price_7d_rolling_avg',
+       'BTC_price_14d_rolling_avg', 'BTC_price_30d_rolling_avg',
+       'BTC_price_60d_rolling_avg', 'BTC_price_90d_rolling_avg',
+       'ETH_price_7d_rolling_avg', 'ETH_price_14d_rolling_avg',
+       'ETH_price_30d_rolling_avg', 'ETH_price_60d_rolling_avg',
+       'ETH_price_90d_rolling_avg', 'MANA_price_7d_rolling_avg',
+       'MANA_price_14d_rolling_avg', 'MANA_price_30d_rolling_avg',
+       'MANA_price_60d_rolling_avg', 'MANA_price_90d_rolling_avg',
+       'WAX_price_7d_rolling_avg', 'WAX_price_14d_rolling_avg',
+       'WAX_price_30d_rolling_avg', 'WAX_price_60d_rolling_avg',
+       'WAX_price_90d_rolling_avg', 'Ggl_trends_collection',
+       'Ggl_trends_collection_7d_rolling_avg',
+       'Ggl_trends_collection_14d_rolling_avg',
+       'Ggl_trends_collection_30d_rolling_avg',
+       'Ggl_trends_collection_60d_rolling_avg',
+       'Ggl_trends_collection_90d_rolling_avg', 'Price_USD_median_7d',
+       'Price_USD_max_7d', 'Price_USD_median_14d', 'Price_USD_max_14d',
+       'Price_USD_median_30d', 'Price_USD_max_30d', 'Price_USD_median_60d',
+       'Price_USD_max_60d', 'Price_USD_median_90d', 'Price_USD_max_90d',
+       'Price_USD_median_180d', 'Price_USD_max_180d', 'Price_USD_median_365d',
+       'Price_USD_max_365d', 'Price_USD_median_730d', 'Price_USD_max_730d',
+       'Price_Crypto_median_7d', 'Price_Crypto_max_7d',
+       'Price_Crypto_median_14d', 'Price_Crypto_max_14d',
+       'Price_Crypto_median_30d', 'Price_Crypto_max_30d',
+       'Price_Crypto_median_60d', 'Price_Crypto_max_60d',
+       'Price_Crypto_median_90d', 'Price_Crypto_max_90d',
+       'Price_Crypto_median_180d', 'Price_Crypto_max_180d',
+       'Price_Crypto_median_365d', 'Price_Crypto_max_365d',
+       'Price_Crypto_median_730d', 'Price_Crypto_max_730d',
+       'Price_USD_collection_cum_median', 'Price_USD_collection_cum_max',
+       'Price_Crypto_collection_cum_median', 'Price_Crypto_collection_cum_max',
+       'p_resale', 'pca_1', 'pca_2', 'pca_3', 'pca_4', 'pca_5',
+       'trans_count_seller', 'deg_centrality_seller', 'pgrank_seller',
+       'trans_count_buyer', 'deg_centrality_buyer', 'pgrank_buyer',
+       'Category_Art', 'Category_Collectible', 'Category_Games',
+       'Category_Metaverse', 'Category_Other'],
+      dtype='object')","[0.04711125 0.         0.00350571 0.00951937 0.00670821 0.0063828
+ 0.00334613 0.00551716 0.00628406 0.00377471 0.01240893 0.00096718
+ 0.00699297 0.01708726 0.00901753 0.00360703 0.01572969 0.00252784
+ 0.00486068 0.0024373  0.00333962 0.00330988 0.00983092 0.00220496
+ 0.00279211 0.00497212 0.00458868 0.0036169  0.002253   0.00794226
+ 0.00485404 0.00670612 0.00492882 0.00473955 0.01078374 0.00479595
+ 0.01137353 0.00532429 0.00282723 0.001609   0.00522904 0.00387029
+ 0.02148385 0.00471175 0.00333447 0.00552129 0.00319603 0.00227212
+ 0.01232361 0.00252237 0.00402316 0.00407769 0.0075873  0.00868891
+ 0.00362062 0.00179161 0.00391682 0.00162409 0.00374909 0.00300098
+ 0.00360963 0.00301683 0.00736651 0.00286312 0.03891504 0.00259367
+ 0.00293951 0.00343521 0.12729904 0.0030729  0.24826938 0.02081017
+ 0.00742988 0.00898109 0.02203609 0.04419859 0.00263244 0.0031025
+ 0.00150268 0.00382151 0.0096764  0.0066838  0.01105303 0.
+ 0.00238523 0.00304347 0.00577714 0.00307187 0.00611963 0.0145313
+ 0.00263862]",2022-04-05-04:30:17
+11,secondary-xgboost-fillcustom-nobal-minmaxscale,NFT secondary sales,"XGBClassifier(base_score=0.5, booster='gbtree', colsample_bylevel=1,
+              colsample_bynode=1, colsample_bytree=1, enable_categorical=False,
+              eval_metric='mlogloss', gamma=0, gpu_id=-1, importance_type=None,
+              interaction_constraints='', learning_rate=0.300000012,
+              max_delta_step=0, max_depth=6, min_child_weight=1, missing=nan,
+              monotone_constraints='()', n_estimators=100, n_jobs=8,
+              num_parallel_tree=1, predictor='auto', random_state=0,
+              reg_alpha=0, reg_lambda=1, scale_pos_weight=1, subsample=1,
+              tree_method='exact', use_label_encoder=False,
+              validate_parameters=1, verbosity=None)",None,MinMaxScaler,0.8285278024965066,0.8142408286515338,0.8160972290475251,0.8147940820800993,0.7769261826717123,0.856542535534297,0.8160972290475251,<sklearn.metrics._plot.confusion_matrix.ConfusionMatrixDisplay object at 0x7fde27c36710>,"              precision    recall  f1-score   support
+
+           0       0.86      0.78      0.81    145301
+           1       0.78      0.86      0.81    132548
+
+    accuracy                           0.81    277849
+   macro avg       0.82      0.82      0.81    277849
+weighted avg       0.82      0.81      0.81    277849
+","Index(['nft_sales_count', 'First_item_Unique_id_collection', 'GoogleTrends',
+       'BTC_price', 'ETH_price', 'MANA_price', 'WAX_price',
+       'GoogleTrends_7d_rolling_avg', 'GoogleTrends_14d_rolling_avg',
+       'GoogleTrends_30d_rolling_avg', 'GoogleTrends_60d_rolling_avg',
+       'GoogleTrends_90d_rolling_avg', 'BTC_price_7d_rolling_avg',
+       'BTC_price_14d_rolling_avg', 'BTC_price_30d_rolling_avg',
+       'BTC_price_60d_rolling_avg', 'BTC_price_90d_rolling_avg',
+       'ETH_price_7d_rolling_avg', 'ETH_price_14d_rolling_avg',
+       'ETH_price_30d_rolling_avg', 'ETH_price_60d_rolling_avg',
+       'ETH_price_90d_rolling_avg', 'MANA_price_7d_rolling_avg',
+       'MANA_price_14d_rolling_avg', 'MANA_price_30d_rolling_avg',
+       'MANA_price_60d_rolling_avg', 'MANA_price_90d_rolling_avg',
+       'WAX_price_7d_rolling_avg', 'WAX_price_14d_rolling_avg',
+       'WAX_price_30d_rolling_avg', 'WAX_price_60d_rolling_avg',
+       'WAX_price_90d_rolling_avg', 'Ggl_trends_collection',
+       'Ggl_trends_collection_7d_rolling_avg',
+       'Ggl_trends_collection_14d_rolling_avg',
+       'Ggl_trends_collection_30d_rolling_avg',
+       'Ggl_trends_collection_60d_rolling_avg',
+       'Ggl_trends_collection_90d_rolling_avg', 'Price_USD_median_7d',
+       'Price_USD_max_7d', 'Price_USD_median_14d', 'Price_USD_max_14d',
+       'Price_USD_median_30d', 'Price_USD_max_30d', 'Price_USD_median_60d',
+       'Price_USD_max_60d', 'Price_USD_median_90d', 'Price_USD_max_90d',
+       'Price_USD_median_180d', 'Price_USD_max_180d', 'Price_USD_median_365d',
+       'Price_USD_max_365d', 'Price_USD_median_730d', 'Price_USD_max_730d',
+       'Price_Crypto_median_7d', 'Price_Crypto_max_7d',
+       'Price_Crypto_median_14d', 'Price_Crypto_max_14d',
+       'Price_Crypto_median_30d', 'Price_Crypto_max_30d',
+       'Price_Crypto_median_60d', 'Price_Crypto_max_60d',
+       'Price_Crypto_median_90d', 'Price_Crypto_max_90d',
+       'Price_Crypto_median_180d', 'Price_Crypto_max_180d',
+       'Price_Crypto_median_365d', 'Price_Crypto_max_365d',
+       'Price_Crypto_median_730d', 'Price_Crypto_max_730d',
+       'Price_USD_collection_cum_median', 'Price_USD_collection_cum_max',
+       'Price_Crypto_collection_cum_median', 'Price_Crypto_collection_cum_max',
+       'p_resale', 'pca_1', 'pca_2', 'pca_3', 'pca_4', 'pca_5',
+       'trans_count_seller', 'deg_centrality_seller', 'pgrank_seller',
+       'trans_count_buyer', 'deg_centrality_buyer', 'pgrank_buyer',
+       'Category_Art', 'Category_Collectible', 'Category_Games',
+       'Category_Metaverse', 'Category_Other'],
+      dtype='object')","[0.04840075 0.         0.00354309 0.00940095 0.00750207 0.00630771
+ 0.00326427 0.00535537 0.00599951 0.00456826 0.01094214 0.00216405
+ 0.00698371 0.01913297 0.00853845 0.0037233  0.0158934  0.00230831
+ 0.00493594 0.0033252  0.00339244 0.00276578 0.01225592 0.00244921
+ 0.00262297 0.00521597 0.00539917 0.00337877 0.0022266  0.00845288
+ 0.00499939 0.00659255 0.00461337 0.00541435 0.01243719 0.00460201
+ 0.0119118  0.00512475 0.00286199 0.00161952 0.00530386 0.00356987
+ 0.02127182 0.00536601 0.00348568 0.00619621 0.0033244  0.00210332
+ 0.01307877 0.00246306 0.00488183 0.00407216 0.00842787 0.00956237
+ 0.0035268  0.0018582  0.0037791  0.00165185 0.0038467  0.00265879
+ 0.0032182  0.00329634 0.00665702 0.002753   0.04564583 0.00185835
+ 0.0034289  0.00322569 0.11669291 0.00312004 0.24027242 0.01940935
+ 0.00745136 0.00813931 0.02429602 0.04639669 0.0024556  0.00310864
+ 0.00155064 0.00384336 0.00894737 0.00648659 0.01166984 0.
+ 0.00240556 0.00312578 0.00638389 0.00252806 0.00598225 0.01150755
+ 0.00308868]",2022-04-05-04:36:06
+12,secondary2-49-logregr-fill0-nobal-noscale,NFT sales 2-49,LogisticRegression(),None,None,0.7061963669027105,0.706703265078313,0.5317204154996382,0.2015490993263495,0.4305456942894817,0.13157017876930469,0.5317204154996382,<sklearn.metrics._plot.confusion_matrix.ConfusionMatrixDisplay object at 0x7fde26edf950>,"              precision    recall  f1-score   support
+
+           0       0.73      0.93      0.82    329623
+           1       0.43      0.13      0.20    129049
+
+    accuracy                           0.71    458672
+   macro avg       0.58      0.53      0.51    458672
+weighted avg       0.65      0.71      0.65    458672
+","Index(['nft_sales_count', 'First_item_Unique_id_collection', 'GoogleTrends',
+       'BTC_price', 'ETH_price', 'MANA_price', 'WAX_price',
+       'GoogleTrends_7d_rolling_avg', 'GoogleTrends_14d_rolling_avg',
+       'GoogleTrends_30d_rolling_avg', 'GoogleTrends_60d_rolling_avg',
+       'GoogleTrends_90d_rolling_avg', 'BTC_price_7d_rolling_avg',
+       'BTC_price_14d_rolling_avg', 'BTC_price_30d_rolling_avg',
+       'BTC_price_60d_rolling_avg', 'BTC_price_90d_rolling_avg',
+       'ETH_price_7d_rolling_avg', 'ETH_price_14d_rolling_avg',
+       'ETH_price_30d_rolling_avg', 'ETH_price_60d_rolling_avg',
+       'ETH_price_90d_rolling_avg', 'MANA_price_7d_rolling_avg',
+       'MANA_price_14d_rolling_avg', 'MANA_price_30d_rolling_avg',
+       'MANA_price_60d_rolling_avg', 'MANA_price_90d_rolling_avg',
+       'WAX_price_7d_rolling_avg', 'WAX_price_14d_rolling_avg',
+       'WAX_price_30d_rolling_avg', 'WAX_price_60d_rolling_avg',
+       'WAX_price_90d_rolling_avg', 'Ggl_trends_collection',
+       'Ggl_trends_collection_7d_rolling_avg',
+       'Ggl_trends_collection_14d_rolling_avg',
+       'Ggl_trends_collection_30d_rolling_avg',
+       'Ggl_trends_collection_60d_rolling_avg',
+       'Ggl_trends_collection_90d_rolling_avg', 'Price_USD_median_7d',
+       'Price_USD_max_7d', 'Price_USD_median_14d', 'Price_USD_max_14d',
+       'Price_USD_median_30d', 'Price_USD_max_30d', 'Price_USD_median_60d',
+       'Price_USD_max_60d', 'Price_USD_median_90d', 'Price_USD_max_90d',
+       'Price_USD_median_180d', 'Price_USD_max_180d', 'Price_USD_median_365d',
+       'Price_USD_max_365d', 'Price_USD_median_730d', 'Price_USD_max_730d',
+       'Price_Crypto_median_7d', 'Price_Crypto_max_7d',
+       'Price_Crypto_median_14d', 'Price_Crypto_max_14d',
+       'Price_Crypto_median_30d', 'Price_Crypto_max_30d',
+       'Price_Crypto_median_60d', 'Price_Crypto_max_60d',
+       'Price_Crypto_median_90d', 'Price_Crypto_max_90d',
+       'Price_Crypto_median_180d', 'Price_Crypto_max_180d',
+       'Price_Crypto_median_365d', 'Price_Crypto_max_365d',
+       'Price_Crypto_median_730d', 'Price_Crypto_max_730d',
+       'Price_USD_collection_cum_median', 'Price_USD_collection_cum_max',
+       'Price_Crypto_collection_cum_median', 'Price_Crypto_collection_cum_max',
+       'p_resale', 'pca_1', 'pca_2', 'pca_3', 'pca_4', 'pca_5',
+       'trans_count_seller', 'deg_centrality_seller', 'pgrank_seller',
+       'trans_count_buyer', 'deg_centrality_buyer', 'pgrank_buyer',
+       'Category_Art', 'Category_Collectible', 'Category_Games',
+       'Category_Metaverse', 'Category_Other'],
+      dtype='object')","[-5.51008943e-07 -8.64895716e-07  9.09141809e-07 -4.21396009e-05
+ -1.46489495e-05  3.83595986e-08 -1.92383391e-08  7.99279597e-07
+  9.03282008e-07  1.13783626e-06  1.00615118e-06  6.98912153e-07
+ -6.31622907e-05  6.84955345e-05  1.15913695e-04  8.82537146e-05
+ -1.87581805e-04 -1.94452798e-05 -2.11594141e-05 -2.99917317e-05
+ -4.00253161e-05 -4.53446776e-05  3.89414146e-08  4.06769451e-08
+  4.03140198e-08  2.64447171e-08  1.73872176e-08 -1.71081152e-08
+ -1.40427733e-08 -1.06426094e-08 -1.04843516e-08 -9.84507866e-09
+  2.27107328e-06  2.07050876e-06  1.81805386e-06  1.45214833e-06
+  1.06203340e-06  7.93643531e-07  3.13809354e-06  1.06544917e-05
+  2.51572352e-06  5.83624660e-06  4.15510815e-06 -3.09072696e-06
+  3.87697931e-06  2.52753137e-06  4.21101757e-06  2.51669166e-06
+  3.93596930e-06  1.18068589e-07  3.58852859e-06 -2.01425338e-06
+  2.76425573e-06  2.45748968e-08 -7.62182919e-06 -1.39601091e-06
+ -9.33943316e-08  1.41932774e-06 -6.04315807e-07  2.50640728e-06
+  7.22246984e-07  5.72903687e-06  6.86617362e-07  2.26718014e-05
+  6.84120878e-07 -3.64688482e-05  2.37595135e-07  5.71729653e-06
+  3.60938858e-07 -1.19853613e-06  7.14316503e-06 -8.34703716e-07
+  2.89841318e-05 -4.90015090e-06 -1.24570223e-07  2.55289764e-06
+ -2.70839619e-07 -6.90065369e-07 -4.97498637e-07  1.02692998e-06
+ -6.78674166e-05 -2.34002132e-09  9.97698519e-11 -6.78674166e-05
+ -7.58526804e-10 -4.15923191e-11 -2.43859981e-07 -1.37423539e-08
+ -2.85740546e-08  5.68594080e-09 -9.16143150e-09]",2022-04-05-18:55:20
+13,secondary2-49-logregr-fill0-nobal-minmaxscale,NFT sales 2-49,LogisticRegression(),None,MinMaxScaler,0.865775543307636,0.8656839746049465,0.852574111827433,0.7750888042728271,0.7327705221304912,0.8225945183612426,0.8525741118274329,<sklearn.metrics._plot.confusion_matrix.ConfusionMatrixDisplay object at 0x7fde26d98b90>,"              precision    recall  f1-score   support
+
+           0       0.93      0.88      0.90    329623
+           1       0.73      0.82      0.78    129049
+
+    accuracy                           0.87    458672
+   macro avg       0.83      0.85      0.84    458672
+weighted avg       0.87      0.87      0.87    458672
+","Index(['nft_sales_count', 'First_item_Unique_id_collection', 'GoogleTrends',
+       'BTC_price', 'ETH_price', 'MANA_price', 'WAX_price',
+       'GoogleTrends_7d_rolling_avg', 'GoogleTrends_14d_rolling_avg',
+       'GoogleTrends_30d_rolling_avg', 'GoogleTrends_60d_rolling_avg',
+       'GoogleTrends_90d_rolling_avg', 'BTC_price_7d_rolling_avg',
+       'BTC_price_14d_rolling_avg', 'BTC_price_30d_rolling_avg',
+       'BTC_price_60d_rolling_avg', 'BTC_price_90d_rolling_avg',
+       'ETH_price_7d_rolling_avg', 'ETH_price_14d_rolling_avg',
+       'ETH_price_30d_rolling_avg', 'ETH_price_60d_rolling_avg',
+       'ETH_price_90d_rolling_avg', 'MANA_price_7d_rolling_avg',
+       'MANA_price_14d_rolling_avg', 'MANA_price_30d_rolling_avg',
+       'MANA_price_60d_rolling_avg', 'MANA_price_90d_rolling_avg',
+       'WAX_price_7d_rolling_avg', 'WAX_price_14d_rolling_avg',
+       'WAX_price_30d_rolling_avg', 'WAX_price_60d_rolling_avg',
+       'WAX_price_90d_rolling_avg', 'Ggl_trends_collection',
+       'Ggl_trends_collection_7d_rolling_avg',
+       'Ggl_trends_collection_14d_rolling_avg',
+       'Ggl_trends_collection_30d_rolling_avg',
+       'Ggl_trends_collection_60d_rolling_avg',
+       'Ggl_trends_collection_90d_rolling_avg', 'Price_USD_median_7d',
+       'Price_USD_max_7d', 'Price_USD_median_14d', 'Price_USD_max_14d',
+       'Price_USD_median_30d', 'Price_USD_max_30d', 'Price_USD_median_60d',
+       'Price_USD_max_60d', 'Price_USD_median_90d', 'Price_USD_max_90d',
+       'Price_USD_median_180d', 'Price_USD_max_180d', 'Price_USD_median_365d',
+       'Price_USD_max_365d', 'Price_USD_median_730d', 'Price_USD_max_730d',
+       'Price_Crypto_median_7d', 'Price_Crypto_max_7d',
+       'Price_Crypto_median_14d', 'Price_Crypto_max_14d',
+       'Price_Crypto_median_30d', 'Price_Crypto_max_30d',
+       'Price_Crypto_median_60d', 'Price_Crypto_max_60d',
+       'Price_Crypto_median_90d', 'Price_Crypto_max_90d',
+       'Price_Crypto_median_180d', 'Price_Crypto_max_180d',
+       'Price_Crypto_median_365d', 'Price_Crypto_max_365d',
+       'Price_Crypto_median_730d', 'Price_Crypto_max_730d',
+       'Price_USD_collection_cum_median', 'Price_USD_collection_cum_max',
+       'Price_Crypto_collection_cum_median', 'Price_Crypto_collection_cum_max',
+       'p_resale', 'pca_1', 'pca_2', 'pca_3', 'pca_4', 'pca_5',
+       'trans_count_seller', 'deg_centrality_seller', 'pgrank_seller',
+       'trans_count_buyer', 'deg_centrality_buyer', 'pgrank_buyer',
+       'Category_Art', 'Category_Collectible', 'Category_Games',
+       'Category_Metaverse', 'Category_Other'],
+      dtype='object')","[-1.00274855e+00 -2.59795873e+01 -3.14528009e-01  3.27755880e+00
+  1.44734531e+00  4.92307318e-01 -1.78524129e+00 -2.10280345e+00
+  2.56198740e+00  3.05297654e+00 -1.53844551e+00 -1.30588603e+00
+ -2.16901190e+00 -1.88515474e+00  7.16733790e-01 -5.55913741e-03
+  5.06179230e-01  4.98878420e-01  6.60505192e-01 -5.05753681e-01
+ -2.45307045e-01  3.44642127e-01 -2.71430629e+00 -4.86700159e-01
+  1.52879643e+00  1.75010542e+00 -7.97539953e-01 -3.65308757e-01
+ -5.91417046e-01  5.38194296e-01 -3.97463429e-02 -1.03897004e+00
+ -2.70345385e-02  5.36070680e-01  5.13678173e-01 -9.57976907e-01
+ -7.99701890e-01  4.71346228e-01  1.39049627e+00  1.79823603e+00
+  1.43409093e+00  1.30396661e+00  1.40326589e+00  8.25389846e-01
+  1.43745766e+00  1.09330564e+00  1.34452452e+00  1.15796840e+00
+  1.33001476e+00  1.26053746e+00  1.32569490e+00  1.35350912e+00
+  1.31978448e+00  1.56137679e+00 -4.78542264e-01 -1.16822130e-01
+ -4.46564884e-01 -1.50811945e-01 -4.87854363e-01 -1.45972502e-01
+ -4.85261704e-01 -1.56158750e-01 -4.85500442e-01 -1.52247999e-01
+ -4.86959221e-01 -1.69439837e-01 -4.87928540e-01 -1.53021630e-01
+ -4.88245118e-01 -1.78065614e-01  5.72598774e-01  7.50645150e-01
+  5.94512975e-01 -5.18336691e+00 -1.96225668e+00  1.05840504e+00
+ -4.54330038e-02  8.59144031e-01 -4.87226083e-01  4.39370464e-01
+ -2.31777806e+00 -2.34872341e+00  1.72321124e+01 -2.31777806e+00
+ -1.14780508e+00  2.45678667e+00 -1.18991690e+00  3.18214858e-01
+  2.33069890e-01  4.87476657e-01 -2.31360565e-01]",2022-04-05-18:59:08
+14,secondary2-49-logregr-fillcustom-nobal-noscale,NFT sales 2-49,LogisticRegression(),None,None,0.7051263570234324,0.7057748170798296,0.5378638098354895,0.22721562193449937,0.43577951369787654,0.1536694756118379,0.5378638098354895,<sklearn.metrics._plot.confusion_matrix.ConfusionMatrixDisplay object at 0x7fde26c61250>,"              precision    recall  f1-score   support
+
+           0       0.74      0.92      0.82    328976
+           1       0.44      0.15      0.23    128874
+
+    accuracy                           0.71    457850
+   macro avg       0.59      0.54      0.52    457850
+weighted avg       0.65      0.71      0.65    457850
+","Index(['nft_sales_count', 'First_item_Unique_id_collection', 'GoogleTrends',
+       'BTC_price', 'ETH_price', 'MANA_price', 'WAX_price',
+       'GoogleTrends_7d_rolling_avg', 'GoogleTrends_14d_rolling_avg',
+       'GoogleTrends_30d_rolling_avg', 'GoogleTrends_60d_rolling_avg',
+       'GoogleTrends_90d_rolling_avg', 'BTC_price_7d_rolling_avg',
+       'BTC_price_14d_rolling_avg', 'BTC_price_30d_rolling_avg',
+       'BTC_price_60d_rolling_avg', 'BTC_price_90d_rolling_avg',
+       'ETH_price_7d_rolling_avg', 'ETH_price_14d_rolling_avg',
+       'ETH_price_30d_rolling_avg', 'ETH_price_60d_rolling_avg',
+       'ETH_price_90d_rolling_avg', 'MANA_price_7d_rolling_avg',
+       'MANA_price_14d_rolling_avg', 'MANA_price_30d_rolling_avg',
+       'MANA_price_60d_rolling_avg', 'MANA_price_90d_rolling_avg',
+       'WAX_price_7d_rolling_avg', 'WAX_price_14d_rolling_avg',
+       'WAX_price_30d_rolling_avg', 'WAX_price_60d_rolling_avg',
+       'WAX_price_90d_rolling_avg', 'Ggl_trends_collection',
+       'Ggl_trends_collection_7d_rolling_avg',
+       'Ggl_trends_collection_14d_rolling_avg',
+       'Ggl_trends_collection_30d_rolling_avg',
+       'Ggl_trends_collection_60d_rolling_avg',
+       'Ggl_trends_collection_90d_rolling_avg', 'Price_USD_median_7d',
+       'Price_USD_max_7d', 'Price_USD_median_14d', 'Price_USD_max_14d',
+       'Price_USD_median_30d', 'Price_USD_max_30d', 'Price_USD_median_60d',
+       'Price_USD_max_60d', 'Price_USD_median_90d', 'Price_USD_max_90d',
+       'Price_USD_median_180d', 'Price_USD_max_180d', 'Price_USD_median_365d',
+       'Price_USD_max_365d', 'Price_USD_median_730d', 'Price_USD_max_730d',
+       'Price_Crypto_median_7d', 'Price_Crypto_max_7d',
+       'Price_Crypto_median_14d', 'Price_Crypto_max_14d',
+       'Price_Crypto_median_30d', 'Price_Crypto_max_30d',
+       'Price_Crypto_median_60d', 'Price_Crypto_max_60d',
+       'Price_Crypto_median_90d', 'Price_Crypto_max_90d',
+       'Price_Crypto_median_180d', 'Price_Crypto_max_180d',
+       'Price_Crypto_median_365d', 'Price_Crypto_max_365d',
+       'Price_Crypto_median_730d', 'Price_Crypto_max_730d',
+       'Price_USD_collection_cum_median', 'Price_USD_collection_cum_max',
+       'Price_Crypto_collection_cum_median', 'Price_Crypto_collection_cum_max',
+       'p_resale', 'pca_1', 'pca_2', 'pca_3', 'pca_4', 'pca_5',
+       'trans_count_seller', 'deg_centrality_seller', 'pgrank_seller',
+       'trans_count_buyer', 'deg_centrality_buyer', 'pgrank_buyer',
+       'Category_Art', 'Category_Collectible', 'Category_Games',
+       'Category_Metaverse', 'Category_Other'],
+      dtype='object')","[-5.36863394e-07 -9.26930287e-07  9.70121373e-07 -5.16530423e-05
+ -1.71345007e-05  3.59128626e-08 -3.86622589e-08  8.51691789e-07
+  9.61823750e-07  1.20676470e-06  1.06337505e-06  7.38782885e-07
+ -7.03768444e-05  8.02446163e-05  1.30720646e-04  9.32486904e-05
+ -2.03567018e-04 -2.21686653e-05 -2.36300975e-05 -3.28682760e-05
+ -4.38384566e-05 -4.97314410e-05  3.67157777e-08  3.81824951e-08
+  3.58705013e-08  1.88435775e-08  6.59334095e-09 -3.74533668e-08
+ -3.38334644e-08 -2.96761649e-08 -3.58314915e-08 -4.23356666e-08
+  2.44092040e-06  2.22103170e-06  1.95222169e-06  1.57110138e-06
+  1.15203800e-06  8.60447454e-07  3.56737012e-06  1.10501592e-05
+  1.59227415e-06  3.18637665e-06  4.77800146e-06 -2.82157599e-06
+  3.97236077e-06  2.44766044e-06  4.83156427e-06  2.29959577e-06
+  4.59608218e-06  1.46503362e-06  4.26740398e-06 -2.94206854e-06
+  3.38425890e-06 -1.12784445e-07 -1.01436111e-05 -2.00565501e-06
+ -6.82917341e-07  1.35285604e-06 -1.78050301e-06  1.19813360e-06
+ -2.58408399e-07  1.05245868e-05 -3.28615405e-07  2.83271953e-05
+ -3.68453050e-07 -4.49174555e-05 -8.43555247e-07  5.27953749e-06
+ -7.29316298e-07  5.09259817e-07  8.21594833e-06 -6.39821538e-07
+  3.16457492e-05 -4.66253485e-06 -8.14457362e-08  3.35182280e-06
+ -3.99624222e-07 -1.03664372e-06 -5.40086685e-07  1.28138574e-06
+ -7.35953183e-05 -2.51769901e-09  1.05743579e-10 -7.35953183e-05
+ -8.15846158e-10 -4.44095369e-11 -2.63855798e-07 -1.35365533e-08
+ -3.16998780e-08  5.66088270e-09 -6.80640484e-09]",2022-04-05-19:02:39
+15,secondary2-49-logregr-fillcustom-nobal-minmaxscale,NFT sales 2-49,LogisticRegression(),None,MinMaxScaler,0.8673494237735325,0.8664977612755269,0.853006188832067,0.7761255255871193,0.7349917449394398,0.8221363502335615,0.853006188832067,<sklearn.metrics._plot.confusion_matrix.ConfusionMatrixDisplay object at 0x7fde26b2f490>,"              precision    recall  f1-score   support
+
+           0       0.93      0.88      0.90    328976
+           1       0.73      0.82      0.78    128874
+
+    accuracy                           0.87    457850
+   macro avg       0.83      0.85      0.84    457850
+weighted avg       0.87      0.87      0.87    457850
+","Index(['nft_sales_count', 'First_item_Unique_id_collection', 'GoogleTrends',
+       'BTC_price', 'ETH_price', 'MANA_price', 'WAX_price',
+       'GoogleTrends_7d_rolling_avg', 'GoogleTrends_14d_rolling_avg',
+       'GoogleTrends_30d_rolling_avg', 'GoogleTrends_60d_rolling_avg',
+       'GoogleTrends_90d_rolling_avg', 'BTC_price_7d_rolling_avg',
+       'BTC_price_14d_rolling_avg', 'BTC_price_30d_rolling_avg',
+       'BTC_price_60d_rolling_avg', 'BTC_price_90d_rolling_avg',
+       'ETH_price_7d_rolling_avg', 'ETH_price_14d_rolling_avg',
+       'ETH_price_30d_rolling_avg', 'ETH_price_60d_rolling_avg',
+       'ETH_price_90d_rolling_avg', 'MANA_price_7d_rolling_avg',
+       'MANA_price_14d_rolling_avg', 'MANA_price_30d_rolling_avg',
+       'MANA_price_60d_rolling_avg', 'MANA_price_90d_rolling_avg',
+       'WAX_price_7d_rolling_avg', 'WAX_price_14d_rolling_avg',
+       'WAX_price_30d_rolling_avg', 'WAX_price_60d_rolling_avg',
+       'WAX_price_90d_rolling_avg', 'Ggl_trends_collection',
+       'Ggl_trends_collection_7d_rolling_avg',
+       'Ggl_trends_collection_14d_rolling_avg',
+       'Ggl_trends_collection_30d_rolling_avg',
+       'Ggl_trends_collection_60d_rolling_avg',
+       'Ggl_trends_collection_90d_rolling_avg', 'Price_USD_median_7d',
+       'Price_USD_max_7d', 'Price_USD_median_14d', 'Price_USD_max_14d',
+       'Price_USD_median_30d', 'Price_USD_max_30d', 'Price_USD_median_60d',
+       'Price_USD_max_60d', 'Price_USD_median_90d', 'Price_USD_max_90d',
+       'Price_USD_median_180d', 'Price_USD_max_180d', 'Price_USD_median_365d',
+       'Price_USD_max_365d', 'Price_USD_median_730d', 'Price_USD_max_730d',
+       'Price_Crypto_median_7d', 'Price_Crypto_max_7d',
+       'Price_Crypto_median_14d', 'Price_Crypto_max_14d',
+       'Price_Crypto_median_30d', 'Price_Crypto_max_30d',
+       'Price_Crypto_median_60d', 'Price_Crypto_max_60d',
+       'Price_Crypto_median_90d', 'Price_Crypto_max_90d',
+       'Price_Crypto_median_180d', 'Price_Crypto_max_180d',
+       'Price_Crypto_median_365d', 'Price_Crypto_max_365d',
+       'Price_Crypto_median_730d', 'Price_Crypto_max_730d',
+       'Price_USD_collection_cum_median', 'Price_USD_collection_cum_max',
+       'Price_Crypto_collection_cum_median', 'Price_Crypto_collection_cum_max',
+       'p_resale', 'pca_1', 'pca_2', 'pca_3', 'pca_4', 'pca_5',
+       'trans_count_seller', 'deg_centrality_seller', 'pgrank_seller',
+       'trans_count_buyer', 'deg_centrality_buyer', 'pgrank_buyer',
+       'Category_Art', 'Category_Collectible', 'Category_Games',
+       'Category_Metaverse', 'Category_Other'],
+      dtype='object')","[-1.22517660e+00 -1.62035783e+01 -5.02755638e-01  2.45220410e+00
+  2.69429903e-01 -1.45707378e+00  2.71052203e+00 -2.49168545e+00
+  1.70519824e+00  1.61394802e+00 -1.12357116e+00 -8.78182374e-01
+ -2.46693753e+00 -1.42728231e+00  2.08273336e+00  1.38527925e+00
+  1.83365291e+00 -6.47295461e-03  3.80276496e-01  7.99764726e-01
+ -1.30475708e+00 -2.25867556e+00 -2.24382337e+00  1.37457655e+00
+  1.79552975e+00  7.94410468e-01 -9.57343090e-02  5.22007128e-01
+ -7.36819340e-01 -2.44537519e+00  7.19195242e-02  8.48553465e-01
+  3.78868617e-01  1.91880639e-01  5.12236882e-01 -1.34241810e+00
+ -9.17955820e-01  1.22768617e+00  1.29205931e+00  1.60158656e+00
+  1.29650902e+00  1.16274259e+00  1.27323215e+00  7.17782310e-01
+  1.29409487e+00  9.65000875e-01  1.21451701e+00  1.03615379e+00
+  1.20032122e+00  1.11357434e+00  1.19650257e+00  1.15647057e+00
+  1.19054691e+00  1.32410861e+00 -6.30905488e-01 -3.23890526e-02
+ -3.70416800e-01 -3.97393662e-02 -4.68369858e-01 -3.62790759e-02
+ -4.53573597e-01 -4.57628914e-02 -4.53327257e-01 -4.15885144e-02
+ -4.60079515e-01 -6.18166663e-02 -4.63279061e-01 -5.77506062e-02
+ -4.64554300e-01 -1.05640547e-01  2.79762610e-01  3.46211829e-01
+  4.92368636e-01 -1.89593441e+00 -8.97234616e-01  3.27275312e+00
+  1.61641018e-01  6.14392508e-01 -6.16512258e-01  1.25364114e+00
+ -1.57340814e+00 -1.72281973e+00  1.48117913e+01 -1.57340814e+00
+ -1.29968677e+00  2.93017445e+00 -9.49257811e-01  2.24578949e-01
+ -1.68346773e-02  3.51581756e-01 -1.61621560e-01]",2022-04-05-20:09:13
+16,secondary2-49-lightgbm-fill0-nobal-noscale,NFT sales 2-49,LGBMClassifier(),None,None,0.8946431218823037,0.8935710049883141,0.8789551147246215,0.817200032953124,0.7907055950491677,0.8455315422823889,0.8789551147246216,<sklearn.metrics._plot.confusion_matrix.ConfusionMatrixDisplay object at 0x7fde269f2a50>,"              precision    recall  f1-score   support
+
+           0       0.94      0.91      0.92    329623
+           1       0.79      0.85      0.82    129049
+
+    accuracy                           0.89    458672
+   macro avg       0.86      0.88      0.87    458672
+weighted avg       0.90      0.89      0.89    458672
+","Index(['nft_sales_count', 'First_item_Unique_id_collection', 'GoogleTrends',
+       'BTC_price', 'ETH_price', 'MANA_price', 'WAX_price',
+       'GoogleTrends_7d_rolling_avg', 'GoogleTrends_14d_rolling_avg',
+       'GoogleTrends_30d_rolling_avg', 'GoogleTrends_60d_rolling_avg',
+       'GoogleTrends_90d_rolling_avg', 'BTC_price_7d_rolling_avg',
+       'BTC_price_14d_rolling_avg', 'BTC_price_30d_rolling_avg',
+       'BTC_price_60d_rolling_avg', 'BTC_price_90d_rolling_avg',
+       'ETH_price_7d_rolling_avg', 'ETH_price_14d_rolling_avg',
+       'ETH_price_30d_rolling_avg', 'ETH_price_60d_rolling_avg',
+       'ETH_price_90d_rolling_avg', 'MANA_price_7d_rolling_avg',
+       'MANA_price_14d_rolling_avg', 'MANA_price_30d_rolling_avg',
+       'MANA_price_60d_rolling_avg', 'MANA_price_90d_rolling_avg',
+       'WAX_price_7d_rolling_avg', 'WAX_price_14d_rolling_avg',
+       'WAX_price_30d_rolling_avg', 'WAX_price_60d_rolling_avg',
+       'WAX_price_90d_rolling_avg', 'Ggl_trends_collection',
+       'Ggl_trends_collection_7d_rolling_avg',
+       'Ggl_trends_collection_14d_rolling_avg',
+       'Ggl_trends_collection_30d_rolling_avg',
+       'Ggl_trends_collection_60d_rolling_avg',
+       'Ggl_trends_collection_90d_rolling_avg', 'Price_USD_median_7d',
+       'Price_USD_max_7d', 'Price_USD_median_14d', 'Price_USD_max_14d',
+       'Price_USD_median_30d', 'Price_USD_max_30d', 'Price_USD_median_60d',
+       'Price_USD_max_60d', 'Price_USD_median_90d', 'Price_USD_max_90d',
+       'Price_USD_median_180d', 'Price_USD_max_180d', 'Price_USD_median_365d',
+       'Price_USD_max_365d', 'Price_USD_median_730d', 'Price_USD_max_730d',
+       'Price_Crypto_median_7d', 'Price_Crypto_max_7d',
+       'Price_Crypto_median_14d', 'Price_Crypto_max_14d',
+       'Price_Crypto_median_30d', 'Price_Crypto_max_30d',
+       'Price_Crypto_median_60d', 'Price_Crypto_max_60d',
+       'Price_Crypto_median_90d', 'Price_Crypto_max_90d',
+       'Price_Crypto_median_180d', 'Price_Crypto_max_180d',
+       'Price_Crypto_median_365d', 'Price_Crypto_max_365d',
+       'Price_Crypto_median_730d', 'Price_Crypto_max_730d',
+       'Price_USD_collection_cum_median', 'Price_USD_collection_cum_max',
+       'Price_Crypto_collection_cum_median', 'Price_Crypto_collection_cum_max',
+       'p_resale', 'pca_1', 'pca_2', 'pca_3', 'pca_4', 'pca_5',
+       'trans_count_seller', 'deg_centrality_seller', 'pgrank_seller',
+       'trans_count_buyer', 'deg_centrality_buyer', 'pgrank_buyer',
+       'Category_Art', 'Category_Collectible', 'Category_Games',
+       'Category_Metaverse', 'Category_Other'],
+      dtype='object')","[145  92   3  40  45  39  14  13  13  16  11   0  21  33  15  17  26  16
+   9  11  15  31  20  14   4  11  12  22  10  17  18  32   6  13  14  24
+  15  25  13  11  14  11  15  16  14  18  10   7  23   7  14  22  38  22
+   9  11   9   9  18  14  13   7   5   7  34  18  19  22  25  19 119  55
+ 103  57 208  76  44  54  30  24 150 259 239   0  84  74   9   7  10  21
+   1]",2022-04-05-20:30:52
+17,secondary2-49-lightgbm-fill0-nobal-minmaxscale,NFT sales 2-49,LGBMClassifier(),None,MinMaxScaler,0.8946981721142777,0.8915543133219381,0.8786647898789877,0.8150307718052172,0.7835142207541504,0.8491890677184635,0.8786647898789878,<sklearn.metrics._plot.confusion_matrix.ConfusionMatrixDisplay object at 0x7fde26841c90>,"              precision    recall  f1-score   support
+
+           0       0.94      0.91      0.92    329623
+           1       0.78      0.85      0.82    129049
+
+    accuracy                           0.89    458672
+   macro avg       0.86      0.88      0.87    458672
+weighted avg       0.90      0.89      0.89    458672
+","Index(['nft_sales_count', 'First_item_Unique_id_collection', 'GoogleTrends',
+       'BTC_price', 'ETH_price', 'MANA_price', 'WAX_price',
+       'GoogleTrends_7d_rolling_avg', 'GoogleTrends_14d_rolling_avg',
+       'GoogleTrends_30d_rolling_avg', 'GoogleTrends_60d_rolling_avg',
+       'GoogleTrends_90d_rolling_avg', 'BTC_price_7d_rolling_avg',
+       'BTC_price_14d_rolling_avg', 'BTC_price_30d_rolling_avg',
+       'BTC_price_60d_rolling_avg', 'BTC_price_90d_rolling_avg',
+       'ETH_price_7d_rolling_avg', 'ETH_price_14d_rolling_avg',
+       'ETH_price_30d_rolling_avg', 'ETH_price_60d_rolling_avg',
+       'ETH_price_90d_rolling_avg', 'MANA_price_7d_rolling_avg',
+       'MANA_price_14d_rolling_avg', 'MANA_price_30d_rolling_avg',
+       'MANA_price_60d_rolling_avg', 'MANA_price_90d_rolling_avg',
+       'WAX_price_7d_rolling_avg', 'WAX_price_14d_rolling_avg',
+       'WAX_price_30d_rolling_avg', 'WAX_price_60d_rolling_avg',
+       'WAX_price_90d_rolling_avg', 'Ggl_trends_collection',
+       'Ggl_trends_collection_7d_rolling_avg',
+       'Ggl_trends_collection_14d_rolling_avg',
+       'Ggl_trends_collection_30d_rolling_avg',
+       'Ggl_trends_collection_60d_rolling_avg',
+       'Ggl_trends_collection_90d_rolling_avg', 'Price_USD_median_7d',
+       'Price_USD_max_7d', 'Price_USD_median_14d', 'Price_USD_max_14d',
+       'Price_USD_median_30d', 'Price_USD_max_30d', 'Price_USD_median_60d',
+       'Price_USD_max_60d', 'Price_USD_median_90d', 'Price_USD_max_90d',
+       'Price_USD_median_180d', 'Price_USD_max_180d', 'Price_USD_median_365d',
+       'Price_USD_max_365d', 'Price_USD_median_730d', 'Price_USD_max_730d',
+       'Price_Crypto_median_7d', 'Price_Crypto_max_7d',
+       'Price_Crypto_median_14d', 'Price_Crypto_max_14d',
+       'Price_Crypto_median_30d', 'Price_Crypto_max_30d',
+       'Price_Crypto_median_60d', 'Price_Crypto_max_60d',
+       'Price_Crypto_median_90d', 'Price_Crypto_max_90d',
+       'Price_Crypto_median_180d', 'Price_Crypto_max_180d',
+       'Price_Crypto_median_365d', 'Price_Crypto_max_365d',
+       'Price_Crypto_median_730d', 'Price_Crypto_max_730d',
+       'Price_USD_collection_cum_median', 'Price_USD_collection_cum_max',
+       'Price_Crypto_collection_cum_median', 'Price_Crypto_collection_cum_max',
+       'p_resale', 'pca_1', 'pca_2', 'pca_3', 'pca_4', 'pca_5',
+       'trans_count_seller', 'deg_centrality_seller', 'pgrank_seller',
+       'trans_count_buyer', 'deg_centrality_buyer', 'pgrank_buyer',
+       'Category_Art', 'Category_Collectible', 'Category_Games',
+       'Category_Metaverse', 'Category_Other'],
+      dtype='object')","[148  91   3  39  45  36  15  15   8   9  16   0  19  23  18  16  27  13
+   8  14  13  24  17  12   6  11  11  19  11  18  21  34   6   9  12  26
+  11  26  16  14  11  19  14  17  11  17  13   4  25   8  10  28  35  20
+  10   6   8  13  17  11   7   4   7   7  22  18  15  13  28  17 140  67
+ 110  56 206  85  46  48  34  25 163 252 243   0  82  80  11   5   9  22
+   1]",2022-04-05-20:32:54
+18,secondary2-49-lightgbm-fillcustom-nobal-noscale,NFT sales 2-49,LGBMClassifier(),None,None,0.8945406732998508,0.8935131593316589,0.8798078222931671,0.8176981091156554,0.7890984144854114,0.8484488725421729,0.8798078222931672,<sklearn.metrics._plot.confusion_matrix.ConfusionMatrixDisplay object at 0x7fde26712350>,"              precision    recall  f1-score   support
+
+           0       0.94      0.91      0.92    328976
+           1       0.79      0.85      0.82    128874
+
+    accuracy                           0.89    457850
+   macro avg       0.86      0.88      0.87    457850
+weighted avg       0.90      0.89      0.89    457850
+","Index(['nft_sales_count', 'First_item_Unique_id_collection', 'GoogleTrends',
+       'BTC_price', 'ETH_price', 'MANA_price', 'WAX_price',
+       'GoogleTrends_7d_rolling_avg', 'GoogleTrends_14d_rolling_avg',
+       'GoogleTrends_30d_rolling_avg', 'GoogleTrends_60d_rolling_avg',
+       'GoogleTrends_90d_rolling_avg', 'BTC_price_7d_rolling_avg',
+       'BTC_price_14d_rolling_avg', 'BTC_price_30d_rolling_avg',
+       'BTC_price_60d_rolling_avg', 'BTC_price_90d_rolling_avg',
+       'ETH_price_7d_rolling_avg', 'ETH_price_14d_rolling_avg',
+       'ETH_price_30d_rolling_avg', 'ETH_price_60d_rolling_avg',
+       'ETH_price_90d_rolling_avg', 'MANA_price_7d_rolling_avg',
+       'MANA_price_14d_rolling_avg', 'MANA_price_30d_rolling_avg',
+       'MANA_price_60d_rolling_avg', 'MANA_price_90d_rolling_avg',
+       'WAX_price_7d_rolling_avg', 'WAX_price_14d_rolling_avg',
+       'WAX_price_30d_rolling_avg', 'WAX_price_60d_rolling_avg',
+       'WAX_price_90d_rolling_avg', 'Ggl_trends_collection',
+       'Ggl_trends_collection_7d_rolling_avg',
+       'Ggl_trends_collection_14d_rolling_avg',
+       'Ggl_trends_collection_30d_rolling_avg',
+       'Ggl_trends_collection_60d_rolling_avg',
+       'Ggl_trends_collection_90d_rolling_avg', 'Price_USD_median_7d',
+       'Price_USD_max_7d', 'Price_USD_median_14d', 'Price_USD_max_14d',
+       'Price_USD_median_30d', 'Price_USD_max_30d', 'Price_USD_median_60d',
+       'Price_USD_max_60d', 'Price_USD_median_90d', 'Price_USD_max_90d',
+       'Price_USD_median_180d', 'Price_USD_max_180d', 'Price_USD_median_365d',
+       'Price_USD_max_365d', 'Price_USD_median_730d', 'Price_USD_max_730d',
+       'Price_Crypto_median_7d', 'Price_Crypto_max_7d',
+       'Price_Crypto_median_14d', 'Price_Crypto_max_14d',
+       'Price_Crypto_median_30d', 'Price_Crypto_max_30d',
+       'Price_Crypto_median_60d', 'Price_Crypto_max_60d',
+       'Price_Crypto_median_90d', 'Price_Crypto_max_90d',
+       'Price_Crypto_median_180d', 'Price_Crypto_max_180d',
+       'Price_Crypto_median_365d', 'Price_Crypto_max_365d',
+       'Price_Crypto_median_730d', 'Price_Crypto_max_730d',
+       'Price_USD_collection_cum_median', 'Price_USD_collection_cum_max',
+       'Price_Crypto_collection_cum_median', 'Price_Crypto_collection_cum_max',
+       'p_resale', 'pca_1', 'pca_2', 'pca_3', 'pca_4', 'pca_5',
+       'trans_count_seller', 'deg_centrality_seller', 'pgrank_seller',
+       'trans_count_buyer', 'deg_centrality_buyer', 'pgrank_buyer',
+       'Category_Art', 'Category_Collectible', 'Category_Games',
+       'Category_Metaverse', 'Category_Other'],
+      dtype='object')","[136  91   3  35  31  36  26  16  15  13  16   0  22  38  18  12  25   5
+   4  13  14  15  20   4   8  10  15  19  15  17  29  34   3  13  12  18
+  13  23  12  11  20  13  16  21  16  26  10   9  23   9  10  17  36  24
+   7   9   7  13  17   9   7   6   3  11  18  12  20  11  32  11 132  48
+ 112  62 210  75  27  53  25  36 168 264 274   0  93  81   6   7   6  15
+   3]",2022-04-05-20:35:02
+19,secondary2-49-lightgbm-fillcustom-nobal-minmaxscale,NFT sales 2-49,LGBMClassifier(),None,MinMaxScaler,0.8945286606188279,0.8925783553565578,0.878515428611814,0.8160179556719349,0.7877949599497295,0.8463382839052097,0.8785154286118141,<sklearn.metrics._plot.confusion_matrix.ConfusionMatrixDisplay object at 0x7fde265db9d0>,"              precision    recall  f1-score   support
+
+           0       0.94      0.91      0.92    328976
+           1       0.79      0.85      0.82    128874
+
+    accuracy                           0.89    457850
+   macro avg       0.86      0.88      0.87    457850
+weighted avg       0.90      0.89      0.89    457850
+","Index(['nft_sales_count', 'First_item_Unique_id_collection', 'GoogleTrends',
+       'BTC_price', 'ETH_price', 'MANA_price', 'WAX_price',
+       'GoogleTrends_7d_rolling_avg', 'GoogleTrends_14d_rolling_avg',
+       'GoogleTrends_30d_rolling_avg', 'GoogleTrends_60d_rolling_avg',
+       'GoogleTrends_90d_rolling_avg', 'BTC_price_7d_rolling_avg',
+       'BTC_price_14d_rolling_avg', 'BTC_price_30d_rolling_avg',
+       'BTC_price_60d_rolling_avg', 'BTC_price_90d_rolling_avg',
+       'ETH_price_7d_rolling_avg', 'ETH_price_14d_rolling_avg',
+       'ETH_price_30d_rolling_avg', 'ETH_price_60d_rolling_avg',
+       'ETH_price_90d_rolling_avg', 'MANA_price_7d_rolling_avg',
+       'MANA_price_14d_rolling_avg', 'MANA_price_30d_rolling_avg',
+       'MANA_price_60d_rolling_avg', 'MANA_price_90d_rolling_avg',
+       'WAX_price_7d_rolling_avg', 'WAX_price_14d_rolling_avg',
+       'WAX_price_30d_rolling_avg', 'WAX_price_60d_rolling_avg',
+       'WAX_price_90d_rolling_avg', 'Ggl_trends_collection',
+       'Ggl_trends_collection_7d_rolling_avg',
+       'Ggl_trends_collection_14d_rolling_avg',
+       'Ggl_trends_collection_30d_rolling_avg',
+       'Ggl_trends_collection_60d_rolling_avg',
+       'Ggl_trends_collection_90d_rolling_avg', 'Price_USD_median_7d',
+       'Price_USD_max_7d', 'Price_USD_median_14d', 'Price_USD_max_14d',
+       'Price_USD_median_30d', 'Price_USD_max_30d', 'Price_USD_median_60d',
+       'Price_USD_max_60d', 'Price_USD_median_90d', 'Price_USD_max_90d',
+       'Price_USD_median_180d', 'Price_USD_max_180d', 'Price_USD_median_365d',
+       'Price_USD_max_365d', 'Price_USD_median_730d', 'Price_USD_max_730d',
+       'Price_Crypto_median_7d', 'Price_Crypto_max_7d',
+       'Price_Crypto_median_14d', 'Price_Crypto_max_14d',
+       'Price_Crypto_median_30d', 'Price_Crypto_max_30d',
+       'Price_Crypto_median_60d', 'Price_Crypto_max_60d',
+       'Price_Crypto_median_90d', 'Price_Crypto_max_90d',
+       'Price_Crypto_median_180d', 'Price_Crypto_max_180d',
+       'Price_Crypto_median_365d', 'Price_Crypto_max_365d',
+       'Price_Crypto_median_730d', 'Price_Crypto_max_730d',
+       'Price_USD_collection_cum_median', 'Price_USD_collection_cum_max',
+       'Price_Crypto_collection_cum_median', 'Price_Crypto_collection_cum_max',
+       'p_resale', 'pca_1', 'pca_2', 'pca_3', 'pca_4', 'pca_5',
+       'trans_count_seller', 'deg_centrality_seller', 'pgrank_seller',
+       'trans_count_buyer', 'deg_centrality_buyer', 'pgrank_buyer',
+       'Category_Art', 'Category_Collectible', 'Category_Games',
+       'Category_Metaverse', 'Category_Other'],
+      dtype='object')","[138  92   3  44  35  34  19  11  10  13  12   1  23  34  24  14  35   9
+   8  10  17  20  17   5  11   9  17  22  20  19  26  42   3   7  11  19
+   7  30  21   9  15  17  17  13  19  22  11   7  19   8  19  16  36  21
+  10  12   4  11  16  15   6   7   9   2  24  16  28  19  37  14 125  50
+ 110  73 192  60  25  54  37  45 150 268 255   0  78  76   2   5   6  17
+   1]",2022-04-05-20:36:47
+20,secondary2-49-xgboost-fill0-nobal-noscale,NFT sales 2-49,"XGBClassifier(base_score=0.5, booster='gbtree', colsample_bylevel=1,
+              colsample_bynode=1, colsample_bytree=1, enable_categorical=False,
+              eval_metric='mlogloss', gamma=0, gpu_id=-1, importance_type=None,
+              interaction_constraints='', learning_rate=0.300000012,
+              max_delta_step=0, max_depth=6, min_child_weight=1, missing=nan,
+              monotone_constraints='()', n_estimators=100, n_jobs=8,
+              num_parallel_tree=1, predictor='auto', random_state=0,
+              reg_alpha=0, reg_lambda=1, scale_pos_weight=1, subsample=1,
+              tree_method='exact', use_label_encoder=False,
+              validate_parameters=1, verbosity=None)",None,MinMaxScaler,0.9018067377123522,0.8989997209334775,0.8831470968424034,0.8251241940598245,0.8044443135898247,0.8468953653263489,0.8831470968424034,<sklearn.metrics._plot.confusion_matrix.ConfusionMatrixDisplay object at 0x7fde264a9090>,"              precision    recall  f1-score   support
+
+           0       0.94      0.92      0.93    329623
+           1       0.80      0.85      0.83    129049
+
+    accuracy                           0.90    458672
+   macro avg       0.87      0.88      0.88    458672
+weighted avg       0.90      0.90      0.90    458672
+","Index(['nft_sales_count', 'First_item_Unique_id_collection', 'GoogleTrends',
+       'BTC_price', 'ETH_price', 'MANA_price', 'WAX_price',
+       'GoogleTrends_7d_rolling_avg', 'GoogleTrends_14d_rolling_avg',
+       'GoogleTrends_30d_rolling_avg', 'GoogleTrends_60d_rolling_avg',
+       'GoogleTrends_90d_rolling_avg', 'BTC_price_7d_rolling_avg',
+       'BTC_price_14d_rolling_avg', 'BTC_price_30d_rolling_avg',
+       'BTC_price_60d_rolling_avg', 'BTC_price_90d_rolling_avg',
+       'ETH_price_7d_rolling_avg', 'ETH_price_14d_rolling_avg',
+       'ETH_price_30d_rolling_avg', 'ETH_price_60d_rolling_avg',
+       'ETH_price_90d_rolling_avg', 'MANA_price_7d_rolling_avg',
+       'MANA_price_14d_rolling_avg', 'MANA_price_30d_rolling_avg',
+       'MANA_price_60d_rolling_avg', 'MANA_price_90d_rolling_avg',
+       'WAX_price_7d_rolling_avg', 'WAX_price_14d_rolling_avg',
+       'WAX_price_30d_rolling_avg', 'WAX_price_60d_rolling_avg',
+       'WAX_price_90d_rolling_avg', 'Ggl_trends_collection',
+       'Ggl_trends_collection_7d_rolling_avg',
+       'Ggl_trends_collection_14d_rolling_avg',
+       'Ggl_trends_collection_30d_rolling_avg',
+       'Ggl_trends_collection_60d_rolling_avg',
+       'Ggl_trends_collection_90d_rolling_avg', 'Price_USD_median_7d',
+       'Price_USD_max_7d', 'Price_USD_median_14d', 'Price_USD_max_14d',
+       'Price_USD_median_30d', 'Price_USD_max_30d', 'Price_USD_median_60d',
+       'Price_USD_max_60d', 'Price_USD_median_90d', 'Price_USD_max_90d',
+       'Price_USD_median_180d', 'Price_USD_max_180d', 'Price_USD_median_365d',
+       'Price_USD_max_365d', 'Price_USD_median_730d', 'Price_USD_max_730d',
+       'Price_Crypto_median_7d', 'Price_Crypto_max_7d',
+       'Price_Crypto_median_14d', 'Price_Crypto_max_14d',
+       'Price_Crypto_median_30d', 'Price_Crypto_max_30d',
+       'Price_Crypto_median_60d', 'Price_Crypto_max_60d',
+       'Price_Crypto_median_90d', 'Price_Crypto_max_90d',
+       'Price_Crypto_median_180d', 'Price_Crypto_max_180d',
+       'Price_Crypto_median_365d', 'Price_Crypto_max_365d',
+       'Price_Crypto_median_730d', 'Price_Crypto_max_730d',
+       'Price_USD_collection_cum_median', 'Price_USD_collection_cum_max',
+       'Price_Crypto_collection_cum_median', 'Price_Crypto_collection_cum_max',
+       'p_resale', 'pca_1', 'pca_2', 'pca_3', 'pca_4', 'pca_5',
+       'trans_count_seller', 'deg_centrality_seller', 'pgrank_seller',
+       'trans_count_buyer', 'deg_centrality_buyer', 'pgrank_buyer',
+       'Category_Art', 'Category_Collectible', 'Category_Games',
+       'Category_Metaverse', 'Category_Other'],
+      dtype='object')","[9.8988321e-03 6.3979125e-01 4.9591245e-04 2.9158918e-03 3.1634350e-03
+ 2.8730545e-03 1.0300054e-03 2.3008564e-03 1.4052034e-03 1.3949124e-03
+ 9.5719928e-03 2.7238569e-04 3.3115707e-03 1.1424627e-03 3.4331512e-03
+ 2.3671372e-03 4.2117010e-03 9.2061813e-04 9.1786293e-04 1.1840842e-03
+ 9.4035175e-04 2.0740181e-03 1.1597025e-03 1.6271295e-03 9.7527256e-04
+ 1.1494159e-03 7.0163334e-04 1.5087469e-03 5.5970001e-04 1.5670013e-03
+ 2.3430556e-03 3.8138800e-03 7.7454472e-04 5.4944307e-04 8.8407780e-04
+ 2.8910930e-03 1.9796595e-03 1.5017858e-03 8.1922795e-04 5.2203325e-04
+ 6.2086520e-04 7.3618698e-04 2.6056068e-03 1.0675130e-03 2.3611551e-03
+ 1.2438368e-03 1.1074515e-03 1.2059449e-03 3.6506550e-03 1.2040297e-03
+ 2.7463106e-03 1.6984957e-03 2.9108385e-03 2.9793547e-03 6.3598348e-04
+ 5.7983719e-04 7.5801194e-04 9.4693847e-04 2.9389597e-03 1.2145885e-03
+ 2.0027566e-03 4.9947505e-04 2.9479847e-03 1.3681765e-03 6.7192526e-03
+ 1.1001070e-03 1.0163530e-03 9.9842623e-04 3.7587598e-02 1.5535097e-03
+ 7.1878344e-02 1.1403647e-02 3.1114121e-03 6.9252877e-03 1.0038955e-02
+ 1.2710126e-03 5.7588756e-04 8.6926966e-04 4.0269893e-04 4.6409614e-04
+ 4.6507185e-03 1.9456407e-03 4.3973238e-03 0.0000000e+00 8.1145536e-04
+ 1.0554905e-03 5.6045584e-02 1.6254573e-03 7.5689331e-03 4.4701714e-03
+ 5.3840951e-04]",2022-04-05-21:30:17
+21,secondary2-49-xgboost-fill0-nobal-minmaxscale,NFT sales 2-49,"XGBClassifier(base_score=0.5, booster='gbtree', colsample_bylevel=1,
+              colsample_bynode=1, colsample_bytree=1, enable_categorical=False,
+              eval_metric='mlogloss', gamma=0, gpu_id=-1, importance_type=None,
+              interaction_constraints='', learning_rate=0.300000012,
+              max_delta_step=0, max_depth=6, min_child_weight=1, missing=nan,
+              monotone_constraints='()', n_estimators=100, n_jobs=8,
+              num_parallel_tree=1, predictor='auto', random_state=0,
+              reg_alpha=0, reg_lambda=1, scale_pos_weight=1, subsample=1,
+              tree_method='exact', use_label_encoder=False,
+              validate_parameters=1, verbosity=None)",None,MinMaxScaler,0.9018094629713608,0.8956029581051383,0.8796992889758748,0.8196771934052857,0.7973142266863008,0.8433308278250897,0.8796992889758748,<sklearn.metrics._plot.confusion_matrix.ConfusionMatrixDisplay object at 0x7fde263792d0>,"              precision    recall  f1-score   support
+
+           0       0.94      0.92      0.93    329623
+           1       0.80      0.84      0.82    129049
+
+    accuracy                           0.90    458672
+   macro avg       0.87      0.88      0.87    458672
+weighted avg       0.90      0.90      0.90    458672
+","Index(['nft_sales_count', 'First_item_Unique_id_collection', 'GoogleTrends',
+       'BTC_price', 'ETH_price', 'MANA_price', 'WAX_price',
+       'GoogleTrends_7d_rolling_avg', 'GoogleTrends_14d_rolling_avg',
+       'GoogleTrends_30d_rolling_avg', 'GoogleTrends_60d_rolling_avg',
+       'GoogleTrends_90d_rolling_avg', 'BTC_price_7d_rolling_avg',
+       'BTC_price_14d_rolling_avg', 'BTC_price_30d_rolling_avg',
+       'BTC_price_60d_rolling_avg', 'BTC_price_90d_rolling_avg',
+       'ETH_price_7d_rolling_avg', 'ETH_price_14d_rolling_avg',
+       'ETH_price_30d_rolling_avg', 'ETH_price_60d_rolling_avg',
+       'ETH_price_90d_rolling_avg', 'MANA_price_7d_rolling_avg',
+       'MANA_price_14d_rolling_avg', 'MANA_price_30d_rolling_avg',
+       'MANA_price_60d_rolling_avg', 'MANA_price_90d_rolling_avg',
+       'WAX_price_7d_rolling_avg', 'WAX_price_14d_rolling_avg',
+       'WAX_price_30d_rolling_avg', 'WAX_price_60d_rolling_avg',
+       'WAX_price_90d_rolling_avg', 'Ggl_trends_collection',
+       'Ggl_trends_collection_7d_rolling_avg',
+       'Ggl_trends_collection_14d_rolling_avg',
+       'Ggl_trends_collection_30d_rolling_avg',
+       'Ggl_trends_collection_60d_rolling_avg',
+       'Ggl_trends_collection_90d_rolling_avg', 'Price_USD_median_7d',
+       'Price_USD_max_7d', 'Price_USD_median_14d', 'Price_USD_max_14d',
+       'Price_USD_median_30d', 'Price_USD_max_30d', 'Price_USD_median_60d',
+       'Price_USD_max_60d', 'Price_USD_median_90d', 'Price_USD_max_90d',
+       'Price_USD_median_180d', 'Price_USD_max_180d', 'Price_USD_median_365d',
+       'Price_USD_max_365d', 'Price_USD_median_730d', 'Price_USD_max_730d',
+       'Price_Crypto_median_7d', 'Price_Crypto_max_7d',
+       'Price_Crypto_median_14d', 'Price_Crypto_max_14d',
+       'Price_Crypto_median_30d', 'Price_Crypto_max_30d',
+       'Price_Crypto_median_60d', 'Price_Crypto_max_60d',
+       'Price_Crypto_median_90d', 'Price_Crypto_max_90d',
+       'Price_Crypto_median_180d', 'Price_Crypto_max_180d',
+       'Price_Crypto_median_365d', 'Price_Crypto_max_365d',
+       'Price_Crypto_median_730d', 'Price_Crypto_max_730d',
+       'Price_USD_collection_cum_median', 'Price_USD_collection_cum_max',
+       'Price_Crypto_collection_cum_median', 'Price_Crypto_collection_cum_max',
+       'p_resale', 'pca_1', 'pca_2', 'pca_3', 'pca_4', 'pca_5',
+       'trans_count_seller', 'deg_centrality_seller', 'pgrank_seller',
+       'trans_count_buyer', 'deg_centrality_buyer', 'pgrank_buyer',
+       'Category_Art', 'Category_Collectible', 'Category_Games',
+       'Category_Metaverse', 'Category_Other'],
+      dtype='object')","[9.1167083e-03 6.3622046e-01 7.7803101e-04 2.7481290e-03 2.8239086e-03
+ 3.0673994e-03 1.1320595e-03 1.9036845e-03 1.4271343e-03 1.3585766e-03
+ 1.4115889e-02 1.9575776e-04 2.7058322e-03 1.2142773e-03 2.6483207e-03
+ 2.0648388e-03 4.6710083e-03 7.7108690e-04 9.2827319e-04 1.0666084e-03
+ 1.0194083e-03 1.9308472e-03 9.6022151e-04 1.1224617e-03 1.0775380e-03
+ 1.1874100e-03 5.9942214e-04 1.3930065e-03 6.0928438e-04 1.4993232e-03
+ 2.5063257e-03 4.2069564e-03 7.1016944e-04 6.3858152e-04 1.2496867e-03
+ 2.3359912e-03 2.3007758e-03 1.6030467e-03 7.2813005e-04 5.1689823e-04
+ 6.9180952e-04 7.3577958e-04 2.3176312e-03 1.0382595e-03 2.4544944e-03
+ 1.3976338e-03 8.9832075e-04 1.4576727e-03 2.8362488e-03 1.1709197e-03
+ 3.1817756e-03 1.9708076e-03 2.9962687e-03 2.4605677e-03 6.0965418e-04
+ 5.0201395e-04 9.1543689e-04 1.0457985e-03 3.0516777e-03 1.2687703e-03
+ 2.4136323e-03 5.7163404e-04 3.0380213e-03 1.3294747e-03 7.2286660e-03
+ 8.8339148e-04 6.7837082e-04 9.2429662e-04 3.2656699e-02 1.5391387e-03
+ 7.5280674e-02 9.5789023e-03 2.8062197e-03 6.6377465e-03 9.6573280e-03
+ 1.2414263e-03 5.6102400e-04 7.8694033e-04 3.8870270e-04 4.5264335e-04
+ 4.4275168e-03 1.8637409e-03 4.1000149e-03 0.0000000e+00 7.0078811e-04
+ 9.5009233e-04 6.4850934e-02 1.6715202e-03 5.7748575e-03 4.3949778e-03
+ 4.5564759e-04]",2022-04-05-21:38:45
+22,secondary2-49-xgboost-fillcustom-nobal-noscale,NFT sales 2-49,"XGBClassifier(base_score=0.5, booster='gbtree', colsample_bylevel=1,
+              colsample_bynode=1, colsample_bytree=1, enable_categorical=False,
+              eval_metric='mlogloss', gamma=0, gpu_id=-1, importance_type=None,
+              interaction_constraints='', learning_rate=0.300000012,
+              max_delta_step=0, max_depth=6, min_child_weight=1, missing=nan,
+              monotone_constraints='()', n_estimators=100, n_jobs=8,
+              num_parallel_tree=1, predictor='auto', random_state=0,
+              reg_alpha=0, reg_lambda=1, scale_pos_weight=1, subsample=1,
+              tree_method='exact', use_label_encoder=False,
+              validate_parameters=1, verbosity=None)",None,None,0.9015566250481872,0.8989297804957955,0.8833576243701193,0.825228967991691,0.8038940110815962,0.8477272374567407,0.8833576243701193,<sklearn.metrics._plot.confusion_matrix.ConfusionMatrixDisplay object at 0x7fde261c9510>,"              precision    recall  f1-score   support
+
+           0       0.94      0.92      0.93    328976
+           1       0.80      0.85      0.83    128874
+
+    accuracy                           0.90    457850
+   macro avg       0.87      0.88      0.88    457850
+weighted avg       0.90      0.90      0.90    457850
+","Index(['nft_sales_count', 'First_item_Unique_id_collection', 'GoogleTrends',
+       'BTC_price', 'ETH_price', 'MANA_price', 'WAX_price',
+       'GoogleTrends_7d_rolling_avg', 'GoogleTrends_14d_rolling_avg',
+       'GoogleTrends_30d_rolling_avg', 'GoogleTrends_60d_rolling_avg',
+       'GoogleTrends_90d_rolling_avg', 'BTC_price_7d_rolling_avg',
+       'BTC_price_14d_rolling_avg', 'BTC_price_30d_rolling_avg',
+       'BTC_price_60d_rolling_avg', 'BTC_price_90d_rolling_avg',
+       'ETH_price_7d_rolling_avg', 'ETH_price_14d_rolling_avg',
+       'ETH_price_30d_rolling_avg', 'ETH_price_60d_rolling_avg',
+       'ETH_price_90d_rolling_avg', 'MANA_price_7d_rolling_avg',
+       'MANA_price_14d_rolling_avg', 'MANA_price_30d_rolling_avg',
+       'MANA_price_60d_rolling_avg', 'MANA_price_90d_rolling_avg',
+       'WAX_price_7d_rolling_avg', 'WAX_price_14d_rolling_avg',
+       'WAX_price_30d_rolling_avg', 'WAX_price_60d_rolling_avg',
+       'WAX_price_90d_rolling_avg', 'Ggl_trends_collection',
+       'Ggl_trends_collection_7d_rolling_avg',
+       'Ggl_trends_collection_14d_rolling_avg',
+       'Ggl_trends_collection_30d_rolling_avg',
+       'Ggl_trends_collection_60d_rolling_avg',
+       'Ggl_trends_collection_90d_rolling_avg', 'Price_USD_median_7d',
+       'Price_USD_max_7d', 'Price_USD_median_14d', 'Price_USD_max_14d',
+       'Price_USD_median_30d', 'Price_USD_max_30d', 'Price_USD_median_60d',
+       'Price_USD_max_60d', 'Price_USD_median_90d', 'Price_USD_max_90d',
+       'Price_USD_median_180d', 'Price_USD_max_180d', 'Price_USD_median_365d',
+       'Price_USD_max_365d', 'Price_USD_median_730d', 'Price_USD_max_730d',
+       'Price_Crypto_median_7d', 'Price_Crypto_max_7d',
+       'Price_Crypto_median_14d', 'Price_Crypto_max_14d',
+       'Price_Crypto_median_30d', 'Price_Crypto_max_30d',
+       'Price_Crypto_median_60d', 'Price_Crypto_max_60d',
+       'Price_Crypto_median_90d', 'Price_Crypto_max_90d',
+       'Price_Crypto_median_180d', 'Price_Crypto_max_180d',
+       'Price_Crypto_median_365d', 'Price_Crypto_max_365d',
+       'Price_Crypto_median_730d', 'Price_Crypto_max_730d',
+       'Price_USD_collection_cum_median', 'Price_USD_collection_cum_max',
+       'Price_Crypto_collection_cum_median', 'Price_Crypto_collection_cum_max',
+       'p_resale', 'pca_1', 'pca_2', 'pca_3', 'pca_4', 'pca_5',
+       'trans_count_seller', 'deg_centrality_seller', 'pgrank_seller',
+       'trans_count_buyer', 'deg_centrality_buyer', 'pgrank_buyer',
+       'Category_Art', 'Category_Collectible', 'Category_Games',
+       'Category_Metaverse', 'Category_Other'],
+      dtype='object')","[8.0045685e-03 6.8675935e-01 3.8508675e-04 2.6605781e-03 1.6397862e-03
+ 9.8445907e-04 1.2042434e-03 2.1061304e-03 1.7973324e-03 3.7859797e-03
+ 3.8645470e-03 3.8990541e-04 5.8138096e-03 4.3678829e-03 2.2929509e-03
+ 2.2748655e-03 1.9367541e-03 6.4472290e-04 6.2535191e-04 5.0287799e-04
+ 1.3031743e-03 1.1656230e-03 8.5748610e-04 6.4600917e-04 9.1459468e-04
+ 5.0211855e-04 1.1069779e-03 1.1808424e-03 6.4236461e-04 4.7816038e-03
+ 1.3484682e-03 2.3350252e-03 2.2236477e-03 6.9942581e-04 8.7266008e-04
+ 9.3759602e-04 8.8669994e-04 3.0081819e-03 8.3710108e-04 4.7025416e-04
+ 1.1435197e-03 7.5878779e-04 1.7600508e-03 1.1016555e-03 2.7710821e-03
+ 1.5006948e-03 8.6294150e-04 2.7026215e-03 7.1720015e-03 8.0456305e-04
+ 1.6687721e-03 1.3707043e-03 1.7220986e-03 2.0243833e-03 7.9175486e-04
+ 7.3518028e-04 4.0970981e-04 1.9227979e-03 7.9024391e-04 6.0871406e-04
+ 1.7827376e-03 6.1562244e-04 1.4383559e-03 7.3951471e-04 1.4611420e-02
+ 7.0344441e-04 1.1659730e-03 8.3164021e-04 1.4805860e-02 1.0028686e-03
+ 8.8859864e-02 1.0454610e-02 2.5521696e-03 3.4108260e-03 8.3387671e-03
+ 1.9871108e-02 5.2229821e-04 1.1656597e-03 5.5733247e-04 8.5157022e-04
+ 3.9958772e-03 1.7119895e-03 3.6742091e-03 0.0000000e+00 6.3589058e-04
+ 9.2820521e-04 1.3827157e-03 2.4534941e-03 1.6396482e-02 2.7023510e-03
+ 4.5370328e-04]",2022-04-05-21:47:13
+23,secondary2-49-xgboost-fillcustom-nobal-minmaxscale,NFT sales 2-49,"XGBClassifier(base_score=0.5, booster='gbtree', colsample_bylevel=1,
+              colsample_bynode=1, colsample_bytree=1, enable_categorical=False,
+              eval_metric='mlogloss', gamma=0, gpu_id=-1, importance_type=None,
+              interaction_constraints='', learning_rate=0.300000012,
+              max_delta_step=0, max_depth=6, min_child_weight=1, missing=nan,
+              monotone_constraints='()', n_estimators=100, n_jobs=8,
+              num_parallel_tree=1, predictor='auto', random_state=0,
+              reg_alpha=0, reg_lambda=1, scale_pos_weight=1, subsample=1,
+              tree_method='exact', use_label_encoder=False,
+              validate_parameters=1, verbosity=None)",None,MinMaxScaler,0.9015467964909867,0.8974489461614066,0.8827637338626811,0.8233674287025576,0.7990930930492373,0.8491627481105576,0.8827637338626813,<sklearn.metrics._plot.confusion_matrix.ConfusionMatrixDisplay object at 0x7fde26098750>,"              precision    recall  f1-score   support
+
+           0       0.94      0.92      0.93    328976
+           1       0.80      0.85      0.82    128874
+
+    accuracy                           0.90    457850
+   macro avg       0.87      0.88      0.88    457850
+weighted avg       0.90      0.90      0.90    457850
+","Index(['nft_sales_count', 'First_item_Unique_id_collection', 'GoogleTrends',
+       'BTC_price', 'ETH_price', 'MANA_price', 'WAX_price',
+       'GoogleTrends_7d_rolling_avg', 'GoogleTrends_14d_rolling_avg',
+       'GoogleTrends_30d_rolling_avg', 'GoogleTrends_60d_rolling_avg',
+       'GoogleTrends_90d_rolling_avg', 'BTC_price_7d_rolling_avg',
+       'BTC_price_14d_rolling_avg', 'BTC_price_30d_rolling_avg',
+       'BTC_price_60d_rolling_avg', 'BTC_price_90d_rolling_avg',
+       'ETH_price_7d_rolling_avg', 'ETH_price_14d_rolling_avg',
+       'ETH_price_30d_rolling_avg', 'ETH_price_60d_rolling_avg',
+       'ETH_price_90d_rolling_avg', 'MANA_price_7d_rolling_avg',
+       'MANA_price_14d_rolling_avg', 'MANA_price_30d_rolling_avg',
+       'MANA_price_60d_rolling_avg', 'MANA_price_90d_rolling_avg',
+       'WAX_price_7d_rolling_avg', 'WAX_price_14d_rolling_avg',
+       'WAX_price_30d_rolling_avg', 'WAX_price_60d_rolling_avg',
+       'WAX_price_90d_rolling_avg', 'Ggl_trends_collection',
+       'Ggl_trends_collection_7d_rolling_avg',
+       'Ggl_trends_collection_14d_rolling_avg',
+       'Ggl_trends_collection_30d_rolling_avg',
+       'Ggl_trends_collection_60d_rolling_avg',
+       'Ggl_trends_collection_90d_rolling_avg', 'Price_USD_median_7d',
+       'Price_USD_max_7d', 'Price_USD_median_14d', 'Price_USD_max_14d',
+       'Price_USD_median_30d', 'Price_USD_max_30d', 'Price_USD_median_60d',
+       'Price_USD_max_60d', 'Price_USD_median_90d', 'Price_USD_max_90d',
+       'Price_USD_median_180d', 'Price_USD_max_180d', 'Price_USD_median_365d',
+       'Price_USD_max_365d', 'Price_USD_median_730d', 'Price_USD_max_730d',
+       'Price_Crypto_median_7d', 'Price_Crypto_max_7d',
+       'Price_Crypto_median_14d', 'Price_Crypto_max_14d',
+       'Price_Crypto_median_30d', 'Price_Crypto_max_30d',
+       'Price_Crypto_median_60d', 'Price_Crypto_max_60d',
+       'Price_Crypto_median_90d', 'Price_Crypto_max_90d',
+       'Price_Crypto_median_180d', 'Price_Crypto_max_180d',
+       'Price_Crypto_median_365d', 'Price_Crypto_max_365d',
+       'Price_Crypto_median_730d', 'Price_Crypto_max_730d',
+       'Price_USD_collection_cum_median', 'Price_USD_collection_cum_max',
+       'Price_Crypto_collection_cum_median', 'Price_Crypto_collection_cum_max',
+       'p_resale', 'pca_1', 'pca_2', 'pca_3', 'pca_4', 'pca_5',
+       'trans_count_seller', 'deg_centrality_seller', 'pgrank_seller',
+       'trans_count_buyer', 'deg_centrality_buyer', 'pgrank_buyer',
+       'Category_Art', 'Category_Collectible', 'Category_Games',
+       'Category_Metaverse', 'Category_Other'],
+      dtype='object')","[8.0136359e-03 6.8753636e-01 3.8552252e-04 2.6636042e-03 1.6416439e-03
+ 9.8557537e-04 1.2056486e-03 2.1086200e-03 1.7994160e-03 3.7902927e-03
+ 3.8689249e-03 3.9034654e-04 5.8201216e-03 4.3728338e-03 2.2954843e-03
+ 2.2774320e-03 1.9387555e-03 6.4546324e-04 6.2606187e-04 5.0344755e-04
+ 1.3046329e-03 1.1669871e-03 8.5845392e-04 6.4670347e-04 9.1562764e-04
+ 5.0268898e-04 1.1082268e-03 1.1821664e-03 6.4307911e-04 4.7870106e-03
+ 1.3497528e-03 2.3376760e-03 2.2262041e-03 7.0022390e-04 8.7364507e-04
+ 9.3865284e-04 8.8777265e-04 3.0116760e-03 8.3805219e-04 4.7079293e-04
+ 1.1448149e-03 7.5963861e-04 1.7620412e-03 1.1029613e-03 2.7742172e-03
+ 1.4605944e-03 8.6391333e-04 2.7056769e-03 7.1800449e-03 8.0547563e-04
+ 1.6706338e-03 1.3722569e-03 1.7239412e-03 2.0266920e-03 7.9265144e-04
+ 7.3600869e-04 4.1016471e-04 1.9249737e-03 7.9114106e-04 6.0939958e-04
+ 1.7847890e-03 6.1631552e-04 1.4793844e-03 7.4035837e-04 1.4627934e-02
+ 7.2675827e-04 1.1673078e-03 8.3257176e-04 1.4225698e-02 1.0040156e-03
+ 8.8273995e-02 1.0466421e-02 2.5721991e-03 3.4146807e-03 8.3481763e-03
+ 2.0012669e-02 5.2288530e-04 1.1592562e-03 5.5795669e-04 8.5253874e-04
+ 4.0004179e-03 1.7101414e-03 3.6860069e-03 0.0000000e+00 6.3660956e-04
+ 9.2924980e-04 1.3842715e-03 2.4562604e-03 1.6415020e-02 2.7054267e-03
+ 4.5423704e-04]",2022-04-05-21:55:24
+24,secondary-catboost-fill0-nobal-noscale,NFT secondary sales,<catboost.core.CatBoostClassifier object at 0x7fde39714d90>,None,None,0.811709991132874,0.8106204475206151,0.811346376983067,0.8060729712342616,0.7865639303803825,0.8265743861156974,0.811346376983067,<sklearn.metrics._plot.confusion_matrix.ConfusionMatrixDisplay object at 0x7fde25f69990>,"              precision    recall  f1-score   support
+
+           0       0.83      0.80      0.81    145918
+           1       0.79      0.83      0.81    132639
+
+    accuracy                           0.81    278557
+   macro avg       0.81      0.81      0.81    278557
+weighted avg       0.81      0.81      0.81    278557
+","Index(['nft_sales_count', 'First_item_Unique_id_collection', 'GoogleTrends',
+       'BTC_price', 'ETH_price', 'MANA_price', 'WAX_price',
+       'GoogleTrends_7d_rolling_avg', 'GoogleTrends_14d_rolling_avg',
+       'GoogleTrends_30d_rolling_avg', 'GoogleTrends_60d_rolling_avg',
+       'GoogleTrends_90d_rolling_avg', 'BTC_price_7d_rolling_avg',
+       'BTC_price_14d_rolling_avg', 'BTC_price_30d_rolling_avg',
+       'BTC_price_60d_rolling_avg', 'BTC_price_90d_rolling_avg',
+       'ETH_price_7d_rolling_avg', 'ETH_price_14d_rolling_avg',
+       'ETH_price_30d_rolling_avg', 'ETH_price_60d_rolling_avg',
+       'ETH_price_90d_rolling_avg', 'MANA_price_7d_rolling_avg',
+       'MANA_price_14d_rolling_avg', 'MANA_price_30d_rolling_avg',
+       'MANA_price_60d_rolling_avg', 'MANA_price_90d_rolling_avg',
+       'WAX_price_7d_rolling_avg', 'WAX_price_14d_rolling_avg',
+       'WAX_price_30d_rolling_avg', 'WAX_price_60d_rolling_avg',
+       'WAX_price_90d_rolling_avg', 'Ggl_trends_collection',
+       'Ggl_trends_collection_7d_rolling_avg',
+       'Ggl_trends_collection_14d_rolling_avg',
+       'Ggl_trends_collection_30d_rolling_avg',
+       'Ggl_trends_collection_60d_rolling_avg',
+       'Ggl_trends_collection_90d_rolling_avg', 'Price_USD_median_7d',
+       'Price_USD_max_7d', 'Price_USD_median_14d', 'Price_USD_max_14d',
+       'Price_USD_median_30d', 'Price_USD_max_30d', 'Price_USD_median_60d',
+       'Price_USD_max_60d', 'Price_USD_median_90d', 'Price_USD_max_90d',
+       'Price_USD_median_180d', 'Price_USD_max_180d', 'Price_USD_median_365d',
+       'Price_USD_max_365d', 'Price_USD_median_730d', 'Price_USD_max_730d',
+       'Price_Crypto_median_7d', 'Price_Crypto_max_7d',
+       'Price_Crypto_median_14d', 'Price_Crypto_max_14d',
+       'Price_Crypto_median_30d', 'Price_Crypto_max_30d',
+       'Price_Crypto_median_60d', 'Price_Crypto_max_60d',
+       'Price_Crypto_median_90d', 'Price_Crypto_max_90d',
+       'Price_Crypto_median_180d', 'Price_Crypto_max_180d',
+       'Price_Crypto_median_365d', 'Price_Crypto_max_365d',
+       'Price_Crypto_median_730d', 'Price_Crypto_max_730d',
+       'Price_USD_collection_cum_median', 'Price_USD_collection_cum_max',
+       'Price_Crypto_collection_cum_median', 'Price_Crypto_collection_cum_max',
+       'p_resale', 'pca_1', 'pca_2', 'pca_3', 'pca_4', 'pca_5',
+       'trans_count_seller', 'deg_centrality_seller', 'pgrank_seller',
+       'trans_count_buyer', 'deg_centrality_buyer', 'pgrank_buyer',
+       'Category_Art', 'Category_Collectible', 'Category_Games',
+       'Category_Metaverse', 'Category_Other'],
+      dtype='object')","[19.17274644  0.          0.          1.17217324  1.38633457  0.29098179
+  0.28497063  1.64724413  0.05652074  0.          0.          0.
+  0.16058287  1.26852818  0.72124871  0.          0.29123403  0.
+  0.30040146  0.51013905  0.19853083  0.13394843  0.13609189  0.30427491
+  1.05615596  0.06061392  0.59745139  0.09423823  0.10947578  0.5565574
+  0.2858051   0.42315492  0.02368479  0.          0.          0.047411
+  0.          0.72002285  0.16968352  0.12387365  0.          1.69030089
+  0.          0.19695216  0.51192827  0.22067593  0.33804089  0.08160759
+  0.74273791  0.11780688  0.26693746  0.48845524  0.80061724  0.16978798
+  0.          0.03701929  0.04274266  0.          0.14980567  0.18784325
+  0.62429772  0.          0.02044097  0.13674719  2.73630305  0.04420889
+  0.26890616  0.06397495  2.15049021  0.0197615  11.56711804  3.10286238
+  3.49291036  4.50809706  5.80575845  1.03663423  0.26061295  0.31841938
+  0.18221536  0.23606862  1.43985797  8.18409153  8.40752101  2.74364485
+  0.56466185  0.90360315  1.96172169  0.          0.60775645  0.26397434
+  0.        ]",2022-04-07-01:35:21
+25,secondary-catboost-fill0-nobal-minmaxscale,NFT secondary sales,<catboost.core.CatBoostClassifier object at 0x7fde39714f90>,None,MinMaxScaler,0.8113779226513783,0.8082798134672616,0.809595943583485,0.8061503392051454,0.7773173360959834,0.8372047437028325,0.809595943583485,<sklearn.metrics._plot.confusion_matrix.ConfusionMatrixDisplay object at 0x7fde25e324d0>,"              precision    recall  f1-score   support
+
+           0       0.84      0.78      0.81    145918
+           1       0.78      0.84      0.81    132639
+
+    accuracy                           0.81    278557
+   macro avg       0.81      0.81      0.81    278557
+weighted avg       0.81      0.81      0.81    278557
+","Index(['nft_sales_count', 'First_item_Unique_id_collection', 'GoogleTrends',
+       'BTC_price', 'ETH_price', 'MANA_price', 'WAX_price',
+       'GoogleTrends_7d_rolling_avg', 'GoogleTrends_14d_rolling_avg',
+       'GoogleTrends_30d_rolling_avg', 'GoogleTrends_60d_rolling_avg',
+       'GoogleTrends_90d_rolling_avg', 'BTC_price_7d_rolling_avg',
+       'BTC_price_14d_rolling_avg', 'BTC_price_30d_rolling_avg',
+       'BTC_price_60d_rolling_avg', 'BTC_price_90d_rolling_avg',
+       'ETH_price_7d_rolling_avg', 'ETH_price_14d_rolling_avg',
+       'ETH_price_30d_rolling_avg', 'ETH_price_60d_rolling_avg',
+       'ETH_price_90d_rolling_avg', 'MANA_price_7d_rolling_avg',
+       'MANA_price_14d_rolling_avg', 'MANA_price_30d_rolling_avg',
+       'MANA_price_60d_rolling_avg', 'MANA_price_90d_rolling_avg',
+       'WAX_price_7d_rolling_avg', 'WAX_price_14d_rolling_avg',
+       'WAX_price_30d_rolling_avg', 'WAX_price_60d_rolling_avg',
+       'WAX_price_90d_rolling_avg', 'Ggl_trends_collection',
+       'Ggl_trends_collection_7d_rolling_avg',
+       'Ggl_trends_collection_14d_rolling_avg',
+       'Ggl_trends_collection_30d_rolling_avg',
+       'Ggl_trends_collection_60d_rolling_avg',
+       'Ggl_trends_collection_90d_rolling_avg', 'Price_USD_median_7d',
+       'Price_USD_max_7d', 'Price_USD_median_14d', 'Price_USD_max_14d',
+       'Price_USD_median_30d', 'Price_USD_max_30d', 'Price_USD_median_60d',
+       'Price_USD_max_60d', 'Price_USD_median_90d', 'Price_USD_max_90d',
+       'Price_USD_median_180d', 'Price_USD_max_180d', 'Price_USD_median_365d',
+       'Price_USD_max_365d', 'Price_USD_median_730d', 'Price_USD_max_730d',
+       'Price_Crypto_median_7d', 'Price_Crypto_max_7d',
+       'Price_Crypto_median_14d', 'Price_Crypto_max_14d',
+       'Price_Crypto_median_30d', 'Price_Crypto_max_30d',
+       'Price_Crypto_median_60d', 'Price_Crypto_max_60d',
+       'Price_Crypto_median_90d', 'Price_Crypto_max_90d',
+       'Price_Crypto_median_180d', 'Price_Crypto_max_180d',
+       'Price_Crypto_median_365d', 'Price_Crypto_max_365d',
+       'Price_Crypto_median_730d', 'Price_Crypto_max_730d',
+       'Price_USD_collection_cum_median', 'Price_USD_collection_cum_max',
+       'Price_Crypto_collection_cum_median', 'Price_Crypto_collection_cum_max',
+       'p_resale', 'pca_1', 'pca_2', 'pca_3', 'pca_4', 'pca_5',
+       'trans_count_seller', 'deg_centrality_seller', 'pgrank_seller',
+       'trans_count_buyer', 'deg_centrality_buyer', 'pgrank_buyer',
+       'Category_Art', 'Category_Collectible', 'Category_Games',
+       'Category_Metaverse', 'Category_Other'],
+      dtype='object')","[1.77737516e+01 0.00000000e+00 0.00000000e+00 2.16315225e-02
+ 1.31431898e+00 6.08672839e-01 1.79339630e-01 8.91675422e-01
+ 4.37165289e-01 0.00000000e+00 0.00000000e+00 7.33740848e-02
+ 6.81121322e-02 1.04532306e+00 1.57862364e+00 4.35037657e-01
+ 1.53451854e+00 5.64173379e-01 0.00000000e+00 7.51660299e-02
+ 1.65573627e-01 1.32212026e-01 2.00195784e-01 4.12853008e-01
+ 6.98274461e-01 6.20868262e-01 0.00000000e+00 5.53157511e-01
+ 7.04527911e-02 6.33281736e-01 2.60188387e-01 7.03045306e-01
+ 0.00000000e+00 7.48578901e-02 3.16565078e-02 6.99177856e-01
+ 2.14419185e-02 1.98713966e-01 8.73214143e-02 1.13524066e-01
+ 0.00000000e+00 1.60510030e+00 1.98738364e-01 6.91612358e-02
+ 1.03268296e-01 8.95755197e-02 0.00000000e+00 4.08784496e-01
+ 2.12532747e-01 1.31253385e-01 5.84277258e-01 1.18431899e-01
+ 2.80898420e-01 7.59112034e-02 0.00000000e+00 1.10811870e-01
+ 9.68151399e-03 0.00000000e+00 5.23100069e-01 1.44831863e-01
+ 2.55473447e-02 0.00000000e+00 0.00000000e+00 1.74214170e-01
+ 2.34186329e+00 1.42328423e-01 5.18955288e-01 8.03303432e-02
+ 2.59424161e+00 6.84883824e-02 1.18551719e+01 2.80924075e+00
+ 2.81924808e+00 3.83454681e+00 4.66440021e+00 1.11757150e+00
+ 1.36660089e-01 8.77654159e-01 1.19587631e-01 1.67283040e-01
+ 2.34062542e+00 1.05049285e+01 8.97810546e+00 3.29915301e+00
+ 6.32150860e-01 8.38365983e-01 1.73870485e+00 0.00000000e+00
+ 1.54968093e-01 2.21626066e-01 0.00000000e+00]",2022-04-07-01:38:33
+26,secondary-catboost-fillcustom-nobal-noscale,NFT secondary sales,<catboost.core.CatBoostClassifier object at 0x7fde39714710>,None,None,0.8130283347114837,0.8115739124488481,0.8122948521718214,0.8074186879722204,0.7878339770002728,0.8280019313758035,0.8122948521718214,<sklearn.metrics._plot.confusion_matrix.ConfusionMatrixDisplay object at 0x7fde25ceffd0>,"              precision    recall  f1-score   support
+
+           0       0.84      0.80      0.82    145301
+           1       0.79      0.83      0.81    132548
+
+    accuracy                           0.81    277849
+   macro avg       0.81      0.81      0.81    277849
+weighted avg       0.81      0.81      0.81    277849
+","Index(['nft_sales_count', 'First_item_Unique_id_collection', 'GoogleTrends',
+       'BTC_price', 'ETH_price', 'MANA_price', 'WAX_price',
+       'GoogleTrends_7d_rolling_avg', 'GoogleTrends_14d_rolling_avg',
+       'GoogleTrends_30d_rolling_avg', 'GoogleTrends_60d_rolling_avg',
+       'GoogleTrends_90d_rolling_avg', 'BTC_price_7d_rolling_avg',
+       'BTC_price_14d_rolling_avg', 'BTC_price_30d_rolling_avg',
+       'BTC_price_60d_rolling_avg', 'BTC_price_90d_rolling_avg',
+       'ETH_price_7d_rolling_avg', 'ETH_price_14d_rolling_avg',
+       'ETH_price_30d_rolling_avg', 'ETH_price_60d_rolling_avg',
+       'ETH_price_90d_rolling_avg', 'MANA_price_7d_rolling_avg',
+       'MANA_price_14d_rolling_avg', 'MANA_price_30d_rolling_avg',
+       'MANA_price_60d_rolling_avg', 'MANA_price_90d_rolling_avg',
+       'WAX_price_7d_rolling_avg', 'WAX_price_14d_rolling_avg',
+       'WAX_price_30d_rolling_avg', 'WAX_price_60d_rolling_avg',
+       'WAX_price_90d_rolling_avg', 'Ggl_trends_collection',
+       'Ggl_trends_collection_7d_rolling_avg',
+       'Ggl_trends_collection_14d_rolling_avg',
+       'Ggl_trends_collection_30d_rolling_avg',
+       'Ggl_trends_collection_60d_rolling_avg',
+       'Ggl_trends_collection_90d_rolling_avg', 'Price_USD_median_7d',
+       'Price_USD_max_7d', 'Price_USD_median_14d', 'Price_USD_max_14d',
+       'Price_USD_median_30d', 'Price_USD_max_30d', 'Price_USD_median_60d',
+       'Price_USD_max_60d', 'Price_USD_median_90d', 'Price_USD_max_90d',
+       'Price_USD_median_180d', 'Price_USD_max_180d', 'Price_USD_median_365d',
+       'Price_USD_max_365d', 'Price_USD_median_730d', 'Price_USD_max_730d',
+       'Price_Crypto_median_7d', 'Price_Crypto_max_7d',
+       'Price_Crypto_median_14d', 'Price_Crypto_max_14d',
+       'Price_Crypto_median_30d', 'Price_Crypto_max_30d',
+       'Price_Crypto_median_60d', 'Price_Crypto_max_60d',
+       'Price_Crypto_median_90d', 'Price_Crypto_max_90d',
+       'Price_Crypto_median_180d', 'Price_Crypto_max_180d',
+       'Price_Crypto_median_365d', 'Price_Crypto_max_365d',
+       'Price_Crypto_median_730d', 'Price_Crypto_max_730d',
+       'Price_USD_collection_cum_median', 'Price_USD_collection_cum_max',
+       'Price_Crypto_collection_cum_median', 'Price_Crypto_collection_cum_max',
+       'p_resale', 'pca_1', 'pca_2', 'pca_3', 'pca_4', 'pca_5',
+       'trans_count_seller', 'deg_centrality_seller', 'pgrank_seller',
+       'trans_count_buyer', 'deg_centrality_buyer', 'pgrank_buyer',
+       'Category_Art', 'Category_Collectible', 'Category_Games',
+       'Category_Metaverse', 'Category_Other'],
+      dtype='object')","[17.87952136  0.          0.33420264  0.58278633  0.35056141  0.21383982
+  0.24153406  0.18000892  0.48985984  0.04538783  0.          0.
+  0.36165989  1.36466728  0.0474129   1.2841587   0.37970193  0.
+  0.17821593  0.98597121  0.1594488   0.29643584  0.16183093  0.33855764
+  0.04765846  0.1126872   0.06993095  0.13731908  0.12313576  0.06894968
+  0.4451995   0.40716745  0.10596801  0.07162363  0.1211985   0.21186893
+  0.          0.30618038  0.          0.20201873  0.04340458  0.73212767
+  0.59595236  0.          0.13210582  0.336279    0.25131644  0.
+  0.39256352  0.          0.          0.07015596  0.705957    0.65897542
+  0.          0.          0.          0.34341501  0.7681722   0.
+  0.82545756  0.          0.1845949   0.08546656  0.19004983  0.19610488
+  1.48932509  0.02805033  2.62623505  0.1075374  16.15201613  3.13409557
+  2.16624974  0.86526332  8.3189384   6.8753878   0.10901369  0.41556423
+  0.13974849  0.32187902  1.2735186  10.85348924  6.07817487  2.7253287
+  0.52253999  0.70212377  0.          0.          0.          0.27675235
+  0.        ]",2022-04-07-01:41:10
+27,secondary-catboost-fillcustom-nobal-minmaxscale,NFT secondary sales,<catboost.core.CatBoostClassifier object at 0x7fde39714b10>,None,MinMaxScaler,0.8126351344663859,0.8047572602384748,0.8070867915511672,0.8073976240689063,0.7625578432030045,0.8578401786522618,0.8070867915511671,<sklearn.metrics._plot.confusion_matrix.ConfusionMatrixDisplay object at 0x7fde25bb6b10>,"              precision    recall  f1-score   support
+
+           0       0.85      0.76      0.80    145301
+           1       0.76      0.86      0.81    132548
+
+    accuracy                           0.80    277849
+   macro avg       0.81      0.81      0.80    277849
+weighted avg       0.81      0.80      0.80    277849
+","Index(['nft_sales_count', 'First_item_Unique_id_collection', 'GoogleTrends',
+       'BTC_price', 'ETH_price', 'MANA_price', 'WAX_price',
+       'GoogleTrends_7d_rolling_avg', 'GoogleTrends_14d_rolling_avg',
+       'GoogleTrends_30d_rolling_avg', 'GoogleTrends_60d_rolling_avg',
+       'GoogleTrends_90d_rolling_avg', 'BTC_price_7d_rolling_avg',
+       'BTC_price_14d_rolling_avg', 'BTC_price_30d_rolling_avg',
+       'BTC_price_60d_rolling_avg', 'BTC_price_90d_rolling_avg',
+       'ETH_price_7d_rolling_avg', 'ETH_price_14d_rolling_avg',
+       'ETH_price_30d_rolling_avg', 'ETH_price_60d_rolling_avg',
+       'ETH_price_90d_rolling_avg', 'MANA_price_7d_rolling_avg',
+       'MANA_price_14d_rolling_avg', 'MANA_price_30d_rolling_avg',
+       'MANA_price_60d_rolling_avg', 'MANA_price_90d_rolling_avg',
+       'WAX_price_7d_rolling_avg', 'WAX_price_14d_rolling_avg',
+       'WAX_price_30d_rolling_avg', 'WAX_price_60d_rolling_avg',
+       'WAX_price_90d_rolling_avg', 'Ggl_trends_collection',
+       'Ggl_trends_collection_7d_rolling_avg',
+       'Ggl_trends_collection_14d_rolling_avg',
+       'Ggl_trends_collection_30d_rolling_avg',
+       'Ggl_trends_collection_60d_rolling_avg',
+       'Ggl_trends_collection_90d_rolling_avg', 'Price_USD_median_7d',
+       'Price_USD_max_7d', 'Price_USD_median_14d', 'Price_USD_max_14d',
+       'Price_USD_median_30d', 'Price_USD_max_30d', 'Price_USD_median_60d',
+       'Price_USD_max_60d', 'Price_USD_median_90d', 'Price_USD_max_90d',
+       'Price_USD_median_180d', 'Price_USD_max_180d', 'Price_USD_median_365d',
+       'Price_USD_max_365d', 'Price_USD_median_730d', 'Price_USD_max_730d',
+       'Price_Crypto_median_7d', 'Price_Crypto_max_7d',
+       'Price_Crypto_median_14d', 'Price_Crypto_max_14d',
+       'Price_Crypto_median_30d', 'Price_Crypto_max_30d',
+       'Price_Crypto_median_60d', 'Price_Crypto_max_60d',
+       'Price_Crypto_median_90d', 'Price_Crypto_max_90d',
+       'Price_Crypto_median_180d', 'Price_Crypto_max_180d',
+       'Price_Crypto_median_365d', 'Price_Crypto_max_365d',
+       'Price_Crypto_median_730d', 'Price_Crypto_max_730d',
+       'Price_USD_collection_cum_median', 'Price_USD_collection_cum_max',
+       'Price_Crypto_collection_cum_median', 'Price_Crypto_collection_cum_max',
+       'p_resale', 'pca_1', 'pca_2', 'pca_3', 'pca_4', 'pca_5',
+       'trans_count_seller', 'deg_centrality_seller', 'pgrank_seller',
+       'trans_count_buyer', 'deg_centrality_buyer', 'pgrank_buyer',
+       'Category_Art', 'Category_Collectible', 'Category_Games',
+       'Category_Metaverse', 'Category_Other'],
+      dtype='object')","[18.05004027  0.          0.33559028  0.43387142  0.08261284  0.25444742
+  0.88549651  0.22837116  0.49204227  0.          0.          0.
+  0.39227031  0.64570731  0.63728346  0.91725978  0.28147118  0.11828274
+  0.08210079  1.22322705  0.          0.523852    0.2051216   0.43201027
+  0.02973302  0.          0.14915002  0.03766165  0.33678505  0.
+  0.63755488  0.52757936  0.10032222  0.          0.          0.05563991
+  0.04405091  0.34324965  0.          0.14433706  0.05874027  0.78049394
+  0.63478588  0.21306457  0.          0.03784816  0.22225966  0.
+  0.29704159  0.0897778   0.66845001  0.08630966  0.63699367  0.70624326
+  0.07108313  0.          0.03087709  0.38372262  0.78397137  0.
+  0.82913515  0.06837096  0.43667268  0.          0.20141612  0.10670392
+  0.80586858  0.          2.80745191  0.03505769 17.22146033  2.66586892
+  0.70501909  1.08828753  8.73781866  6.51822475  0.05079425  0.5110486
+  0.23318465  0.29982463  1.4191713   9.0950008   6.71617791  2.83522183
+  0.68086375  0.84317394  0.          0.20386488  0.33485574  0.22067633
+  0.        ]",2022-04-07-01:43:39
+28,secondary2-49-catboost-fill0-nobal-noscale,NFT sales 2-49,<catboost.core.CatBoostClassifier object at 0x7fde39714f10>,None,None,0.892645507028988,0.8916262601597655,0.875774903849976,0.8134000030031384,0.7888509454706966,0.8395260714922239,0.8757749038499761,<sklearn.metrics._plot.confusion_matrix.ConfusionMatrixDisplay object at 0x7fde25a061d0>,"              precision    recall  f1-score   support
+
+           0       0.94      0.91      0.92    329623
+           1       0.79      0.84      0.81    129049
+
+    accuracy                           0.89    458672
+   macro avg       0.86      0.88      0.87    458672
+weighted avg       0.89      0.89      0.89    458672
+","Index(['nft_sales_count', 'First_item_Unique_id_collection', 'GoogleTrends',
+       'BTC_price', 'ETH_price', 'MANA_price', 'WAX_price',
+       'GoogleTrends_7d_rolling_avg', 'GoogleTrends_14d_rolling_avg',
+       'GoogleTrends_30d_rolling_avg', 'GoogleTrends_60d_rolling_avg',
+       'GoogleTrends_90d_rolling_avg', 'BTC_price_7d_rolling_avg',
+       'BTC_price_14d_rolling_avg', 'BTC_price_30d_rolling_avg',
+       'BTC_price_60d_rolling_avg', 'BTC_price_90d_rolling_avg',
+       'ETH_price_7d_rolling_avg', 'ETH_price_14d_rolling_avg',
+       'ETH_price_30d_rolling_avg', 'ETH_price_60d_rolling_avg',
+       'ETH_price_90d_rolling_avg', 'MANA_price_7d_rolling_avg',
+       'MANA_price_14d_rolling_avg', 'MANA_price_30d_rolling_avg',
+       'MANA_price_60d_rolling_avg', 'MANA_price_90d_rolling_avg',
+       'WAX_price_7d_rolling_avg', 'WAX_price_14d_rolling_avg',
+       'WAX_price_30d_rolling_avg', 'WAX_price_60d_rolling_avg',
+       'WAX_price_90d_rolling_avg', 'Ggl_trends_collection',
+       'Ggl_trends_collection_7d_rolling_avg',
+       'Ggl_trends_collection_14d_rolling_avg',
+       'Ggl_trends_collection_30d_rolling_avg',
+       'Ggl_trends_collection_60d_rolling_avg',
+       'Ggl_trends_collection_90d_rolling_avg', 'Price_USD_median_7d',
+       'Price_USD_max_7d', 'Price_USD_median_14d', 'Price_USD_max_14d',
+       'Price_USD_median_30d', 'Price_USD_max_30d', 'Price_USD_median_60d',
+       'Price_USD_max_60d', 'Price_USD_median_90d', 'Price_USD_max_90d',
+       'Price_USD_median_180d', 'Price_USD_max_180d', 'Price_USD_median_365d',
+       'Price_USD_max_365d', 'Price_USD_median_730d', 'Price_USD_max_730d',
+       'Price_Crypto_median_7d', 'Price_Crypto_max_7d',
+       'Price_Crypto_median_14d', 'Price_Crypto_max_14d',
+       'Price_Crypto_median_30d', 'Price_Crypto_max_30d',
+       'Price_Crypto_median_60d', 'Price_Crypto_max_60d',
+       'Price_Crypto_median_90d', 'Price_Crypto_max_90d',
+       'Price_Crypto_median_180d', 'Price_Crypto_max_180d',
+       'Price_Crypto_median_365d', 'Price_Crypto_max_365d',
+       'Price_Crypto_median_730d', 'Price_Crypto_max_730d',
+       'Price_USD_collection_cum_median', 'Price_USD_collection_cum_max',
+       'Price_Crypto_collection_cum_median', 'Price_Crypto_collection_cum_max',
+       'p_resale', 'pca_1', 'pca_2', 'pca_3', 'pca_4', 'pca_5',
+       'trans_count_seller', 'deg_centrality_seller', 'pgrank_seller',
+       'trans_count_buyer', 'deg_centrality_buyer', 'pgrank_buyer',
+       'Category_Art', 'Category_Collectible', 'Category_Games',
+       'Category_Metaverse', 'Category_Other'],
+      dtype='object')","[1.52568067e+00 8.80700920e+01 0.00000000e+00 4.36810845e-02
+ 2.85095385e-02 2.95138942e-02 0.00000000e+00 3.22501371e-02
+ 6.84368477e-02 6.21972877e-02 0.00000000e+00 4.01454703e-03
+ 1.14290275e-02 2.66387743e-01 2.37030528e-02 1.51803082e-02
+ 1.53433673e-01 1.82638259e-02 9.99368404e-03 3.87741461e-02
+ 1.62986343e-02 1.33329210e-01 1.90686092e-02 4.29671855e-02
+ 1.06248415e-02 2.00876824e-01 0.00000000e+00 2.97322746e-02
+ 2.56535780e-02 0.00000000e+00 3.10805336e-02 2.02970976e-02
+ 1.31693336e-02 0.00000000e+00 0.00000000e+00 5.31376185e-02
+ 3.97275973e-02 1.12775009e-02 2.42884249e-03 6.71811234e-03
+ 2.48408252e-01 1.08004329e-01 0.00000000e+00 2.20699246e-02
+ 0.00000000e+00 1.92763636e-02 2.75723499e-03 7.56228989e-02
+ 0.00000000e+00 0.00000000e+00 1.87425874e-02 4.87378641e-02
+ 4.52919648e-02 0.00000000e+00 2.37615330e-02 0.00000000e+00
+ 0.00000000e+00 9.14984128e-03 3.65060424e-01 4.52861296e-03
+ 0.00000000e+00 0.00000000e+00 4.54285405e-01 0.00000000e+00
+ 0.00000000e+00 0.00000000e+00 4.13739955e-02 0.00000000e+00
+ 2.04677909e-02 7.50883473e-03 1.98543968e+00 4.72684936e-02
+ 4.12532897e-01 2.27016427e-01 9.85068550e-01 5.20187466e-01
+ 1.12539607e-02 5.93845944e-02 1.80225772e-02 3.29129228e-03
+ 1.94227823e-01 5.17143218e-01 1.13204848e+00 2.84935088e-01
+ 5.39771560e-02 7.31523947e-02 4.85715718e-01 3.14021406e-01
+ 8.70632484e-02 1.52724242e-02 0.00000000e+00]",2022-04-07-01:46:42
+29,secondary2-49-catboost-fill0-nobal-minmaxscale,NFT sales 2-49,<catboost.core.CatBoostClassifier object at 0x7fde39714a50>,None,MinMaxScaler,0.8923936930965919,0.8891473645655283,0.8730977306522091,0.8093672319349723,0.7840311473980881,0.8363954776867701,0.8730977306522091,<sklearn.metrics._plot.confusion_matrix.ConfusionMatrixDisplay object at 0x7fde258d7410>,"              precision    recall  f1-score   support
+
+           0       0.93      0.91      0.92    329623
+           1       0.78      0.84      0.81    129049
+
+    accuracy                           0.89    458672
+   macro avg       0.86      0.87      0.87    458672
+weighted avg       0.89      0.89      0.89    458672
+","Index(['nft_sales_count', 'First_item_Unique_id_collection', 'GoogleTrends',
+       'BTC_price', 'ETH_price', 'MANA_price', 'WAX_price',
+       'GoogleTrends_7d_rolling_avg', 'GoogleTrends_14d_rolling_avg',
+       'GoogleTrends_30d_rolling_avg', 'GoogleTrends_60d_rolling_avg',
+       'GoogleTrends_90d_rolling_avg', 'BTC_price_7d_rolling_avg',
+       'BTC_price_14d_rolling_avg', 'BTC_price_30d_rolling_avg',
+       'BTC_price_60d_rolling_avg', 'BTC_price_90d_rolling_avg',
+       'ETH_price_7d_rolling_avg', 'ETH_price_14d_rolling_avg',
+       'ETH_price_30d_rolling_avg', 'ETH_price_60d_rolling_avg',
+       'ETH_price_90d_rolling_avg', 'MANA_price_7d_rolling_avg',
+       'MANA_price_14d_rolling_avg', 'MANA_price_30d_rolling_avg',
+       'MANA_price_60d_rolling_avg', 'MANA_price_90d_rolling_avg',
+       'WAX_price_7d_rolling_avg', 'WAX_price_14d_rolling_avg',
+       'WAX_price_30d_rolling_avg', 'WAX_price_60d_rolling_avg',
+       'WAX_price_90d_rolling_avg', 'Ggl_trends_collection',
+       'Ggl_trends_collection_7d_rolling_avg',
+       'Ggl_trends_collection_14d_rolling_avg',
+       'Ggl_trends_collection_30d_rolling_avg',
+       'Ggl_trends_collection_60d_rolling_avg',
+       'Ggl_trends_collection_90d_rolling_avg', 'Price_USD_median_7d',
+       'Price_USD_max_7d', 'Price_USD_median_14d', 'Price_USD_max_14d',
+       'Price_USD_median_30d', 'Price_USD_max_30d', 'Price_USD_median_60d',
+       'Price_USD_max_60d', 'Price_USD_median_90d', 'Price_USD_max_90d',
+       'Price_USD_median_180d', 'Price_USD_max_180d', 'Price_USD_median_365d',
+       'Price_USD_max_365d', 'Price_USD_median_730d', 'Price_USD_max_730d',
+       'Price_Crypto_median_7d', 'Price_Crypto_max_7d',
+       'Price_Crypto_median_14d', 'Price_Crypto_max_14d',
+       'Price_Crypto_median_30d', 'Price_Crypto_max_30d',
+       'Price_Crypto_median_60d', 'Price_Crypto_max_60d',
+       'Price_Crypto_median_90d', 'Price_Crypto_max_90d',
+       'Price_Crypto_median_180d', 'Price_Crypto_max_180d',
+       'Price_Crypto_median_365d', 'Price_Crypto_max_365d',
+       'Price_Crypto_median_730d', 'Price_Crypto_max_730d',
+       'Price_USD_collection_cum_median', 'Price_USD_collection_cum_max',
+       'Price_Crypto_collection_cum_median', 'Price_Crypto_collection_cum_max',
+       'p_resale', 'pca_1', 'pca_2', 'pca_3', 'pca_4', 'pca_5',
+       'trans_count_seller', 'deg_centrality_seller', 'pgrank_seller',
+       'trans_count_buyer', 'deg_centrality_buyer', 'pgrank_buyer',
+       'Category_Art', 'Category_Collectible', 'Category_Games',
+       'Category_Metaverse', 'Category_Other'],
+      dtype='object')","[1.34234391e+00 8.82300850e+01 0.00000000e+00 3.80393895e-02
+ 2.31827845e-02 1.24831146e-01 7.09403127e-03 2.43425059e-02
+ 7.37593685e-02 6.22695534e-02 0.00000000e+00 0.00000000e+00
+ 3.11407898e-02 2.83638908e-01 4.28937175e-02 0.00000000e+00
+ 1.31294997e-01 2.05718174e-02 0.00000000e+00 7.55013259e-03
+ 2.28348161e-02 5.49995495e-02 4.15789442e-02 2.04611972e-02
+ 8.53108122e-03 2.08656954e-01 0.00000000e+00 0.00000000e+00
+ 0.00000000e+00 1.27719578e-02 1.37734045e-02 6.59986992e-02
+ 0.00000000e+00 4.02500198e-03 0.00000000e+00 2.19367860e-02
+ 0.00000000e+00 2.48025740e-02 9.27751046e-03 6.33991290e-03
+ 2.45563876e-01 1.07716789e-01 0.00000000e+00 1.59678735e-02
+ 1.73628009e-02 1.44083924e-02 0.00000000e+00 8.26515020e-02
+ 2.40826059e-02 0.00000000e+00 1.66139568e-02 1.72851938e-02
+ 2.16544507e-01 9.20731598e-03 2.82393600e-02 0.00000000e+00
+ 0.00000000e+00 3.30104928e-02 3.44487067e-01 4.07133090e-03
+ 0.00000000e+00 0.00000000e+00 4.19306630e-01 4.63983989e-03
+ 0.00000000e+00 8.87173194e-03 0.00000000e+00 7.32210654e-03
+ 5.94011463e-02 0.00000000e+00 1.92939490e+00 1.14329691e-01
+ 5.20473950e-01 2.59818620e-01 9.75509194e-01 1.80400293e-01
+ 6.49702267e-03 4.46276466e-02 8.66514041e-03 2.21835772e-02
+ 9.66886641e-02 6.67820755e-01 1.25440070e+00 2.73104419e-01
+ 7.15938627e-02 9.33248289e-02 4.91412582e-01 3.12157524e-01
+ 1.92529418e-02 1.84539695e-02 4.10872507e-03]",2022-04-07-01:49:26
+30,secondary2-49-catboost-fillcustom-nobal-noscale,NFT sales 2-49,<catboost.core.CatBoostClassifier object at 0x7fde39714e90>,None,None,0.8922063909647165,0.8913071966801354,0.8759364640003617,0.8132442179449171,0.7874662965035575,0.8407669506649906,0.8759364640003617,<sklearn.metrics._plot.confusion_matrix.ConfusionMatrixDisplay object at 0x7fde2579da90>,"              precision    recall  f1-score   support
+
+           0       0.94      0.91      0.92    328976
+           1       0.79      0.84      0.81    128874
+
+    accuracy                           0.89    457850
+   macro avg       0.86      0.88      0.87    457850
+weighted avg       0.89      0.89      0.89    457850
+","Index(['nft_sales_count', 'First_item_Unique_id_collection', 'GoogleTrends',
+       'BTC_price', 'ETH_price', 'MANA_price', 'WAX_price',
+       'GoogleTrends_7d_rolling_avg', 'GoogleTrends_14d_rolling_avg',
+       'GoogleTrends_30d_rolling_avg', 'GoogleTrends_60d_rolling_avg',
+       'GoogleTrends_90d_rolling_avg', 'BTC_price_7d_rolling_avg',
+       'BTC_price_14d_rolling_avg', 'BTC_price_30d_rolling_avg',
+       'BTC_price_60d_rolling_avg', 'BTC_price_90d_rolling_avg',
+       'ETH_price_7d_rolling_avg', 'ETH_price_14d_rolling_avg',
+       'ETH_price_30d_rolling_avg', 'ETH_price_60d_rolling_avg',
+       'ETH_price_90d_rolling_avg', 'MANA_price_7d_rolling_avg',
+       'MANA_price_14d_rolling_avg', 'MANA_price_30d_rolling_avg',
+       'MANA_price_60d_rolling_avg', 'MANA_price_90d_rolling_avg',
+       'WAX_price_7d_rolling_avg', 'WAX_price_14d_rolling_avg',
+       'WAX_price_30d_rolling_avg', 'WAX_price_60d_rolling_avg',
+       'WAX_price_90d_rolling_avg', 'Ggl_trends_collection',
+       'Ggl_trends_collection_7d_rolling_avg',
+       'Ggl_trends_collection_14d_rolling_avg',
+       'Ggl_trends_collection_30d_rolling_avg',
+       'Ggl_trends_collection_60d_rolling_avg',
+       'Ggl_trends_collection_90d_rolling_avg', 'Price_USD_median_7d',
+       'Price_USD_max_7d', 'Price_USD_median_14d', 'Price_USD_max_14d',
+       'Price_USD_median_30d', 'Price_USD_max_30d', 'Price_USD_median_60d',
+       'Price_USD_max_60d', 'Price_USD_median_90d', 'Price_USD_max_90d',
+       'Price_USD_median_180d', 'Price_USD_max_180d', 'Price_USD_median_365d',
+       'Price_USD_max_365d', 'Price_USD_median_730d', 'Price_USD_max_730d',
+       'Price_Crypto_median_7d', 'Price_Crypto_max_7d',
+       'Price_Crypto_median_14d', 'Price_Crypto_max_14d',
+       'Price_Crypto_median_30d', 'Price_Crypto_max_30d',
+       'Price_Crypto_median_60d', 'Price_Crypto_max_60d',
+       'Price_Crypto_median_90d', 'Price_Crypto_max_90d',
+       'Price_Crypto_median_180d', 'Price_Crypto_max_180d',
+       'Price_Crypto_median_365d', 'Price_Crypto_max_365d',
+       'Price_Crypto_median_730d', 'Price_Crypto_max_730d',
+       'Price_USD_collection_cum_median', 'Price_USD_collection_cum_max',
+       'Price_Crypto_collection_cum_median', 'Price_Crypto_collection_cum_max',
+       'p_resale', 'pca_1', 'pca_2', 'pca_3', 'pca_4', 'pca_5',
+       'trans_count_seller', 'deg_centrality_seller', 'pgrank_seller',
+       'trans_count_buyer', 'deg_centrality_buyer', 'pgrank_buyer',
+       'Category_Art', 'Category_Collectible', 'Category_Games',
+       'Category_Metaverse', 'Category_Other'],
+      dtype='object')","[1.49448593e+00 8.87376478e+01 0.00000000e+00 1.48536095e-01
+ 0.00000000e+00 1.30954722e-02 1.00705321e-02 7.25928492e-02
+ 0.00000000e+00 2.74906194e-01 0.00000000e+00 8.61554961e-03
+ 0.00000000e+00 5.95644798e-02 2.40109448e-02 2.01797572e-01
+ 6.16951433e-02 4.18741897e-03 0.00000000e+00 3.66290927e-03
+ 5.85875236e-02 8.56986576e-02 1.69964897e-02 3.72715187e-02
+ 4.27254993e-03 8.57050285e-03 1.01389439e-02 3.25493585e-02
+ 1.59107718e-02 0.00000000e+00 1.16623929e-01 2.35021096e-02
+ 1.36018214e-03 4.90719906e-02 1.25014203e-02 6.62688158e-03
+ 4.10554755e-03 3.24639318e-02 0.00000000e+00 3.49429851e-03
+ 0.00000000e+00 7.38324613e-03 1.46229805e-02 7.15010339e-03
+ 0.00000000e+00 6.62628163e-03 3.53577605e-01 0.00000000e+00
+ 7.64798714e-02 5.00009763e-02 2.66505466e-01 3.10668773e-02
+ 1.66910043e-01 0.00000000e+00 0.00000000e+00 7.02784534e-03
+ 1.40583011e-03 7.52806854e-03 1.80707295e-01 4.49352155e-03
+ 2.86236387e-02 0.00000000e+00 3.11778875e-03 5.18279154e-03
+ 6.30586174e-02 5.42073703e-04 7.36956695e-02 2.09971481e-02
+ 2.74777800e-01 5.57258153e-03 8.39684976e-01 4.87183009e-01
+ 1.15954155e-01 8.61508744e-02 1.12072612e+00 4.55715303e-01
+ 5.78465163e-03 1.56150925e-02 7.84539420e-03 2.17538371e-02
+ 1.85727725e-01 7.67934635e-01 1.20712826e+00 1.39815567e-01
+ 1.30327624e-01 1.30107354e-01 9.48059144e-01 6.13056229e-03
+ 1.68201658e-02 1.98658994e-02 0.00000000e+00]",2022-04-07-01:52:00
+31,secondary2-49-catboost-fillcustom-nobal-minmaxscale,NFT sales 2-49,<catboost.core.CatBoostClassifier object at 0x7fde3970a710>,None,MinMaxScaler,0.8921359529714459,0.8888391394561538,0.8717340484610442,0.8083014746040416,0.7853843845382481,0.8325961792138057,0.8717340484610442,<sklearn.metrics._plot.confusion_matrix.ConfusionMatrixDisplay object at 0x7fde2566e150>,"              precision    recall  f1-score   support
+
+           0       0.93      0.91      0.92    328976
+           1       0.79      0.83      0.81    128874
+
+    accuracy                           0.89    457850
+   macro avg       0.86      0.87      0.87    457850
+weighted avg       0.89      0.89      0.89    457850
+","Index(['nft_sales_count', 'First_item_Unique_id_collection', 'GoogleTrends',
+       'BTC_price', 'ETH_price', 'MANA_price', 'WAX_price',
+       'GoogleTrends_7d_rolling_avg', 'GoogleTrends_14d_rolling_avg',
+       'GoogleTrends_30d_rolling_avg', 'GoogleTrends_60d_rolling_avg',
+       'GoogleTrends_90d_rolling_avg', 'BTC_price_7d_rolling_avg',
+       'BTC_price_14d_rolling_avg', 'BTC_price_30d_rolling_avg',
+       'BTC_price_60d_rolling_avg', 'BTC_price_90d_rolling_avg',
+       'ETH_price_7d_rolling_avg', 'ETH_price_14d_rolling_avg',
+       'ETH_price_30d_rolling_avg', 'ETH_price_60d_rolling_avg',
+       'ETH_price_90d_rolling_avg', 'MANA_price_7d_rolling_avg',
+       'MANA_price_14d_rolling_avg', 'MANA_price_30d_rolling_avg',
+       'MANA_price_60d_rolling_avg', 'MANA_price_90d_rolling_avg',
+       'WAX_price_7d_rolling_avg', 'WAX_price_14d_rolling_avg',
+       'WAX_price_30d_rolling_avg', 'WAX_price_60d_rolling_avg',
+       'WAX_price_90d_rolling_avg', 'Ggl_trends_collection',
+       'Ggl_trends_collection_7d_rolling_avg',
+       'Ggl_trends_collection_14d_rolling_avg',
+       'Ggl_trends_collection_30d_rolling_avg',
+       'Ggl_trends_collection_60d_rolling_avg',
+       'Ggl_trends_collection_90d_rolling_avg', 'Price_USD_median_7d',
+       'Price_USD_max_7d', 'Price_USD_median_14d', 'Price_USD_max_14d',
+       'Price_USD_median_30d', 'Price_USD_max_30d', 'Price_USD_median_60d',
+       'Price_USD_max_60d', 'Price_USD_median_90d', 'Price_USD_max_90d',
+       'Price_USD_median_180d', 'Price_USD_max_180d', 'Price_USD_median_365d',
+       'Price_USD_max_365d', 'Price_USD_median_730d', 'Price_USD_max_730d',
+       'Price_Crypto_median_7d', 'Price_Crypto_max_7d',
+       'Price_Crypto_median_14d', 'Price_Crypto_max_14d',
+       'Price_Crypto_median_30d', 'Price_Crypto_max_30d',
+       'Price_Crypto_median_60d', 'Price_Crypto_max_60d',
+       'Price_Crypto_median_90d', 'Price_Crypto_max_90d',
+       'Price_Crypto_median_180d', 'Price_Crypto_max_180d',
+       'Price_Crypto_median_365d', 'Price_Crypto_max_365d',
+       'Price_Crypto_median_730d', 'Price_Crypto_max_730d',
+       'Price_USD_collection_cum_median', 'Price_USD_collection_cum_max',
+       'Price_Crypto_collection_cum_median', 'Price_Crypto_collection_cum_max',
+       'p_resale', 'pca_1', 'pca_2', 'pca_3', 'pca_4', 'pca_5',
+       'trans_count_seller', 'deg_centrality_seller', 'pgrank_seller',
+       'trans_count_buyer', 'deg_centrality_buyer', 'pgrank_buyer',
+       'Category_Art', 'Category_Collectible', 'Category_Games',
+       'Category_Metaverse', 'Category_Other'],
+      dtype='object')","[1.48291292e+00 8.89543188e+01 6.72000977e-03 1.71178704e-01
+ 0.00000000e+00 1.37922030e-02 9.70655532e-03 7.27828455e-02
+ 0.00000000e+00 2.81902314e-01 0.00000000e+00 8.64182092e-03
+ 3.54712092e-03 5.87040068e-02 3.32559883e-02 1.94567232e-01
+ 3.20358835e-02 0.00000000e+00 1.05776654e-02 5.35584929e-03
+ 5.87178456e-02 7.45287981e-02 6.83381973e-03 3.79212672e-02
+ 0.00000000e+00 1.27098734e-03 0.00000000e+00 4.50703402e-02
+ 4.17463628e-03 7.27525772e-03 1.12118269e-01 2.35636213e-02
+ 5.73698032e-03 4.27424779e-02 0.00000000e+00 1.05650131e-02
+ 9.86305726e-03 4.53532022e-02 0.00000000e+00 8.24126197e-03
+ 0.00000000e+00 4.07186021e-03 1.46612530e-02 4.42705054e-03
+ 6.51344313e-03 2.49766911e-03 3.54494258e-01 0.00000000e+00
+ 7.91315906e-02 5.01318431e-02 2.67205623e-01 3.45811916e-02
+ 1.48867277e-01 1.67680784e-03 0.00000000e+00 5.55780732e-03
+ 1.40972626e-03 0.00000000e+00 1.81180258e-01 0.00000000e+00
+ 2.47616675e-02 0.00000000e+00 0.00000000e+00 2.78197910e-02
+ 6.82566123e-02 8.42088449e-04 7.38885521e-02 2.10521036e-02
+ 2.80179460e-01 1.45198486e-02 8.32196917e-01 4.90951489e-01
+ 1.38005492e-01 9.65530419e-02 1.05595928e+00 4.19423723e-01
+ 1.12250992e-02 7.77965223e-03 1.61560385e-02 1.40384835e-02
+ 1.82741716e-01 7.77374263e-01 1.21124500e+00 1.46253959e-01
+ 4.39256775e-02 8.37387629e-02 9.50540486e-01 0.00000000e+00
+ 0.00000000e+00 2.01863472e-02 0.00000000e+00]",2022-04-07-01:55:00
+0,secondary-tabnet-fill0-nobal-noscale,NFT secondary sales,"TabNetClassifier(n_d=8, n_a=8, n_steps=3, gamma=1.3, cat_idxs=[], cat_dims=[], cat_emb_dim=1, n_independent=2, n_shared=2, epsilon=1e-15, momentum=0.02, lambda_sparse=0.001, seed=0, clip_value=1, verbose=1, optimizer_fn=<class 'torch.optim.adam.Adam'>, optimizer_params={'lr': 0.02}, scheduler_fn=<class 'torch.optim.lr_scheduler.StepLR'>, scheduler_params={'step_size': 50, 'gamma': 0.9}, mask_type='entmax', input_dim=91, output_dim=2, device_name='auto')",None,None,,,0.8027188509869996,0.7963466267310074,0.7814450346889605,0.8118275921863102,0.8027188509869997,,"              precision    recall  f1-score   support
+
+           0       0.82      0.79      0.81    145918
+           1       0.78      0.81      0.80    132639
+
+    accuracy                           0.80    278557
+   macro avg       0.80      0.80      0.80    278557
+weighted avg       0.80      0.80      0.80    278557
+","Index(['nft_sales_count', 'First_item_Unique_id_collection', 'GoogleTrends',
+       'BTC_price', 'ETH_price', 'MANA_price', 'WAX_price',
+       'GoogleTrends_7d_rolling_avg', 'GoogleTrends_14d_rolling_avg',
+       'GoogleTrends_30d_rolling_avg', 'GoogleTrends_60d_rolling_avg',
+       'GoogleTrends_90d_rolling_avg', 'BTC_price_7d_rolling_avg',
+       'BTC_price_14d_rolling_avg', 'BTC_price_30d_rolling_avg',
+       'BTC_price_60d_rolling_avg', 'BTC_price_90d_rolling_avg',
+       'ETH_price_7d_rolling_avg', 'ETH_price_14d_rolling_avg',
+       'ETH_price_30d_rolling_avg', 'ETH_price_60d_rolling_avg',
+       'ETH_price_90d_rolling_avg', 'MANA_price_7d_rolling_avg',
+       'MANA_price_14d_rolling_avg', 'MANA_price_30d_rolling_avg',
+       'MANA_price_60d_rolling_avg', 'MANA_price_90d_rolling_avg',
+       'WAX_price_7d_rolling_avg', 'WAX_price_14d_rolling_avg',
+       'WAX_price_30d_rolling_avg', 'WAX_price_60d_rolling_avg',
+       'WAX_price_90d_rolling_avg', 'Ggl_trends_collection',
+       'Ggl_trends_collection_7d_rolling_avg',
+       'Ggl_trends_collection_14d_rolling_avg',
+       'Ggl_trends_collection_30d_rolling_avg',
+       'Ggl_trends_collection_60d_rolling_avg',
+       'Ggl_trends_collection_90d_rolling_avg', 'Price_USD_median_7d',
+       'Price_USD_max_7d', 'Price_USD_median_14d', 'Price_USD_max_14d',
+       'Price_USD_median_30d', 'Price_USD_max_30d', 'Price_USD_median_60d',
+       'Price_USD_max_60d', 'Price_USD_median_90d', 'Price_USD_max_90d',
+       'Price_USD_median_180d', 'Price_USD_max_180d', 'Price_USD_median_365d',
+       'Price_USD_max_365d', 'Price_USD_median_730d', 'Price_USD_max_730d',
+       'Price_Crypto_median_7d', 'Price_Crypto_max_7d',
+       'Price_Crypto_median_14d', 'Price_Crypto_max_14d',
+       'Price_Crypto_median_30d', 'Price_Crypto_max_30d',
+       'Price_Crypto_median_60d', 'Price_Crypto_max_60d',
+       'Price_Crypto_median_90d', 'Price_Crypto_max_90d',
+       'Price_Crypto_median_180d', 'Price_Crypto_max_180d',
+       'Price_Crypto_median_365d', 'Price_Crypto_max_365d',
+       'Price_Crypto_median_730d', 'Price_Crypto_max_730d',
+       'Price_USD_collection_cum_median', 'Price_USD_collection_cum_max',
+       'Price_Crypto_collection_cum_median', 'Price_Crypto_collection_cum_max',
+       'p_resale', 'pca_1', 'pca_2', 'pca_3', 'pca_4', 'pca_5',
+       'trans_count_seller', 'deg_centrality_seller', 'pgrank_seller',
+       'trans_count_buyer', 'deg_centrality_buyer', 'pgrank_buyer',
+       'Category_Art', 'Category_Collectible', 'Category_Games',
+       'Category_Metaverse', 'Category_Other'],
+      dtype='object')","[2.12438049e-01 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ 0.00000000e+00 0.00000000e+00 3.03307548e-02 0.00000000e+00
+ 2.31795113e-02 7.87044232e-03 0.00000000e+00 0.00000000e+00
+ 0.00000000e+00 0.00000000e+00 3.43196504e-03 7.29660659e-03
+ 0.00000000e+00 0.00000000e+00 9.83913283e-02 2.70822102e-02
+ 0.00000000e+00 4.44991075e-03 0.00000000e+00 0.00000000e+00
+ 6.14712788e-02 3.83113886e-02 0.00000000e+00 6.04706941e-03
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ 0.00000000e+00 2.63823097e-03 4.61181311e-03 1.28836797e-03
+ 8.63049809e-08 8.26343320e-03 0.00000000e+00 0.00000000e+00
+ 6.11537307e-02 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ 0.00000000e+00 0.00000000e+00 4.92830676e-06 9.40594436e-03
+ 0.00000000e+00 1.64899068e-02 6.61637269e-02 2.11702815e-02
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ 0.00000000e+00 1.52774452e-01 0.00000000e+00 1.73078770e-02
+ 0.00000000e+00 0.00000000e+00 7.15820360e-02 0.00000000e+00
+ 4.68446698e-02 0.00000000e+00 0.00000000e+00]",2022-04-08-14:02:12
+1,secondary-tabnet-fill0-nobal-minmaxscale,NFT secondary sales,"TabNetClassifier(n_d=8, n_a=8, n_steps=3, gamma=1.3, cat_idxs=[], cat_dims=[], cat_emb_dim=1, n_independent=2, n_shared=2, epsilon=1e-15, momentum=0.02, lambda_sparse=0.001, seed=0, clip_value=1, verbose=1, optimizer_fn=<class 'torch.optim.adam.Adam'>, optimizer_params={'lr': 0.02}, scheduler_fn=<class 'torch.optim.lr_scheduler.StepLR'>, scheduler_params={'step_size': 50, 'gamma': 0.9}, mask_type='entmax', input_dim=91, output_dim=2, device_name='auto')",None,MinMaxScaler,,,0.7816210121423006,0.7633852554750268,0.7978578239568606,0.7317681828119934,0.7816210121423006,,"              precision    recall  f1-score   support
+
+           0       0.77      0.83      0.80    145918
+           1       0.80      0.73      0.76    132639
+
+    accuracy                           0.78    278557
+   macro avg       0.79      0.78      0.78    278557
+weighted avg       0.78      0.78      0.78    278557
+","Index(['nft_sales_count', 'First_item_Unique_id_collection', 'GoogleTrends',
+       'BTC_price', 'ETH_price', 'MANA_price', 'WAX_price',
+       'GoogleTrends_7d_rolling_avg', 'GoogleTrends_14d_rolling_avg',
+       'GoogleTrends_30d_rolling_avg', 'GoogleTrends_60d_rolling_avg',
+       'GoogleTrends_90d_rolling_avg', 'BTC_price_7d_rolling_avg',
+       'BTC_price_14d_rolling_avg', 'BTC_price_30d_rolling_avg',
+       'BTC_price_60d_rolling_avg', 'BTC_price_90d_rolling_avg',
+       'ETH_price_7d_rolling_avg', 'ETH_price_14d_rolling_avg',
+       'ETH_price_30d_rolling_avg', 'ETH_price_60d_rolling_avg',
+       'ETH_price_90d_rolling_avg', 'MANA_price_7d_rolling_avg',
+       'MANA_price_14d_rolling_avg', 'MANA_price_30d_rolling_avg',
+       'MANA_price_60d_rolling_avg', 'MANA_price_90d_rolling_avg',
+       'WAX_price_7d_rolling_avg', 'WAX_price_14d_rolling_avg',
+       'WAX_price_30d_rolling_avg', 'WAX_price_60d_rolling_avg',
+       'WAX_price_90d_rolling_avg', 'Ggl_trends_collection',
+       'Ggl_trends_collection_7d_rolling_avg',
+       'Ggl_trends_collection_14d_rolling_avg',
+       'Ggl_trends_collection_30d_rolling_avg',
+       'Ggl_trends_collection_60d_rolling_avg',
+       'Ggl_trends_collection_90d_rolling_avg', 'Price_USD_median_7d',
+       'Price_USD_max_7d', 'Price_USD_median_14d', 'Price_USD_max_14d',
+       'Price_USD_median_30d', 'Price_USD_max_30d', 'Price_USD_median_60d',
+       'Price_USD_max_60d', 'Price_USD_median_90d', 'Price_USD_max_90d',
+       'Price_USD_median_180d', 'Price_USD_max_180d', 'Price_USD_median_365d',
+       'Price_USD_max_365d', 'Price_USD_median_730d', 'Price_USD_max_730d',
+       'Price_Crypto_median_7d', 'Price_Crypto_max_7d',
+       'Price_Crypto_median_14d', 'Price_Crypto_max_14d',
+       'Price_Crypto_median_30d', 'Price_Crypto_max_30d',
+       'Price_Crypto_median_60d', 'Price_Crypto_max_60d',
+       'Price_Crypto_median_90d', 'Price_Crypto_max_90d',
+       'Price_Crypto_median_180d', 'Price_Crypto_max_180d',
+       'Price_Crypto_median_365d', 'Price_Crypto_max_365d',
+       'Price_Crypto_median_730d', 'Price_Crypto_max_730d',
+       'Price_USD_collection_cum_median', 'Price_USD_collection_cum_max',
+       'Price_Crypto_collection_cum_median', 'Price_Crypto_collection_cum_max',
+       'p_resale', 'pca_1', 'pca_2', 'pca_3', 'pca_4', 'pca_5',
+       'trans_count_seller', 'deg_centrality_seller', 'pgrank_seller',
+       'trans_count_buyer', 'deg_centrality_buyer', 'pgrank_buyer',
+       'Category_Art', 'Category_Collectible', 'Category_Games',
+       'Category_Metaverse', 'Category_Other'],
+      dtype='object')","[1.64800282e-01 2.09536441e-03 1.14197850e-02 2.27721869e-03
+ 1.11494937e-09 1.42620224e-07 9.82963183e-09 4.12047530e-05
+ 9.39080876e-07 1.57972912e-03 5.90088910e-02 1.85710663e-02
+ 1.15140254e-01 1.13729456e-07 2.97195022e-02 6.05201663e-03
+ 1.29628891e-02 2.10550919e-02 7.99461360e-04 1.76003850e-05
+ 1.02263894e-02 0.00000000e+00 0.00000000e+00 1.06595467e-06
+ 0.00000000e+00 1.46987586e-02 3.67842902e-02 6.28470654e-03
+ 9.56798490e-03 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ 4.08729565e-03 9.47645446e-06 1.63989388e-02 8.13465745e-10
+ 2.42236956e-11 4.58689805e-03 2.62648344e-02 1.04142555e-03
+ 4.32734135e-05 5.35024503e-04 0.00000000e+00 5.53629572e-04
+ 1.31491650e-05 8.00274773e-03 2.82143537e-02 0.00000000e+00
+ 0.00000000e+00 3.94082670e-10 0.00000000e+00 1.51166030e-03
+ 0.00000000e+00 3.93418459e-04 3.75620983e-09 1.83106992e-07
+ 3.06293829e-07 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ 5.14110551e-09 0.00000000e+00 8.56385396e-03 3.81272403e-05
+ 9.17819687e-09 4.49718103e-08 0.00000000e+00 0.00000000e+00
+ 1.95624895e-06 2.47710352e-08 2.80440870e-02 2.00522498e-02
+ 8.34943437e-06 6.15982544e-02 1.86526071e-02 5.34601996e-02
+ 3.12092684e-02 0.00000000e+00 0.00000000e+00 1.05820112e-08
+ 0.00000000e+00 3.25422983e-02 7.35121501e-02 1.46582354e-02
+ 0.00000000e+00 0.00000000e+00 2.03395348e-02 2.07907935e-05
+ 2.25365319e-02 1.33667019e-08 1.88620633e-08]",2022-04-08-14:39:00
+2,secondary-tabnet-fillcustom-nobal-noscale,NFT secondary sales,"TabNetClassifier(n_d=8, n_a=8, n_steps=3, gamma=1.3, cat_idxs=[], cat_dims=[], cat_emb_dim=1, n_independent=2, n_shared=2, epsilon=1e-15, momentum=0.02, lambda_sparse=0.001, seed=0, clip_value=1, verbose=1, optimizer_fn=<class 'torch.optim.adam.Adam'>, optimizer_params={'lr': 0.02}, scheduler_fn=<class 'torch.optim.lr_scheduler.StepLR'>, scheduler_params={'step_size': 50, 'gamma': 0.9}, mask_type='entmax', input_dim=91, output_dim=2, device_name='auto')",None,None,,,0.7990412211607139,0.7966552064466449,0.7648218463012196,0.8312535836074478,0.799041221160714,,"              precision    recall  f1-score   support
+
+           0       0.83      0.77      0.80    145301
+           1       0.76      0.83      0.80    132548
+
+    accuracy                           0.80    277849
+   macro avg       0.80      0.80      0.80    277849
+weighted avg       0.80      0.80      0.80    277849
+","Index(['nft_sales_count', 'First_item_Unique_id_collection', 'GoogleTrends',
+       'BTC_price', 'ETH_price', 'MANA_price', 'WAX_price',
+       'GoogleTrends_7d_rolling_avg', 'GoogleTrends_14d_rolling_avg',
+       'GoogleTrends_30d_rolling_avg', 'GoogleTrends_60d_rolling_avg',
+       'GoogleTrends_90d_rolling_avg', 'BTC_price_7d_rolling_avg',
+       'BTC_price_14d_rolling_avg', 'BTC_price_30d_rolling_avg',
+       'BTC_price_60d_rolling_avg', 'BTC_price_90d_rolling_avg',
+       'ETH_price_7d_rolling_avg', 'ETH_price_14d_rolling_avg',
+       'ETH_price_30d_rolling_avg', 'ETH_price_60d_rolling_avg',
+       'ETH_price_90d_rolling_avg', 'MANA_price_7d_rolling_avg',
+       'MANA_price_14d_rolling_avg', 'MANA_price_30d_rolling_avg',
+       'MANA_price_60d_rolling_avg', 'MANA_price_90d_rolling_avg',
+       'WAX_price_7d_rolling_avg', 'WAX_price_14d_rolling_avg',
+       'WAX_price_30d_rolling_avg', 'WAX_price_60d_rolling_avg',
+       'WAX_price_90d_rolling_avg', 'Ggl_trends_collection',
+       'Ggl_trends_collection_7d_rolling_avg',
+       'Ggl_trends_collection_14d_rolling_avg',
+       'Ggl_trends_collection_30d_rolling_avg',
+       'Ggl_trends_collection_60d_rolling_avg',
+       'Ggl_trends_collection_90d_rolling_avg', 'Price_USD_median_7d',
+       'Price_USD_max_7d', 'Price_USD_median_14d', 'Price_USD_max_14d',
+       'Price_USD_median_30d', 'Price_USD_max_30d', 'Price_USD_median_60d',
+       'Price_USD_max_60d', 'Price_USD_median_90d', 'Price_USD_max_90d',
+       'Price_USD_median_180d', 'Price_USD_max_180d', 'Price_USD_median_365d',
+       'Price_USD_max_365d', 'Price_USD_median_730d', 'Price_USD_max_730d',
+       'Price_Crypto_median_7d', 'Price_Crypto_max_7d',
+       'Price_Crypto_median_14d', 'Price_Crypto_max_14d',
+       'Price_Crypto_median_30d', 'Price_Crypto_max_30d',
+       'Price_Crypto_median_60d', 'Price_Crypto_max_60d',
+       'Price_Crypto_median_90d', 'Price_Crypto_max_90d',
+       'Price_Crypto_median_180d', 'Price_Crypto_max_180d',
+       'Price_Crypto_median_365d', 'Price_Crypto_max_365d',
+       'Price_Crypto_median_730d', 'Price_Crypto_max_730d',
+       'Price_USD_collection_cum_median', 'Price_USD_collection_cum_max',
+       'Price_Crypto_collection_cum_median', 'Price_Crypto_collection_cum_max',
+       'p_resale', 'pca_1', 'pca_2', 'pca_3', 'pca_4', 'pca_5',
+       'trans_count_seller', 'deg_centrality_seller', 'pgrank_seller',
+       'trans_count_buyer', 'deg_centrality_buyer', 'pgrank_buyer',
+       'Category_Art', 'Category_Collectible', 'Category_Games',
+       'Category_Metaverse', 'Category_Other'],
+      dtype='object')","[1.39503494e-01 1.00058132e-02 1.33764514e-02 0.00000000e+00
+ 0.00000000e+00 0.00000000e+00 1.88724820e-02 7.29767353e-03
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00 1.98557048e-02
+ 0.00000000e+00 1.19464065e-06 1.22618205e-02 9.13951576e-03
+ 4.13320660e-04 0.00000000e+00 2.10113982e-02 0.00000000e+00
+ 6.29815926e-03 0.00000000e+00 0.00000000e+00 1.26158472e-02
+ 1.94801529e-02 1.38273071e-03 4.79581743e-02 0.00000000e+00
+ 4.93590036e-02 4.13713382e-03 0.00000000e+00 0.00000000e+00
+ 1.15277242e-02 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ 0.00000000e+00 1.81340711e-09 6.64054867e-02 0.00000000e+00
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00 3.79566515e-10
+ 8.84276934e-11 0.00000000e+00 1.88144804e-02 1.66838669e-03
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ 0.00000000e+00 0.00000000e+00 8.60210225e-04 0.00000000e+00
+ 0.00000000e+00 0.00000000e+00 4.31761820e-10 2.14889915e-03
+ 0.00000000e+00 2.55849511e-02 2.81785682e-01 7.85917917e-02
+ 0.00000000e+00 3.17906013e-02 0.00000000e+00 0.00000000e+00
+ 6.92986428e-03 5.86032002e-02 0.00000000e+00 6.10201405e-03
+ 5.10981082e-04 0.00000000e+00 1.57056529e-02 0.00000000e+00
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00]",2022-04-08-15:39:58
+3,secondary-tabnet-fillcustom-nobal-minmaxscale,NFT secondary sales,"TabNetClassifier(n_d=8, n_a=8, n_steps=3, gamma=1.3, cat_idxs=[], cat_dims=[], cat_emb_dim=1, n_independent=2, n_shared=2, epsilon=1e-15, momentum=0.02, lambda_sparse=0.001, seed=0, clip_value=1, verbose=1, optimizer_fn=<class 'torch.optim.adam.Adam'>, optimizer_params={'lr': 0.02}, scheduler_fn=<class 'torch.optim.lr_scheduler.StepLR'>, scheduler_params={'step_size': 50, 'gamma': 0.9}, mask_type='entmax', input_dim=91, output_dim=2, device_name='auto')",None,MinMaxScaler,,,0.8025523727885995,0.8029312664874864,0.7583514972670266,0.8530796390741467,0.8025523727885995,,"              precision    recall  f1-score   support
+
+           0       0.85      0.75      0.80    145301
+           1       0.76      0.85      0.80    132548
+
+    accuracy                           0.80    277849
+   macro avg       0.80      0.80      0.80    277849
+weighted avg       0.81      0.80      0.80    277849
+","Index(['nft_sales_count', 'First_item_Unique_id_collection', 'GoogleTrends',
+       'BTC_price', 'ETH_price', 'MANA_price', 'WAX_price',
+       'GoogleTrends_7d_rolling_avg', 'GoogleTrends_14d_rolling_avg',
+       'GoogleTrends_30d_rolling_avg', 'GoogleTrends_60d_rolling_avg',
+       'GoogleTrends_90d_rolling_avg', 'BTC_price_7d_rolling_avg',
+       'BTC_price_14d_rolling_avg', 'BTC_price_30d_rolling_avg',
+       'BTC_price_60d_rolling_avg', 'BTC_price_90d_rolling_avg',
+       'ETH_price_7d_rolling_avg', 'ETH_price_14d_rolling_avg',
+       'ETH_price_30d_rolling_avg', 'ETH_price_60d_rolling_avg',
+       'ETH_price_90d_rolling_avg', 'MANA_price_7d_rolling_avg',
+       'MANA_price_14d_rolling_avg', 'MANA_price_30d_rolling_avg',
+       'MANA_price_60d_rolling_avg', 'MANA_price_90d_rolling_avg',
+       'WAX_price_7d_rolling_avg', 'WAX_price_14d_rolling_avg',
+       'WAX_price_30d_rolling_avg', 'WAX_price_60d_rolling_avg',
+       'WAX_price_90d_rolling_avg', 'Ggl_trends_collection',
+       'Ggl_trends_collection_7d_rolling_avg',
+       'Ggl_trends_collection_14d_rolling_avg',
+       'Ggl_trends_collection_30d_rolling_avg',
+       'Ggl_trends_collection_60d_rolling_avg',
+       'Ggl_trends_collection_90d_rolling_avg', 'Price_USD_median_7d',
+       'Price_USD_max_7d', 'Price_USD_median_14d', 'Price_USD_max_14d',
+       'Price_USD_median_30d', 'Price_USD_max_30d', 'Price_USD_median_60d',
+       'Price_USD_max_60d', 'Price_USD_median_90d', 'Price_USD_max_90d',
+       'Price_USD_median_180d', 'Price_USD_max_180d', 'Price_USD_median_365d',
+       'Price_USD_max_365d', 'Price_USD_median_730d', 'Price_USD_max_730d',
+       'Price_Crypto_median_7d', 'Price_Crypto_max_7d',
+       'Price_Crypto_median_14d', 'Price_Crypto_max_14d',
+       'Price_Crypto_median_30d', 'Price_Crypto_max_30d',
+       'Price_Crypto_median_60d', 'Price_Crypto_max_60d',
+       'Price_Crypto_median_90d', 'Price_Crypto_max_90d',
+       'Price_Crypto_median_180d', 'Price_Crypto_max_180d',
+       'Price_Crypto_median_365d', 'Price_Crypto_max_365d',
+       'Price_Crypto_median_730d', 'Price_Crypto_max_730d',
+       'Price_USD_collection_cum_median', 'Price_USD_collection_cum_max',
+       'Price_Crypto_collection_cum_median', 'Price_Crypto_collection_cum_max',
+       'p_resale', 'pca_1', 'pca_2', 'pca_3', 'pca_4', 'pca_5',
+       'trans_count_seller', 'deg_centrality_seller', 'pgrank_seller',
+       'trans_count_buyer', 'deg_centrality_buyer', 'pgrank_buyer',
+       'Category_Art', 'Category_Collectible', 'Category_Games',
+       'Category_Metaverse', 'Category_Other'],
+      dtype='object')","[9.67820808e-02 7.24340609e-02 3.32541878e-10 0.00000000e+00
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ 1.29146097e-01 2.09661908e-03 0.00000000e+00 2.68546951e-02
+ 0.00000000e+00 0.00000000e+00 4.83823001e-02 0.00000000e+00
+ 0.00000000e+00 1.62320107e-03 0.00000000e+00 0.00000000e+00
+ 5.97405063e-03 5.65929771e-02 0.00000000e+00 0.00000000e+00
+ 0.00000000e+00 0.00000000e+00 4.77411479e-03 6.83832068e-03
+ 7.04791806e-03 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ 0.00000000e+00 5.67358819e-06 0.00000000e+00 0.00000000e+00
+ 7.52581149e-04 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ 0.00000000e+00 6.20740931e-03 0.00000000e+00 0.00000000e+00
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00 1.99767075e-03
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00 5.94624215e-04
+ 0.00000000e+00 3.51803640e-03 6.89586631e-03 0.00000000e+00
+ 0.00000000e+00 6.03995400e-03 7.71359246e-03 0.00000000e+00
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ 0.00000000e+00 4.25181068e-03 3.09888067e-02 1.96618483e-02
+ 9.94529695e-03 1.83096643e-02 4.63179895e-03 0.00000000e+00
+ 0.00000000e+00 3.81147726e-02 1.37884168e-01 9.33387360e-02
+ 5.91483612e-02 0.00000000e+00 6.18747350e-02 0.00000000e+00
+ 2.95781581e-02 0.00000000e+00 0.00000000e+00]",2022-04-08-17:44:21
+4,secondary2-49-tabnet-fill0-nobal-noscale,NFT sales 2-49,"TabNetClassifier(n_d=8, n_a=8, n_steps=3, gamma=1.3, cat_idxs=[], cat_dims=[], cat_emb_dim=1, n_independent=2, n_shared=2, epsilon=1e-15, momentum=0.02, lambda_sparse=0.001, seed=0, clip_value=1, verbose=1, optimizer_fn=<class 'torch.optim.adam.Adam'>, optimizer_params={'lr': 0.02}, scheduler_fn=<class 'torch.optim.lr_scheduler.StepLR'>, scheduler_params={'step_size': 50, 'gamma': 0.9}, mask_type='entmax', input_dim=91, output_dim=2, device_name='auto')",None,None,,,0.8862720715612655,0.7901178953871499,0.6755880815473079,0.9514060550643554,0.8862720715612654,,"              precision    recall  f1-score   support
+
+           0       0.98      0.82      0.89    329623
+           1       0.68      0.95      0.79    129049
+
+    accuracy                           0.86    458672
+   macro avg       0.83      0.89      0.84    458672
+weighted avg       0.89      0.86      0.86    458672
+","Index(['nft_sales_count', 'First_item_Unique_id_collection', 'GoogleTrends',
+       'BTC_price', 'ETH_price', 'MANA_price', 'WAX_price',
+       'GoogleTrends_7d_rolling_avg', 'GoogleTrends_14d_rolling_avg',
+       'GoogleTrends_30d_rolling_avg', 'GoogleTrends_60d_rolling_avg',
+       'GoogleTrends_90d_rolling_avg', 'BTC_price_7d_rolling_avg',
+       'BTC_price_14d_rolling_avg', 'BTC_price_30d_rolling_avg',
+       'BTC_price_60d_rolling_avg', 'BTC_price_90d_rolling_avg',
+       'ETH_price_7d_rolling_avg', 'ETH_price_14d_rolling_avg',
+       'ETH_price_30d_rolling_avg', 'ETH_price_60d_rolling_avg',
+       'ETH_price_90d_rolling_avg', 'MANA_price_7d_rolling_avg',
+       'MANA_price_14d_rolling_avg', 'MANA_price_30d_rolling_avg',
+       'MANA_price_60d_rolling_avg', 'MANA_price_90d_rolling_avg',
+       'WAX_price_7d_rolling_avg', 'WAX_price_14d_rolling_avg',
+       'WAX_price_30d_rolling_avg', 'WAX_price_60d_rolling_avg',
+       'WAX_price_90d_rolling_avg', 'Ggl_trends_collection',
+       'Ggl_trends_collection_7d_rolling_avg',
+       'Ggl_trends_collection_14d_rolling_avg',
+       'Ggl_trends_collection_30d_rolling_avg',
+       'Ggl_trends_collection_60d_rolling_avg',
+       'Ggl_trends_collection_90d_rolling_avg', 'Price_USD_median_7d',
+       'Price_USD_max_7d', 'Price_USD_median_14d', 'Price_USD_max_14d',
+       'Price_USD_median_30d', 'Price_USD_max_30d', 'Price_USD_median_60d',
+       'Price_USD_max_60d', 'Price_USD_median_90d', 'Price_USD_max_90d',
+       'Price_USD_median_180d', 'Price_USD_max_180d', 'Price_USD_median_365d',
+       'Price_USD_max_365d', 'Price_USD_median_730d', 'Price_USD_max_730d',
+       'Price_Crypto_median_7d', 'Price_Crypto_max_7d',
+       'Price_Crypto_median_14d', 'Price_Crypto_max_14d',
+       'Price_Crypto_median_30d', 'Price_Crypto_max_30d',
+       'Price_Crypto_median_60d', 'Price_Crypto_max_60d',
+       'Price_Crypto_median_90d', 'Price_Crypto_max_90d',
+       'Price_Crypto_median_180d', 'Price_Crypto_max_180d',
+       'Price_Crypto_median_365d', 'Price_Crypto_max_365d',
+       'Price_Crypto_median_730d', 'Price_Crypto_max_730d',
+       'Price_USD_collection_cum_median', 'Price_USD_collection_cum_max',
+       'Price_Crypto_collection_cum_median', 'Price_Crypto_collection_cum_max',
+       'p_resale', 'pca_1', 'pca_2', 'pca_3', 'pca_4', 'pca_5',
+       'trans_count_seller', 'deg_centrality_seller', 'pgrank_seller',
+       'trans_count_buyer', 'deg_centrality_buyer', 'pgrank_buyer',
+       'Category_Art', 'Category_Collectible', 'Category_Games',
+       'Category_Metaverse', 'Category_Other'],
+      dtype='object')","[6.88397477e-06 3.78593140e-01 2.61337955e-02 3.29822597e-13
+ 3.68389719e-02 2.22704122e-05 3.15574091e-05 2.18730598e-03
+ 1.19566196e-02 5.78486181e-07 2.15062072e-06 7.12325483e-03
+ 4.13600566e-03 0.00000000e+00 6.48476836e-02 5.80678822e-02
+ 3.23761031e-02 4.60510103e-06 8.70486235e-03 1.39818112e-06
+ 8.59476752e-07 2.02468620e-04 1.90586844e-06 0.00000000e+00
+ 1.09360730e-03 1.16146223e-01 7.81851117e-03 5.48222180e-03
+ 1.28896004e-02 0.00000000e+00 7.45550883e-03 3.40651606e-07
+ 4.82352074e-06 4.25814505e-05 1.35594545e-02 1.49641024e-04
+ 3.83617250e-06 4.53584096e-09 3.60337424e-04 7.71045816e-07
+ 1.86118911e-06 1.45533366e-02 7.86318038e-10 2.02799715e-05
+ 3.59410766e-06 2.87281754e-05 4.52117764e-02 1.64556227e-12
+ 3.05353474e-09 5.36588831e-07 1.75076299e-02 2.64087358e-06
+ 6.16771106e-04 0.00000000e+00 2.89952831e-05 1.85558279e-05
+ 1.24024013e-04 8.82958021e-04 9.52268728e-03 1.65147921e-11
+ 2.83540243e-04 5.67626132e-06 1.30089915e-03 5.99948254e-05
+ 2.73794351e-04 8.54157671e-03 1.60134796e-05 4.59667531e-09
+ 7.18948824e-04 3.39324725e-06 8.17397156e-07 6.26803242e-04
+ 7.27336952e-06 1.14468697e-02 5.81730874e-06 6.62218258e-03
+ 5.60326268e-03 3.05450763e-06 2.56142571e-07 1.41963572e-06
+ 4.04074832e-07 2.51309816e-02 2.52081845e-05 2.56847915e-11
+ 4.26083866e-05 1.99587841e-05 2.08638071e-02 0.00000000e+00
+ 3.36183538e-02 2.11493476e-06 2.82083804e-06]",2022-04-08-22:35:07
+5,secondary2-49-tabnet-fill0-nobal-minmaxscale,NFT sales 2-49,"TabNetClassifier(n_d=8, n_a=8, n_steps=3, gamma=1.3, cat_idxs=[], cat_dims=[], cat_emb_dim=1, n_independent=2, n_shared=2, epsilon=1e-15, momentum=0.02, lambda_sparse=0.001, seed=0, clip_value=1, verbose=1, optimizer_fn=<class 'torch.optim.adam.Adam'>, optimizer_params={'lr': 0.02}, scheduler_fn=<class 'torch.optim.lr_scheduler.StepLR'>, scheduler_params={'step_size': 50, 'gamma': 0.9}, mask_type='entmax', input_dim=91, output_dim=2, device_name='auto')",None,MinMaxScaler,,,0.8827805141869036,0.7971534097244984,0.7067903453896119,0.9140094072794055,0.8827805141869035,,"              precision    recall  f1-score   support
+
+           0       0.96      0.85      0.90    329623
+           1       0.71      0.91      0.80    129049
+
+    accuracy                           0.87    458672
+   macro avg       0.83      0.88      0.85    458672
+weighted avg       0.89      0.87      0.87    458672
+","Index(['nft_sales_count', 'First_item_Unique_id_collection', 'GoogleTrends',
+       'BTC_price', 'ETH_price', 'MANA_price', 'WAX_price',
+       'GoogleTrends_7d_rolling_avg', 'GoogleTrends_14d_rolling_avg',
+       'GoogleTrends_30d_rolling_avg', 'GoogleTrends_60d_rolling_avg',
+       'GoogleTrends_90d_rolling_avg', 'BTC_price_7d_rolling_avg',
+       'BTC_price_14d_rolling_avg', 'BTC_price_30d_rolling_avg',
+       'BTC_price_60d_rolling_avg', 'BTC_price_90d_rolling_avg',
+       'ETH_price_7d_rolling_avg', 'ETH_price_14d_rolling_avg',
+       'ETH_price_30d_rolling_avg', 'ETH_price_60d_rolling_avg',
+       'ETH_price_90d_rolling_avg', 'MANA_price_7d_rolling_avg',
+       'MANA_price_14d_rolling_avg', 'MANA_price_30d_rolling_avg',
+       'MANA_price_60d_rolling_avg', 'MANA_price_90d_rolling_avg',
+       'WAX_price_7d_rolling_avg', 'WAX_price_14d_rolling_avg',
+       'WAX_price_30d_rolling_avg', 'WAX_price_60d_rolling_avg',
+       'WAX_price_90d_rolling_avg', 'Ggl_trends_collection',
+       'Ggl_trends_collection_7d_rolling_avg',
+       'Ggl_trends_collection_14d_rolling_avg',
+       'Ggl_trends_collection_30d_rolling_avg',
+       'Ggl_trends_collection_60d_rolling_avg',
+       'Ggl_trends_collection_90d_rolling_avg', 'Price_USD_median_7d',
+       'Price_USD_max_7d', 'Price_USD_median_14d', 'Price_USD_max_14d',
+       'Price_USD_median_30d', 'Price_USD_max_30d', 'Price_USD_median_60d',
+       'Price_USD_max_60d', 'Price_USD_median_90d', 'Price_USD_max_90d',
+       'Price_USD_median_180d', 'Price_USD_max_180d', 'Price_USD_median_365d',
+       'Price_USD_max_365d', 'Price_USD_median_730d', 'Price_USD_max_730d',
+       'Price_Crypto_median_7d', 'Price_Crypto_max_7d',
+       'Price_Crypto_median_14d', 'Price_Crypto_max_14d',
+       'Price_Crypto_median_30d', 'Price_Crypto_max_30d',
+       'Price_Crypto_median_60d', 'Price_Crypto_max_60d',
+       'Price_Crypto_median_90d', 'Price_Crypto_max_90d',
+       'Price_Crypto_median_180d', 'Price_Crypto_max_180d',
+       'Price_Crypto_median_365d', 'Price_Crypto_max_365d',
+       'Price_Crypto_median_730d', 'Price_Crypto_max_730d',
+       'Price_USD_collection_cum_median', 'Price_USD_collection_cum_max',
+       'Price_Crypto_collection_cum_median', 'Price_Crypto_collection_cum_max',
+       'p_resale', 'pca_1', 'pca_2', 'pca_3', 'pca_4', 'pca_5',
+       'trans_count_seller', 'deg_centrality_seller', 'pgrank_seller',
+       'trans_count_buyer', 'deg_centrality_buyer', 'pgrank_buyer',
+       'Category_Art', 'Category_Collectible', 'Category_Games',
+       'Category_Metaverse', 'Category_Other'],
+      dtype='object')","[1.80106889e-02 5.84517113e-13 3.60410236e-04 1.15017908e-02
+ 4.17493707e-11 4.57264269e-03 2.09020461e-06 9.59133587e-04
+ 9.14796635e-07 1.54076508e-07 2.50865841e-07 6.32467395e-04
+ 3.99413540e-03 5.38988805e-05 2.52013844e-01 2.02656384e-02
+ 1.30420100e-03 5.49629114e-08 7.85730854e-08 2.58963891e-09
+ 3.80980804e-10 2.86257469e-02 1.96055274e-08 2.59528005e-06
+ 1.43294110e-02 1.87350411e-02 9.87060805e-03 1.01911327e-02
+ 8.94792804e-04 1.21032439e-05 5.46441739e-03 2.52121068e-07
+ 5.30266963e-06 1.41067117e-03 7.68671789e-05 0.00000000e+00
+ 1.03232651e-04 9.79558984e-08 3.63795015e-05 5.26827722e-07
+ 3.23229696e-05 1.56328292e-10 2.15845323e-07 1.17483871e-08
+ 1.08641496e-05 9.88179041e-03 9.88521862e-03 1.10437855e-02
+ 1.23366695e-06 1.20930358e-11 1.58409257e-02 0.00000000e+00
+ 1.93843003e-05 4.23099732e-09 3.50425853e-08 1.39756250e-09
+ 1.01985111e-08 1.27478147e-10 3.68404678e-01 9.60334661e-03
+ 7.73127107e-07 6.78725379e-05 1.54180193e-07 0.00000000e+00
+ 1.34601427e-07 3.41944436e-08 2.06658133e-06 1.64196686e-03
+ 7.60857537e-05 2.68260005e-06 0.00000000e+00 1.08421175e-05
+ 2.20260632e-07 2.82871624e-02 4.11911210e-07 3.13598791e-03
+ 8.85809318e-06 0.00000000e+00 1.08029789e-09 0.00000000e+00
+ 9.81456855e-10 3.27409137e-02 5.95297995e-02 4.26705768e-03
+ 9.35410457e-04 1.10218930e-10 1.83837842e-02 4.44388430e-05
+ 2.27078199e-02 3.87447457e-09 9.15695980e-08]",2022-04-09-03:25:16
+6,secondary2-49-tabnet-fillcustom-nobal-noscale,NFT sales 2-49,"TabNetClassifier(n_d=8, n_a=8, n_steps=3, gamma=1.3, cat_idxs=[], cat_dims=[], cat_emb_dim=1, n_independent=2, n_shared=2, epsilon=1e-15, momentum=0.02, lambda_sparse=0.001, seed=0, clip_value=1, verbose=1, optimizer_fn=<class 'torch.optim.adam.Adam'>, optimizer_params={'lr': 0.02}, scheduler_fn=<class 'torch.optim.lr_scheduler.StepLR'>, scheduler_params={'step_size': 50, 'gamma': 0.9}, mask_type='entmax', input_dim=91, output_dim=2, device_name='auto')",None,None,,,0.8942598563501942,0.8057234985892786,0.7015730000920556,0.9461877492744851,0.8942598563501943,,"              precision    recall  f1-score   support
+
+           0       0.98      0.84      0.90    328976
+           1       0.70      0.95      0.81    128874
+
+    accuracy                           0.87    457850
+   macro avg       0.84      0.89      0.85    457850
+weighted avg       0.90      0.87      0.88    457850
+","Index(['nft_sales_count', 'First_item_Unique_id_collection', 'GoogleTrends',
+       'BTC_price', 'ETH_price', 'MANA_price', 'WAX_price',
+       'GoogleTrends_7d_rolling_avg', 'GoogleTrends_14d_rolling_avg',
+       'GoogleTrends_30d_rolling_avg', 'GoogleTrends_60d_rolling_avg',
+       'GoogleTrends_90d_rolling_avg', 'BTC_price_7d_rolling_avg',
+       'BTC_price_14d_rolling_avg', 'BTC_price_30d_rolling_avg',
+       'BTC_price_60d_rolling_avg', 'BTC_price_90d_rolling_avg',
+       'ETH_price_7d_rolling_avg', 'ETH_price_14d_rolling_avg',
+       'ETH_price_30d_rolling_avg', 'ETH_price_60d_rolling_avg',
+       'ETH_price_90d_rolling_avg', 'MANA_price_7d_rolling_avg',
+       'MANA_price_14d_rolling_avg', 'MANA_price_30d_rolling_avg',
+       'MANA_price_60d_rolling_avg', 'MANA_price_90d_rolling_avg',
+       'WAX_price_7d_rolling_avg', 'WAX_price_14d_rolling_avg',
+       'WAX_price_30d_rolling_avg', 'WAX_price_60d_rolling_avg',
+       'WAX_price_90d_rolling_avg', 'Ggl_trends_collection',
+       'Ggl_trends_collection_7d_rolling_avg',
+       'Ggl_trends_collection_14d_rolling_avg',
+       'Ggl_trends_collection_30d_rolling_avg',
+       'Ggl_trends_collection_60d_rolling_avg',
+       'Ggl_trends_collection_90d_rolling_avg', 'Price_USD_median_7d',
+       'Price_USD_max_7d', 'Price_USD_median_14d', 'Price_USD_max_14d',
+       'Price_USD_median_30d', 'Price_USD_max_30d', 'Price_USD_median_60d',
+       'Price_USD_max_60d', 'Price_USD_median_90d', 'Price_USD_max_90d',
+       'Price_USD_median_180d', 'Price_USD_max_180d', 'Price_USD_median_365d',
+       'Price_USD_max_365d', 'Price_USD_median_730d', 'Price_USD_max_730d',
+       'Price_Crypto_median_7d', 'Price_Crypto_max_7d',
+       'Price_Crypto_median_14d', 'Price_Crypto_max_14d',
+       'Price_Crypto_median_30d', 'Price_Crypto_max_30d',
+       'Price_Crypto_median_60d', 'Price_Crypto_max_60d',
+       'Price_Crypto_median_90d', 'Price_Crypto_max_90d',
+       'Price_Crypto_median_180d', 'Price_Crypto_max_180d',
+       'Price_Crypto_median_365d', 'Price_Crypto_max_365d',
+       'Price_Crypto_median_730d', 'Price_Crypto_max_730d',
+       'Price_USD_collection_cum_median', 'Price_USD_collection_cum_max',
+       'Price_Crypto_collection_cum_median', 'Price_Crypto_collection_cum_max',
+       'p_resale', 'pca_1', 'pca_2', 'pca_3', 'pca_4', 'pca_5',
+       'trans_count_seller', 'deg_centrality_seller', 'pgrank_seller',
+       'trans_count_buyer', 'deg_centrality_buyer', 'pgrank_buyer',
+       'Category_Art', 'Category_Collectible', 'Category_Games',
+       'Category_Metaverse', 'Category_Other'],
+      dtype='object')","[0.00000000e+00 8.23890141e-01 0.00000000e+00 0.00000000e+00
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00 4.08434067e-03
+ 0.00000000e+00 4.32924955e-03 0.00000000e+00 3.97917162e-03
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00 1.77249886e-02
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00 1.11090966e-02
+ 0.00000000e+00 3.17706872e-04 0.00000000e+00 0.00000000e+00
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ 0.00000000e+00 0.00000000e+00 1.42138724e-07 0.00000000e+00
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ 0.00000000e+00 0.00000000e+00 2.34081953e-02 0.00000000e+00
+ 9.62627413e-04 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ 0.00000000e+00 4.35233586e-08 0.00000000e+00 0.00000000e+00
+ 0.00000000e+00 0.00000000e+00 7.53487295e-04 0.00000000e+00
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00 1.68831984e-03
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ 0.00000000e+00 3.31678286e-02 0.00000000e+00 1.21100652e-02
+ 0.00000000e+00 6.24745960e-02 0.00000000e+00 0.00000000e+00
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00]",2022-04-09-17:24:41
+7,secondary2-49-tabnet-fillcustom-nobal-minmaxscale,NFT sales 2-49,"TabNetClassifier(n_d=8, n_a=8, n_steps=3, gamma=1.3, cat_idxs=[], cat_dims=[], cat_emb_dim=1, n_independent=2, n_shared=2, epsilon=1e-15, momentum=0.02, lambda_sparse=0.001, seed=0, clip_value=1, verbose=1, optimizer_fn=<class 'torch.optim.adam.Adam'>, optimizer_params={'lr': 0.02}, scheduler_fn=<class 'torch.optim.lr_scheduler.StepLR'>, scheduler_params={'step_size': 50, 'gamma': 0.9}, mask_type='entmax', input_dim=91, output_dim=2, device_name='auto')",None,MinMaxScaler,,,0.895343646731762,0.807485197406526,0.7040382295736687,0.9465679656098205,0.895343646731762,,"              precision    recall  f1-score   support
+
+           0       0.98      0.84      0.91    328976
+           1       0.70      0.95      0.81    128874
+
+    accuracy                           0.87    457850
+   macro avg       0.84      0.90      0.86    457850
+weighted avg       0.90      0.87      0.88    457850
+","Index(['nft_sales_count', 'First_item_Unique_id_collection', 'GoogleTrends',
+       'BTC_price', 'ETH_price', 'MANA_price', 'WAX_price',
+       'GoogleTrends_7d_rolling_avg', 'GoogleTrends_14d_rolling_avg',
+       'GoogleTrends_30d_rolling_avg', 'GoogleTrends_60d_rolling_avg',
+       'GoogleTrends_90d_rolling_avg', 'BTC_price_7d_rolling_avg',
+       'BTC_price_14d_rolling_avg', 'BTC_price_30d_rolling_avg',
+       'BTC_price_60d_rolling_avg', 'BTC_price_90d_rolling_avg',
+       'ETH_price_7d_rolling_avg', 'ETH_price_14d_rolling_avg',
+       'ETH_price_30d_rolling_avg', 'ETH_price_60d_rolling_avg',
+       'ETH_price_90d_rolling_avg', 'MANA_price_7d_rolling_avg',
+       'MANA_price_14d_rolling_avg', 'MANA_price_30d_rolling_avg',
+       'MANA_price_60d_rolling_avg', 'MANA_price_90d_rolling_avg',
+       'WAX_price_7d_rolling_avg', 'WAX_price_14d_rolling_avg',
+       'WAX_price_30d_rolling_avg', 'WAX_price_60d_rolling_avg',
+       'WAX_price_90d_rolling_avg', 'Ggl_trends_collection',
+       'Ggl_trends_collection_7d_rolling_avg',
+       'Ggl_trends_collection_14d_rolling_avg',
+       'Ggl_trends_collection_30d_rolling_avg',
+       'Ggl_trends_collection_60d_rolling_avg',
+       'Ggl_trends_collection_90d_rolling_avg', 'Price_USD_median_7d',
+       'Price_USD_max_7d', 'Price_USD_median_14d', 'Price_USD_max_14d',
+       'Price_USD_median_30d', 'Price_USD_max_30d', 'Price_USD_median_60d',
+       'Price_USD_max_60d', 'Price_USD_median_90d', 'Price_USD_max_90d',
+       'Price_USD_median_180d', 'Price_USD_max_180d', 'Price_USD_median_365d',
+       'Price_USD_max_365d', 'Price_USD_median_730d', 'Price_USD_max_730d',
+       'Price_Crypto_median_7d', 'Price_Crypto_max_7d',
+       'Price_Crypto_median_14d', 'Price_Crypto_max_14d',
+       'Price_Crypto_median_30d', 'Price_Crypto_max_30d',
+       'Price_Crypto_median_60d', 'Price_Crypto_max_60d',
+       'Price_Crypto_median_90d', 'Price_Crypto_max_90d',
+       'Price_Crypto_median_180d', 'Price_Crypto_max_180d',
+       'Price_Crypto_median_365d', 'Price_Crypto_max_365d',
+       'Price_Crypto_median_730d', 'Price_Crypto_max_730d',
+       'Price_USD_collection_cum_median', 'Price_USD_collection_cum_max',
+       'Price_Crypto_collection_cum_median', 'Price_Crypto_collection_cum_max',
+       'p_resale', 'pca_1', 'pca_2', 'pca_3', 'pca_4', 'pca_5',
+       'trans_count_seller', 'deg_centrality_seller', 'pgrank_seller',
+       'trans_count_buyer', 'deg_centrality_buyer', 'pgrank_buyer',
+       'Category_Art', 'Category_Collectible', 'Category_Games',
+       'Category_Metaverse', 'Category_Other'],
+      dtype='object')","[0.00000000e+00 5.61192764e-01 4.00592620e-03 0.00000000e+00
+ 0.00000000e+00 0.00000000e+00 1.38132616e-11 0.00000000e+00
+ 1.91211003e-03 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ 1.97043723e-01 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ 2.12806765e-09 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ 0.00000000e+00 2.51773947e-02 0.00000000e+00 0.00000000e+00
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ 0.00000000e+00 0.00000000e+00 1.20546039e-08 0.00000000e+00
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00 1.93834770e-07
+ 0.00000000e+00 1.36220599e-09 0.00000000e+00 0.00000000e+00
+ 2.09417020e-09 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ 9.90968806e-03 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ 4.50288076e-03 6.28626106e-04 0.00000000e+00 0.00000000e+00
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ 0.00000000e+00 0.00000000e+00 8.21247596e-03 1.07514073e-03
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ 0.00000000e+00 1.62473478e-01 1.66434504e-02 4.54129726e-03
+ 2.68083383e-03 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00]",2022-04-09-19:59:38
