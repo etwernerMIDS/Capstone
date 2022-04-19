@@ -8,7 +8,7 @@ Current applications such as www.nonfungible.com and www.dappradar.com provide a
 
 The overall purpose of our Capstone project is to build product to predict the price changes of NFTs. From various research and user interaction we determined that a tool to predict price changes could be useful for both NFT creators and investors. We found the space interesting because NFTs are a fast growing asset market, and there is a diverse set of use cases and interested parties
 
-References:
+### References:
 * [Project Website](https://sites.google.com/berkeley.edu/nftpredictor/home)
 * [Berkeley Website](https://www.ischool.berkeley.edu/projects/2022/nft-predictor)
 * [Presentation Slides](https://docs.google.com/presentation/d/1hoDqk6DU45HUwCyZkFBq5Z8CvfIDWMZC/edit#slide=id.p1)
