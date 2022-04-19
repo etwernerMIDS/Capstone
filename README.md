@@ -6,3 +6,4 @@ Non-fungible tokens are currently focused primarily on collectibles, and one of 
  
 Current applications such as www.nonfungible.com and www.dappradar.com provide a vast amount of data on NFT market activity.  However, there does not appear to be a solution to help potential NFT investors and sellers predict the future prices of NFT assets.
 
+*This Capstone Project was completed for UCB's Master of Data Science Course W210 - Capstone. These were completed using a Google Cloud Platform Notebook Instance as well as AWS.* 
