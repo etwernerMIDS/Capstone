@@ -6,7 +6,7 @@ Non-fungible tokens are currently focused primarily on collectibles, and one of 
  
 Current applications such as www.nonfungible.com and www.dappradar.com provide a vast amount of data on NFT market activity.  However, there does not appear to be a solution to help potential NFT investors and sellers predict the future prices of NFT assets.
 
-The overall purpose of our Capstone project is to build product to predict the price changes of NFTs. From various research and user interaction we determined that a tool to predict price changes could be useful for both NFT creators and investors. We found the space interesting because NFTs are a fast growing asset market, and there is a diverse set of use cases and interested parties
+The overall purpose of the Capstone project is to build a product that is able to predict the price changes of NFTs. From various research and user interactions, we determined that a tool to predict increased or decreased price changes could be useful for both NFT creators and investors. We found the space interesting because NFTs are a fast growing asset market, and there is a diverse set of use cases and interested parties.
 
 ### References:
 * [Project Website](https://sites.google.com/berkeley.edu/nftpredictor/home)
